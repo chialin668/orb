@@ -1,0 +1,24 @@
+<schema>
+<table id='DB_User'>
+	<column primaryKey='p' columnName='User_WID' dataType='number' />
+	<column columnName='User_Name' dataType='varchar2' dataLength='16' />
+	<column columnName='First_Name' dataType='varchar2' dataLength='32' />
+	<column columnName='Last_Name' dataType='varchar2' dataLength='32' nullable='y' validate='sex' default='male' />
+	<column columnName='MD5_Hex_Password' dataType='varchar2' dataLength='64' />
+	<column columnName='Status' dataType='char' dataLength='1' />
+	<column columnName='Version_Nbr' dataType='number' dataLength='3' />
+</table>
+
+<table id='Role'>
+	<column primaryKey='p' columnName='Role_WID' dataType='number' />
+	<column columnName='Role_Name' dataType='varchar2' dataLength='32' />
+	<column columnName='Version_Nbr' dataType='number' dataLength='3' />
+</table>
+
+<table id='DB_User_Role'>
+	<column primaryKey='p' columnName='ABC' dataType='number' />
+	<column columnName='XYZ' dataType='number' />
+	<column columnName='Version_Nbr' dataType='number' dataLength='3' />
+</table>
+
+</schema>

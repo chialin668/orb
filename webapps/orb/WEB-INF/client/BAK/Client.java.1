@@ -1,0 +1,42 @@
+import java.io.*;
+import java.net.*;
+
+public class Client {
+	public static void main(String[] args) throws IOException {
+		Socket echoSocket = null;
+		PrintWriter out = null;
+		BufferedReader in = null;
+
+		try {
+			echoSocket = new Socket("mylinux", 3350);
+			out = new PrintWriter(echoSocket.getOutputStream(), 
+						true);
+			in = new BufferedReader(new InputStreamReader(
+						echoSocket.getInputStream()));
+		} catch (UnknownHostException e) {
+			System.err.println("Don't know about host: orb.");
+			System.exit(1);
+		} catch (IOException e) {
+			System.err.println("Couldn't get I/O for "
+				+ "the connection to: orb.");
+			System.exit(1);
+		}
+
+		BufferedReader stdIn = new BufferedReader(
+					new InputStreamReader(System.in));
+
+		String userInput;
+
+		for (int i=0;i<2;i++) {
+			userInput = "get";
+			out.println(userInput);
+			System.out.println("echo: " + in.readLine());
+			System.out.println("Done");
+		}
+
+		out.close();
+		in.close();
+		stdIn.close();
+		echoSocket.close();
+	}
+}

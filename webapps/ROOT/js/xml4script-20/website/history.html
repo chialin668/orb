@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--
+// =========================================================================
+//
+// history.html - The history behind XML for <SCRIPT>
+//
+// =========================================================================
+//
+// Copyright (C) 2001, 2002 - David Joham (djoham@yahoo.com)
+//
+// This library is free software; you can redistribute it and/or
+// modify it under the terms of the GNU Lesser General Public
+// License as published by the Free Software Foundation; either
+// version 2.1 of the License, or (at your option) any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+// Lesser General Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public
+// License along with this library; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+-->
+
+
+<head>
+    <title>
+        XML for &lt;SCRIPT&gt; Cross Platform XML Parsing in JavaScript - History
+    </title>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
+</head>
+
+<body>
+
+    <form name="frmForm" id="frmForm" method="get" action="noaction">
+        <!-- logo -->
+        <div id="logo" class="titleLogo">
+            <img src="./images/titleImage.jpg" width="459" height="75" alt="XML for &lt;SCRIPT&gt; logo">
+        </div>
+
+        <!-- main page square -->
+        <div class="mainContentArea">
+            <br>
+        </div>
+
+        <!-- navigation bar -->
+        <div class="leftImage"></div>
+
+        <!-- credit where credit is due -->
+        <p>
+            <a href="http://validator.w3.org/check/referer"><img src="./images/valid-html401.png" class="validHTMLImage" alt="HTML 4.01 strict HTML" /></a><br />
+            <a href="http://www.sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=14016" class="sourceForgeImage" alt="Visit Sourceforge.net" /></a>
+        </p>
+        <p>
+        <div class="linkBar">
+            <div class="hoverNavigation"><a class="navigation" href="./../index.html">Home</a></div>
+            <div class="hoverNavigation"><a class="navigation" href="./documentation.html">Documentation</a></div>
+            <div class="hoverNavigation"><a class="navigation" href="./caseStudies.html">Case&nbsp;Studies</a></div>
+            <div class="hoverNavigation"><a class="navigation" href="./sampleApplications.html">Sample&nbsp;Code</a></div>
+            <div class="hoverNavigation"><a class="navigation" href="./testSuites.html">Test&nbsp;Suites</a></div>
+            <div class="currentLocation">History</div>
+            <div class="hoverNavigation"><a class="navigation" href="./tools.html">Tools</a></div>
+            <div class="hoverNavigation"><a class="navigation" href="./download.html">Download</a></div>
+        </div>
+
+
+        <div  class="contentDiv">
+            <div class="contentDivBackground">
+                <br>
+
+                <div class="pageHeader">
+                    History
+                </div>
+
+                <br>
+
+                <p>
+                    XML for &lt;SCRIPT&gt; started off as an "experimental code doodle" from Micheal Houghton. It allowed read-only access
+                    to a DOM tree representing an XML string.
+                </p>
+
+                <p>
+                    While looking for a JavaScript parser during the Summer of 2000, I ran across XML for &lt;SCRIPT&gt;
+                    and used it for a large web-based application that I was developing. During the development of that application, I was impressed
+                    with how useful the library actually was. My next web application was a custom XML-based content management system.
+                    Since the back end employed XML as its data source, it was an easy decision to use XML for &lt;SCRIPT&gt; on the client side as well.
+                </p>
+
+                <p>
+                    After the successful implementation of the content management system, I decided to volunteer to maintain XML for &lt;SCRIPT&gt;. Michael
+                    was gracious enough to allow it, and I set forth to merge my DOM manipulation code into his tree and build a web site to support the project.
+                </p>
+
+                <p>
+                    In early Summer 2001, I released XML for &lt;SCRIPT&gt; 1.0. Since then, thousands of people have downloaded the project. Many
+                    have emailed me with suggestions and compliments. I have exchanged greetings with people all over the world.
+                </p>
+
+                <p>
+                    I've also received patches and code contributions. Scott Severtson created the SAX parser and test suite included with XML for
+                    &lt;SCRIPT&gt; version 2.0. He also created a new XML parser that will be the base for future enhancements to the project.
+                    Raymond Irving helped considerably by creating and documenting the SAX parser examples as well as coming up with the
+                    why-didn't-I-think-of-that-idea for the xmlPack functions. A great deal of thanks is also due to Jennifer Sims, who redesigned the
+                    website around XML for &lt;SCRIPT&gt; to make it look wonderful and considerably more professional than the one I originally crafted.
+                </p>
+
+                <p>
+                Thanks to everyone who's contributed so far!
+                </p>
+
+                <p>
+                    What's in the future? Well, Scott's work on the SAX parser also resulted in a potentially more robust, standards complient and faster DOM implementation
+                    as well as some other goodies. Many people are trying to use XML for &lt;SCRIPT&gt; in off-line mode and are requesting some way
+                    to save XML data to the file system. Plans are in the works to create a Java Applet that can be signed so that XML data can be stored
+                    and retreived in a cross-platform manner. A volunteer in this area would be very much appreciated. Also, wouldn't it be cool if we could
+                    have an XSL/XSLT engine as well? As always, your ideas and suggestions (as well as contributions) are very welcome!
+                </p>
+
+                <p>
+                    The following is a detailed version history for XML for &lt;SCRIPT&gt;
+                </p>
+
+                <div class="header">
+                    Version History
+                </div>
+
+                <br>
+
+                <div class="accent">
+                    Version 0.1
+                </div>
+
+                <div class="indentOne">
+                    Initial version
+                </div>
+
+                <br>
+
+                <div class="accent">
+                    Version 0.2
+                </div>
+
+                <div class="indentOne">
+                    Significant code changes - switched to a cleaner one-pass parser.
+                </div>
+
+                <br>
+
+                <div class="accent">
+                    Version 0.21
+                </div>
+
+                <div class="indentOne">
+                    Bug fix release. Resolves an issue with attributes named 'length', due to the Array/Object
+                    duality in JavaScript. Adds a new accessor method on XMLNode, getAttributeNames(), to
+                    return a list of attribute names (Direct access to the attributes array property is discouraged)
+                </div>
+
+                <br>
+
+                <div class="accent">
+                    Version 0.22
+                </div>
+
+                <div class="indentOne">
+                    Bug fix release. Fixes problems with the content of CDATA and comment sections,
+                    and addresses string processing issues.
+                </div>
+
+                <br>
+
+                <div class="accent">
+                    Version 1.0
+                </div>
+
+                <div class="indentOne">
+                    New maintainer (djoham@yahoo.com). Lots of new DOM manipulation functions. In addition, a new
+                    test suite has been added to the distribution as well as a new sample application, new
+                    documentation and a new web site design.
+                </div>
+
+                <br>
+
+                <div class="accent">
+                    Version 1.1
+                </div>
+
+                <div class="indentOne">
+                    Support for Konqueror 2.2 added (by rewriting the convert functions)
+                    and a new stripped down version of xml.js
+                    (tinyxml.js) added to the distribution to increase download speeds on slow
+                    connections.
+                </div>
+
+                <br>
+
+                <div class="accent">
+                    Version 2.0
+                </div>
+
+                <div class="indentOne">
+                    A SAX parser, test suite and sample application is added to the project as well as a simple
+                    objects for storing XML data in cookies and helping in the escaping out of XML into valid HTML.
+                    As a result, the .js files are renamed to more appropriately describe their function. In addition, a new web site
+                    design is introduced that makes the distribution look considerably more professional and easier to read.
+                </div>
+
+                <br>
+
+                <div class="header">
+                    Thanks
+                </div>
+
+                <p>
+                    I would like to personally thank Michael Houghton &lt;mike@idle.org&gt;, the original author of XML
+                    for &lt;SCRIPT&gt;. Without his original work, this parser would never have come into being.
+                </p>
+
+                <br>
+
+                <div class="header">
+                    Feedback
+                </div>
+
+                <p>
+                    If you have any comments, suggestions, modifications, complaints, etc., please contact me
+                    (David Joham) by email: djoham@yahoo.com. If you're reporting a bug, it would be useful if you
+                    could provide the smallest chunk of XML that demonstrates the problem.
+                </p>
+
+                <br>
+
+                <div class="header">
+                    Copyright
+                </div>
+
+                <p>
+                    XML for &lt;SCRIPT&gt; is Copyright 2000, 2001, 2002 Michael Houghton and David Joham.
+                    All trademarks are the property of their respective owners.
+                </p>
+
+            </div>
+        </div>
+
+
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+

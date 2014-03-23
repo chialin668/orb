@@ -1,0 +1,25 @@
+2003-03-31 10:26:20 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-31 10:26:20 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-31 10:26:20 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-31 10:26:21 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-03-31 10:26:21 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-31 10:26:22 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-31 10:26:22 ContextListener: contextInitialized()
+2003-03-31 10:26:22 SessionListener: contextInitialized()
+2003-03-31 10:26:22 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-31 10:26:22 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-31 20:47:04 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-31 20:47:04 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-31 20:47:04 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-31 20:47:05 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-03-31 20:47:05 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-31 20:47:06 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-31 20:47:06 ContextListener: contextInitialized()
+2003-03-31 20:47:06 SessionListener: contextInitialized()
+2003-03-31 20:47:06 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-31 20:47:06 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-31 20:50:45 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@690247')
+2003-03-31 20:50:45 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@14a97b')
+2003-03-31 20:50:45 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@82e4f3')
+2003-03-31 20:50:45 SessionListener: contextDestroyed()
+2003-03-31 20:50:45 ContextListener: contextDestroyed()

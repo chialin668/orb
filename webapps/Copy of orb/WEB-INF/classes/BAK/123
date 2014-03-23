@@ -1,0 +1,386 @@
+$ $ 
+Filesystem            kbytes    used   avail capacity  Mounted on
+/proc                      0       0       0     0%    /proc
+/dev/dsk/c0t0d0s0    2052750  283881 1707287    15%    /
+/dev/dsk/c0t0d0s6    1015542  800136  154474    84%    /usr
+fd                         0       0       0     0%    /dev/fd
+/dev/dsk/c0t0d0s7    4629998 2571850 2011849    57%    /usr/local
+swap                  518216   52632  465584    11%    /tmp
+/dev/dsk/c1t1d0s2    17644051 3637366 13830245    21%    /data1
+/dev/dsk/c1t2d0s2    17644051 2618284 14849327    15%    /data2
+/dev/dsk/c1t3d0s2    17644051 6010636 11456975    35%    /data3
+/dev/dsk/c1t4d0s2    17644051 6980733 10486878    40%    /data4
+/dev/dsk/c1t5d0s2    17644051 4450069 13017542    26%    /data5
+/dev/dsk/c1t6d0s2    17644051 3083642 14383969    18%    /data6
+
+null
+0
+total 295680
+drwxr-xr-x  16 oracle   dba         1024 Jun 13 04:44 .
+drwxr-xr-x  26 root     root         512 Apr 10 22:52 ..
+-rw-------   1 oracle   dba          224 Mar 27 22:46 .TTauthority
+-rw-------   1 oracle   dba          195 Mar 27 22:45 .Xauthority
+drwxr-xr-x  13 oracle   dba          512 Mar 27 22:46 .dt
+-rwxr-xr-x   1 oracle   dba         5111 Jan  4 01:37 .dtprofile
+drwxr-xr-x   2 oracle   dba          512 Jan  4 01:37 .hotjava
+drwxr-xr-x   2 oracle   dba          512 Jan  4 01:38 .java
+drwx------   3 oracle   dba          512 Jan  4 01:38 .mozilla
+-rw-r--r--   1 oracle   dba         1509 May 23 21:25 .profile
+-rw-r--r--   1 oracle   dba          967 Apr 11 01:37 .profile.bad
+-rw-r--r--   1 oracle   dba          793 Dec 13  2000 .profile.sav1
+-rw-------   1 oracle   dba         2832 Jun 13 05:17 .sh_history
+drwx------   2 oracle   dba          512 Mar 27 22:46 .solregis
+drwx------   2 oracle   dba          512 Dec 12  2000 .ssh
+drwxr-xr-x  41 oracle   dba         1024 Jan  8 05:19 816
+-rw-r--r--   1 oracle   dba            0 Apr 21 08:41 BAK
+drwxr-xr-x   4 oracle   dba          512 Dec 12  2000 admin
+-rw-r--r--   1 oracle   dba      30186496 Jan 23 02:29 admin.tar
+-rw-r--r--   1 oracle   dba      111542272 Jun 13 05:17 expdat.dmp
+-rw-r--r--   1 oracle   dba          161 Apr 24 05:56 ftree.html
+drwxrwxr-x   3 oracle   dba          512 Dec  3  2000 jre
+drwxr-xr-x   9 oracle   dba          512 Dec 14  2000 mico
+-rw-r--r--   1 oracle   dba      9404416 Dec 14  2000 mico.tar
+drwxr-xr-x   2 oracle   dba          512 Jan 12 04:24 olap
+drwxrwxr-x   6 oracle   dba          512 Dec  3  2000 oui
+-rw-rw-rw-   1 oracle   dba          533 Jan  4 02:23 plugin130_01.trace
+drwxr-xr-x   3 oracle   dba          512 May 31 04:04 scripts
+-rw-r--r--   1 oracle   dba       106904 Jun 13 00:14 sqlnet.log
+drwxr-xr-x   2 oracle   dba          512 Jan  5 01:17 temp
+
+<table id="orb" border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<td>total</td>
+	<td>295680</td>
+</tr>
+<tr>
+	<td>drwxr-xr-x</td>
+	<td>16</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>1024</td>
+	<td>Jun</td>
+	<td>13</td>
+	<td>04:44</td>
+	<td>.</td>
+</tr>
+<tr>
+	<td>drwxr-xr-x</td>
+	<td>26</td>
+	<td>root</td>
+	<td>root</td>
+	<td>512</td>
+	<td>Apr</td>
+	<td>10</td>
+	<td>22:52</td>
+	<td>..</td>
+</tr>
+<tr>
+	<td>-rw-------</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>224</td>
+	<td>Mar</td>
+	<td>27</td>
+	<td>22:46</td>
+	<td>.TTauthority</td>
+</tr>
+<tr>
+	<td>-rw-------</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>195</td>
+	<td>Mar</td>
+	<td>27</td>
+	<td>22:45</td>
+	<td>.Xauthority</td>
+</tr>
+<tr>
+	<td>drwxr-xr-x</td>
+	<td>13</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Mar</td>
+	<td>27</td>
+	<td>22:46</td>
+	<td>.dt</td>
+</tr>
+<tr>
+	<td>-rwxr-xr-x</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>5111</td>
+	<td>Jan</td>
+	<td>4</td>
+	<td>01:37</td>
+	<td>.dtprofile</td>
+</tr>
+<tr>
+	<td>drwxr-xr-x</td>
+	<td>2</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Jan</td>
+	<td>4</td>
+	<td>01:37</td>
+	<td>.hotjava</td>
+</tr>
+<tr>
+	<td>drwxr-xr-x</td>
+	<td>2</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Jan</td>
+	<td>4</td>
+	<td>01:38</td>
+	<td>.java</td>
+</tr>
+<tr>
+	<td>drwx------</td>
+	<td>3</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Jan</td>
+	<td>4</td>
+	<td>01:38</td>
+	<td>.mozilla</td>
+</tr>
+<tr>
+	<td>-rw-r--r--</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>1509</td>
+	<td>May</td>
+	<td>23</td>
+	<td>21:25</td>
+	<td>.profile</td>
+</tr>
+<tr>
+	<td>-rw-r--r--</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>967</td>
+	<td>Apr</td>
+	<td>11</td>
+	<td>01:37</td>
+	<td>.profile.bad</td>
+</tr>
+<tr>
+	<td>-rw-r--r--</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>793</td>
+	<td>Dec</td>
+	<td>13</td>
+	<td>2000</td>
+	<td>.profile.sav1</td>
+</tr>
+<tr>
+	<td>-rw-------</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>2832</td>
+	<td>Jun</td>
+	<td>13</td>
+	<td>05:17</td>
+	<td>.sh_history</td>
+</tr>
+<tr>
+	<td>drwx------</td>
+	<td>2</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Mar</td>
+	<td>27</td>
+	<td>22:46</td>
+	<td>.solregis</td>
+</tr>
+<tr>
+	<td>drwx------</td>
+	<td>2</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Dec</td>
+	<td>12</td>
+	<td>2000</td>
+	<td>.ssh</td>
+</tr>
+<tr>
+	<td>drwxr-xr-x</td>
+	<td>41</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>1024</td>
+	<td>Jan</td>
+	<td>8</td>
+	<td>05:19</td>
+	<td>816</td>
+</tr>
+<tr>
+	<td>-rw-r--r--</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>0</td>
+	<td>Apr</td>
+	<td>21</td>
+	<td>08:41</td>
+	<td>BAK</td>
+</tr>
+<tr>
+	<td>drwxr-xr-x</td>
+	<td>4</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Dec</td>
+	<td>12</td>
+	<td>2000</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>-rw-r--r--</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>30186496</td>
+	<td>Jan</td>
+	<td>23</td>
+	<td>02:29</td>
+	<td>admin.tar</td>
+</tr>
+<tr>
+	<td>-rw-r--r--</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>111542272</td>
+	<td>Jun</td>
+	<td>13</td>
+	<td>05:17</td>
+	<td>expdat.dmp</td>
+</tr>
+<tr>
+	<td>-rw-r--r--</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>161</td>
+	<td>Apr</td>
+	<td>24</td>
+	<td>05:56</td>
+	<td>ftree.html</td>
+</tr>
+<tr>
+	<td>drwxrwxr-x</td>
+	<td>3</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Dec</td>
+	<td>3</td>
+	<td>2000</td>
+	<td>jre</td>
+</tr>
+<tr>
+	<td>drwxr-xr-x</td>
+	<td>9</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Dec</td>
+	<td>14</td>
+	<td>2000</td>
+	<td>mico</td>
+</tr>
+<tr>
+	<td>-rw-r--r--</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>9404416</td>
+	<td>Dec</td>
+	<td>14</td>
+	<td>2000</td>
+	<td>mico.tar</td>
+</tr>
+<tr>
+	<td>drwxr-xr-x</td>
+	<td>2</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Jan</td>
+	<td>12</td>
+	<td>04:24</td>
+	<td>olap</td>
+</tr>
+<tr>
+	<td>drwxrwxr-x</td>
+	<td>6</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Dec</td>
+	<td>3</td>
+	<td>2000</td>
+	<td>oui</td>
+</tr>
+<tr>
+	<td>-rw-rw-rw-</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>533</td>
+	<td>Jan</td>
+	<td>4</td>
+	<td>02:23</td>
+	<td>plugin130_01.trace</td>
+</tr>
+<tr>
+	<td>drwxr-xr-x</td>
+	<td>3</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>May</td>
+	<td>31</td>
+	<td>04:04</td>
+	<td>scripts</td>
+</tr>
+<tr>
+	<td>-rw-r--r--</td>
+	<td>1</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>106904</td>
+	<td>Jun</td>
+	<td>13</td>
+	<td>00:14</td>
+	<td>sqlnet.log</td>
+</tr>
+<tr>
+	<td>drwxr-xr-x</td>
+	<td>2</td>
+	<td>oracle</td>
+	<td>dba</td>
+	<td>512</td>
+	<td>Jan</td>
+	<td>5</td>
+	<td>01:17</td>
+	<td>temp</td>
+</tr>
+</table>
+0

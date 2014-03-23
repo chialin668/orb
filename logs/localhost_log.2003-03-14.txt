@@ -1,0 +1,400 @@
+2003-03-14 18:43:12 HostConfig[localhost]: Deploying configuration descriptor admin.xml
+2003-03-14 18:43:21 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2003-03-14 18:43:21 WebappLoader[/manager]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\manager
+2003-03-14 18:43:21 ContextConfig[/manager]: Configured an authenticator for method BASIC
+2003-03-14 18:43:21 StandardManager[/manager]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 18:43:21 StandardManager[/manager]: Seeding of random number generator has been completed
+2003-03-14 18:43:21 StandardWrapper[/manager:default]: Loading container servlet default
+2003-03-14 18:43:21 StandardWrapper[/manager:invoker]: Loading container servlet invoker
+2003-03-14 18:43:21 HostConfig[localhost]: Deploying web application directory Copy of orb
+2003-03-14 18:43:21 StandardHost[localhost]: Installing web application at context path /Copy of orb from URL file:C:\Chialin\Tomcat41\webapps\Copy of orb
+2003-03-14 18:43:21 WebappLoader[/Copy of orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\Copy of orb
+2003-03-14 18:43:21 WebappLoader[/Copy of orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\classes
+2003-03-14 18:43:22 WebappLoader[/Copy of orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 18:43:22 ContextConfig[/Copy of orb]: WARNING: Security role name tomcat used in an <auth-constraint> without being defined in a <security-role>
+2003-03-14 18:43:22 ContextConfig[/Copy of orb]: WARNING: Security role name role1 used in an <auth-constraint> without being defined in a <security-role>
+2003-03-14 18:43:22 ContextConfig[/Copy of orb]: Configured an authenticator for method FORM
+2003-03-14 18:43:22 StandardManager[/Copy of orb]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 18:43:22 StandardManager[/Copy of orb]: Seeding of random number generator has been completed
+2003-03-14 18:43:22 StandardWrapper[/Copy of orb:default]: Loading container servlet default
+2003-03-14 18:43:22 StandardWrapper[/Copy of orb:invoker]: Loading container servlet invoker
+2003-03-14 18:43:22 HostConfig[localhost]: Deploying web application directory gid
+2003-03-14 18:43:22 StandardHost[localhost]: Installing web application at context path /gid from URL file:C:\Chialin\Tomcat41\webapps\gid
+2003-03-14 18:43:22 WebappLoader[/gid]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\gid
+2003-03-14 18:43:22 WebappLoader[/gid]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\classes
+2003-03-14 18:43:22 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\lastmod.jar
+2003-03-14 18:43:22 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 18:43:24 StandardManager[/gid]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 18:43:24 StandardManager[/gid]: Seeding of random number generator has been completed
+2003-03-14 18:43:24 StandardWrapper[/gid:default]: Loading container servlet default
+2003-03-14 18:43:24 StandardWrapper[/gid:invoker]: Loading container servlet invoker
+2003-03-14 18:43:24 HostConfig[localhost]: Deploying web application directory orb
+2003-03-14 18:43:24 StandardHost[localhost]: Installing web application at context path /orb from URL file:C:\Chialin\Tomcat41\webapps\orb
+2003-03-14 18:43:24 WebappLoader[/orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+2003-03-14 18:43:24 WebappLoader[/orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+2003-03-14 18:43:24 WebappLoader[/orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 18:43:26 StandardManager[/orb]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 18:43:26 StandardManager[/orb]: Seeding of random number generator has been completed
+2003-03-14 18:43:26 StandardWrapper[/orb:default]: Loading container servlet default
+2003-03-14 18:43:26 StandardWrapper[/orb:invoker]: Loading container servlet invoker
+2003-03-14 18:43:26 HostConfig[localhost]: Deploying web application directory pird
+2003-03-14 18:43:26 StandardHost[localhost]: Installing web application at context path /pird from URL file:C:\Chialin\Tomcat41\webapps\pird
+2003-03-14 18:43:26 WebappLoader[/pird]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\pird
+2003-03-14 18:43:26 WebappLoader[/pird]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\classes
+2003-03-14 18:43:27 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\lastmod.jar
+2003-03-14 18:43:27 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 18:43:29 StandardManager[/pird]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 18:43:29 StandardManager[/pird]: Seeding of random number generator has been completed
+2003-03-14 18:43:29 StandardWrapper[/pird:default]: Loading container servlet default
+2003-03-14 18:43:29 StandardWrapper[/pird:invoker]: Loading container servlet invoker
+2003-03-14 18:43:29 HostConfig[localhost]: Deploying web application directory ROOT
+2003-03-14 18:43:29 StandardHost[localhost]: Installing web application at context path  from URL file:C:\Chialin\Tomcat41\webapps\ROOT
+2003-03-14 18:43:29 WebappLoader[]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\_
+2003-03-14 18:43:29 StandardManager[]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 18:43:29 StandardManager[]: Seeding of random number generator has been completed
+2003-03-14 18:43:29 StandardWrapper[:default]: Loading container servlet default
+2003-03-14 18:43:29 StandardWrapper[:invoker]: Loading container servlet invoker
+2003-03-14 18:43:30 HostConfig[localhost]: Deploying web application directory tomcat-docs
+2003-03-14 18:43:30 StandardHost[localhost]: Installing web application at context path /tomcat-docs from URL file:C:\Chialin\Tomcat41\webapps\tomcat-docs
+2003-03-14 18:43:30 WebappLoader[/tomcat-docs]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\tomcat-docs
+2003-03-14 18:43:30 StandardManager[/tomcat-docs]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 18:43:30 StandardManager[/tomcat-docs]: Seeding of random number generator has been completed
+2003-03-14 18:43:30 StandardWrapper[/tomcat-docs:default]: Loading container servlet default
+2003-03-14 18:43:30 StandardWrapper[/tomcat-docs:invoker]: Loading container servlet invoker
+2003-03-14 18:43:30 HostConfig[localhost]: Deploying web application directory webdav
+2003-03-14 18:43:30 StandardHost[localhost]: Installing web application at context path /webdav from URL file:C:\Chialin\Tomcat41\webapps\webdav
+2003-03-14 18:43:30 WebappLoader[/webdav]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\webdav
+2003-03-14 18:43:30 StandardManager[/webdav]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 18:43:30 StandardManager[/webdav]: Seeding of random number generator has been completed
+2003-03-14 18:43:30 StandardWrapper[/webdav:default]: Loading container servlet default
+2003-03-14 18:43:30 StandardWrapper[/webdav:invoker]: Loading container servlet invoker
+2003-03-14 19:04:43 StandardHost[localhost]: Removing web application at context path /tomcat-docs
+2003-03-14 19:04:43 StandardHost[localhost]: Removing web application at context path /admin
+2003-03-14 19:04:43 StandardHost[localhost]: Removing web application at context path /gid
+2003-03-14 19:04:43 StandardHost[localhost]: Removing web application at context path /pird
+2003-03-14 19:04:43 StandardHost[localhost]: Removing web application at context path /webdav
+2003-03-14 19:04:43 StandardHost[localhost]: Removing web application at context path /examples
+2003-03-14 19:04:43 StandardHost[localhost]: Removing web application at context path /manager
+2003-03-14 19:04:43 StandardHost[localhost]: Removing web application at context path /Copy of orb
+2003-03-14 19:04:43 StandardHost[localhost]: Removing web application at context path /orb
+2003-03-14 19:04:43 StandardHost[localhost]: Removing web application at context path 
+2003-03-14 19:04:53 HostConfig[localhost]: Deploying configuration descriptor admin.xml
+2003-03-14 19:04:56 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2003-03-14 19:04:56 WebappLoader[/manager]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\manager
+2003-03-14 19:04:56 ContextConfig[/manager]: Configured an authenticator for method BASIC
+2003-03-14 19:04:56 StandardManager[/manager]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:04:56 StandardManager[/manager]: Seeding of random number generator has been completed
+2003-03-14 19:04:56 StandardWrapper[/manager:default]: Loading container servlet default
+2003-03-14 19:04:56 StandardWrapper[/manager:invoker]: Loading container servlet invoker
+2003-03-14 19:04:56 HostConfig[localhost]: Deploying web application directory Copy of orb
+2003-03-14 19:04:56 StandardHost[localhost]: Installing web application at context path /Copy of orb from URL file:C:\Chialin\Tomcat41\webapps\Copy of orb
+2003-03-14 19:04:56 WebappLoader[/Copy of orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\Copy of orb
+2003-03-14 19:04:56 WebappLoader[/Copy of orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\classes
+2003-03-14 19:04:56 WebappLoader[/Copy of orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:04:56 ContextConfig[/Copy of orb]: WARNING: Security role name tomcat used in an <auth-constraint> without being defined in a <security-role>
+2003-03-14 19:04:56 ContextConfig[/Copy of orb]: WARNING: Security role name role1 used in an <auth-constraint> without being defined in a <security-role>
+2003-03-14 19:04:56 ContextConfig[/Copy of orb]: Configured an authenticator for method FORM
+2003-03-14 19:04:56 StandardManager[/Copy of orb]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:04:56 StandardManager[/Copy of orb]: Seeding of random number generator has been completed
+2003-03-14 19:04:56 StandardWrapper[/Copy of orb:default]: Loading container servlet default
+2003-03-14 19:04:56 StandardWrapper[/Copy of orb:invoker]: Loading container servlet invoker
+2003-03-14 19:04:56 HostConfig[localhost]: Deploying web application directory gid
+2003-03-14 19:04:56 StandardHost[localhost]: Installing web application at context path /gid from URL file:C:\Chialin\Tomcat41\webapps\gid
+2003-03-14 19:04:56 WebappLoader[/gid]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\gid
+2003-03-14 19:04:56 WebappLoader[/gid]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\classes
+2003-03-14 19:04:56 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\lastmod.jar
+2003-03-14 19:04:56 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:04:56 StandardManager[/gid]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:04:56 StandardManager[/gid]: Seeding of random number generator has been completed
+2003-03-14 19:04:56 StandardWrapper[/gid:default]: Loading container servlet default
+2003-03-14 19:04:56 StandardWrapper[/gid:invoker]: Loading container servlet invoker
+2003-03-14 19:04:56 HostConfig[localhost]: Deploying web application directory orb
+2003-03-14 19:04:56 StandardHost[localhost]: Installing web application at context path /orb from URL file:C:\Chialin\Tomcat41\webapps\orb
+2003-03-14 19:04:56 WebappLoader[/orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+2003-03-14 19:04:57 WebappLoader[/orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+2003-03-14 19:04:57 WebappLoader[/orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:04:57 StandardManager[/orb]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:04:57 StandardManager[/orb]: Seeding of random number generator has been completed
+2003-03-14 19:04:57 StandardWrapper[/orb:default]: Loading container servlet default
+2003-03-14 19:04:57 StandardWrapper[/orb:invoker]: Loading container servlet invoker
+2003-03-14 19:04:57 HostConfig[localhost]: Deploying web application directory pird
+2003-03-14 19:04:57 StandardHost[localhost]: Installing web application at context path /pird from URL file:C:\Chialin\Tomcat41\webapps\pird
+2003-03-14 19:04:57 WebappLoader[/pird]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\pird
+2003-03-14 19:04:57 WebappLoader[/pird]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\classes
+2003-03-14 19:04:57 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\lastmod.jar
+2003-03-14 19:04:57 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:04:57 StandardManager[/pird]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:04:57 StandardManager[/pird]: Seeding of random number generator has been completed
+2003-03-14 19:04:57 StandardWrapper[/pird:default]: Loading container servlet default
+2003-03-14 19:04:57 StandardWrapper[/pird:invoker]: Loading container servlet invoker
+2003-03-14 19:04:57 HostConfig[localhost]: Deploying web application directory ROOT
+2003-03-14 19:04:57 StandardHost[localhost]: Installing web application at context path  from URL file:C:\Chialin\Tomcat41\webapps\ROOT
+2003-03-14 19:04:57 WebappLoader[]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\_
+2003-03-14 19:04:58 StandardManager[]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:04:58 StandardManager[]: Seeding of random number generator has been completed
+2003-03-14 19:04:58 StandardWrapper[:default]: Loading container servlet default
+2003-03-14 19:04:58 StandardWrapper[:invoker]: Loading container servlet invoker
+2003-03-14 19:04:58 HostConfig[localhost]: Deploying web application directory tomcat-docs
+2003-03-14 19:04:58 StandardHost[localhost]: Installing web application at context path /tomcat-docs from URL file:C:\Chialin\Tomcat41\webapps\tomcat-docs
+2003-03-14 19:04:58 WebappLoader[/tomcat-docs]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\tomcat-docs
+2003-03-14 19:04:58 StandardManager[/tomcat-docs]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:04:58 StandardManager[/tomcat-docs]: Seeding of random number generator has been completed
+2003-03-14 19:04:58 StandardWrapper[/tomcat-docs:default]: Loading container servlet default
+2003-03-14 19:04:58 StandardWrapper[/tomcat-docs:invoker]: Loading container servlet invoker
+2003-03-14 19:04:58 HostConfig[localhost]: Deploying web application directory webdav
+2003-03-14 19:04:58 StandardHost[localhost]: Installing web application at context path /webdav from URL file:C:\Chialin\Tomcat41\webapps\webdav
+2003-03-14 19:04:58 WebappLoader[/webdav]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\webdav
+2003-03-14 19:04:58 StandardManager[/webdav]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:04:58 StandardManager[/webdav]: Seeding of random number generator has been completed
+2003-03-14 19:04:58 StandardWrapper[/webdav:default]: Loading container servlet default
+2003-03-14 19:04:58 StandardWrapper[/webdav:invoker]: Loading container servlet invoker
+2003-03-14 19:05:37 StandardHost[localhost]: Removing web application at context path /tomcat-docs
+2003-03-14 19:05:37 StandardHost[localhost]: Removing web application at context path /admin
+2003-03-14 19:05:37 StandardHost[localhost]: Removing web application at context path /gid
+2003-03-14 19:05:37 StandardHost[localhost]: Removing web application at context path /pird
+2003-03-14 19:05:37 StandardHost[localhost]: Removing web application at context path /webdav
+2003-03-14 19:05:37 StandardHost[localhost]: Removing web application at context path /examples
+2003-03-14 19:05:37 StandardHost[localhost]: Removing web application at context path /manager
+2003-03-14 19:05:37 StandardHost[localhost]: Removing web application at context path /Copy of orb
+2003-03-14 19:05:37 StandardHost[localhost]: Removing web application at context path /orb
+2003-03-14 19:05:37 StandardHost[localhost]: Removing web application at context path 
+2003-03-14 19:05:47 HostConfig[localhost]: Deploying configuration descriptor admin.xml
+2003-03-14 19:05:50 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2003-03-14 19:05:50 WebappLoader[/manager]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\manager
+2003-03-14 19:05:50 ContextConfig[/manager]: Configured an authenticator for method BASIC
+2003-03-14 19:05:50 StandardManager[/manager]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:05:50 StandardManager[/manager]: Seeding of random number generator has been completed
+2003-03-14 19:05:50 StandardWrapper[/manager:default]: Loading container servlet default
+2003-03-14 19:05:50 StandardWrapper[/manager:invoker]: Loading container servlet invoker
+2003-03-14 19:05:50 HostConfig[localhost]: Deploying web application directory Copy of orb
+2003-03-14 19:05:50 StandardHost[localhost]: Installing web application at context path /Copy of orb from URL file:C:\Chialin\Tomcat41\webapps\Copy of orb
+2003-03-14 19:05:50 WebappLoader[/Copy of orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\Copy of orb
+2003-03-14 19:05:50 WebappLoader[/Copy of orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\classes
+2003-03-14 19:05:50 WebappLoader[/Copy of orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:05:50 ContextConfig[/Copy of orb]: WARNING: Security role name tomcat used in an <auth-constraint> without being defined in a <security-role>
+2003-03-14 19:05:50 ContextConfig[/Copy of orb]: WARNING: Security role name role1 used in an <auth-constraint> without being defined in a <security-role>
+2003-03-14 19:05:50 ContextConfig[/Copy of orb]: Configured an authenticator for method FORM
+2003-03-14 19:05:50 StandardManager[/Copy of orb]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:05:50 StandardManager[/Copy of orb]: Seeding of random number generator has been completed
+2003-03-14 19:05:50 StandardWrapper[/Copy of orb:default]: Loading container servlet default
+2003-03-14 19:05:50 StandardWrapper[/Copy of orb:invoker]: Loading container servlet invoker
+2003-03-14 19:05:50 HostConfig[localhost]: Deploying web application directory gid
+2003-03-14 19:05:50 StandardHost[localhost]: Installing web application at context path /gid from URL file:C:\Chialin\Tomcat41\webapps\gid
+2003-03-14 19:05:50 WebappLoader[/gid]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\gid
+2003-03-14 19:05:50 WebappLoader[/gid]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\classes
+2003-03-14 19:05:50 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\lastmod.jar
+2003-03-14 19:05:50 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:05:50 StandardManager[/gid]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:05:50 StandardManager[/gid]: Seeding of random number generator has been completed
+2003-03-14 19:05:50 StandardWrapper[/gid:default]: Loading container servlet default
+2003-03-14 19:05:50 StandardWrapper[/gid:invoker]: Loading container servlet invoker
+2003-03-14 19:05:50 HostConfig[localhost]: Deploying web application directory orb
+2003-03-14 19:05:50 StandardHost[localhost]: Installing web application at context path /orb from URL file:C:\Chialin\Tomcat41\webapps\orb
+2003-03-14 19:05:50 WebappLoader[/orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+2003-03-14 19:05:50 WebappLoader[/orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+2003-03-14 19:05:50 WebappLoader[/orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:05:51 StandardManager[/orb]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:05:51 StandardManager[/orb]: Seeding of random number generator has been completed
+2003-03-14 19:05:51 StandardWrapper[/orb:default]: Loading container servlet default
+2003-03-14 19:05:51 StandardWrapper[/orb:invoker]: Loading container servlet invoker
+2003-03-14 19:05:51 HostConfig[localhost]: Deploying web application directory pird
+2003-03-14 19:05:51 StandardHost[localhost]: Installing web application at context path /pird from URL file:C:\Chialin\Tomcat41\webapps\pird
+2003-03-14 19:05:51 WebappLoader[/pird]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\pird
+2003-03-14 19:05:51 WebappLoader[/pird]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\classes
+2003-03-14 19:05:51 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\lastmod.jar
+2003-03-14 19:05:51 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:05:51 StandardManager[/pird]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:05:51 StandardManager[/pird]: Seeding of random number generator has been completed
+2003-03-14 19:05:51 StandardWrapper[/pird:default]: Loading container servlet default
+2003-03-14 19:05:51 StandardWrapper[/pird:invoker]: Loading container servlet invoker
+2003-03-14 19:05:51 HostConfig[localhost]: Deploying web application directory ROOT
+2003-03-14 19:05:51 StandardHost[localhost]: Installing web application at context path  from URL file:C:\Chialin\Tomcat41\webapps\ROOT
+2003-03-14 19:05:51 WebappLoader[]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\_
+2003-03-14 19:05:51 StandardManager[]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:05:51 StandardManager[]: Seeding of random number generator has been completed
+2003-03-14 19:05:51 StandardWrapper[:default]: Loading container servlet default
+2003-03-14 19:05:51 StandardWrapper[:invoker]: Loading container servlet invoker
+2003-03-14 19:05:51 HostConfig[localhost]: Deploying web application directory tomcat-docs
+2003-03-14 19:05:51 StandardHost[localhost]: Installing web application at context path /tomcat-docs from URL file:C:\Chialin\Tomcat41\webapps\tomcat-docs
+2003-03-14 19:05:51 WebappLoader[/tomcat-docs]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\tomcat-docs
+2003-03-14 19:05:51 StandardManager[/tomcat-docs]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:05:51 StandardManager[/tomcat-docs]: Seeding of random number generator has been completed
+2003-03-14 19:05:51 StandardWrapper[/tomcat-docs:default]: Loading container servlet default
+2003-03-14 19:05:51 StandardWrapper[/tomcat-docs:invoker]: Loading container servlet invoker
+2003-03-14 19:05:51 HostConfig[localhost]: Deploying web application directory webdav
+2003-03-14 19:05:51 StandardHost[localhost]: Installing web application at context path /webdav from URL file:C:\Chialin\Tomcat41\webapps\webdav
+2003-03-14 19:05:51 WebappLoader[/webdav]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\webdav
+2003-03-14 19:05:52 StandardManager[/webdav]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:05:52 StandardManager[/webdav]: Seeding of random number generator has been completed
+2003-03-14 19:05:52 StandardWrapper[/webdav:default]: Loading container servlet default
+2003-03-14 19:05:52 StandardWrapper[/webdav:invoker]: Loading container servlet invoker
+2003-03-14 19:07:12 StandardHost[localhost]: Removing web application at context path /tomcat-docs
+2003-03-14 19:07:12 StandardHost[localhost]: Removing web application at context path /admin
+2003-03-14 19:07:12 StandardHost[localhost]: Removing web application at context path /gid
+2003-03-14 19:07:12 StandardHost[localhost]: Removing web application at context path /pird
+2003-03-14 19:07:12 StandardHost[localhost]: Removing web application at context path /webdav
+2003-03-14 19:07:12 StandardHost[localhost]: Removing web application at context path /examples
+2003-03-14 19:07:12 StandardHost[localhost]: Removing web application at context path /manager
+2003-03-14 19:07:12 StandardHost[localhost]: Removing web application at context path /Copy of orb
+2003-03-14 19:07:12 StandardHost[localhost]: Removing web application at context path /orb
+2003-03-14 19:07:12 StandardHost[localhost]: Removing web application at context path 
+2003-03-14 19:07:21 HostConfig[localhost]: Deploying configuration descriptor admin.xml
+2003-03-14 19:07:24 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2003-03-14 19:07:24 WebappLoader[/manager]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\manager
+2003-03-14 19:07:24 ContextConfig[/manager]: Configured an authenticator for method BASIC
+2003-03-14 19:07:24 StandardManager[/manager]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:07:24 StandardManager[/manager]: Seeding of random number generator has been completed
+2003-03-14 19:07:24 StandardWrapper[/manager:default]: Loading container servlet default
+2003-03-14 19:07:24 StandardWrapper[/manager:invoker]: Loading container servlet invoker
+2003-03-14 19:07:24 HostConfig[localhost]: Deploying web application directory Copy of orb
+2003-03-14 19:07:24 StandardHost[localhost]: Installing web application at context path /Copy of orb from URL file:C:\Chialin\Tomcat41\webapps\Copy of orb
+2003-03-14 19:07:24 WebappLoader[/Copy of orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\Copy of orb
+2003-03-14 19:07:24 WebappLoader[/Copy of orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\classes
+2003-03-14 19:07:24 WebappLoader[/Copy of orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:07:24 ContextConfig[/Copy of orb]: WARNING: Security role name tomcat used in an <auth-constraint> without being defined in a <security-role>
+2003-03-14 19:07:24 ContextConfig[/Copy of orb]: WARNING: Security role name role1 used in an <auth-constraint> without being defined in a <security-role>
+2003-03-14 19:07:24 ContextConfig[/Copy of orb]: Configured an authenticator for method FORM
+2003-03-14 19:07:24 StandardManager[/Copy of orb]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:07:24 StandardManager[/Copy of orb]: Seeding of random number generator has been completed
+2003-03-14 19:07:24 StandardWrapper[/Copy of orb:default]: Loading container servlet default
+2003-03-14 19:07:24 StandardWrapper[/Copy of orb:invoker]: Loading container servlet invoker
+2003-03-14 19:07:24 HostConfig[localhost]: Deploying web application directory gid
+2003-03-14 19:07:24 StandardHost[localhost]: Installing web application at context path /gid from URL file:C:\Chialin\Tomcat41\webapps\gid
+2003-03-14 19:07:24 WebappLoader[/gid]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\gid
+2003-03-14 19:07:24 WebappLoader[/gid]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\classes
+2003-03-14 19:07:24 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\lastmod.jar
+2003-03-14 19:07:24 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:07:24 StandardManager[/gid]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:07:24 StandardManager[/gid]: Seeding of random number generator has been completed
+2003-03-14 19:07:24 StandardWrapper[/gid:default]: Loading container servlet default
+2003-03-14 19:07:24 StandardWrapper[/gid:invoker]: Loading container servlet invoker
+2003-03-14 19:07:25 HostConfig[localhost]: Deploying web application directory orb
+2003-03-14 19:07:25 StandardHost[localhost]: Installing web application at context path /orb from URL file:C:\Chialin\Tomcat41\webapps\orb
+2003-03-14 19:07:25 WebappLoader[/orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+2003-03-14 19:07:25 WebappLoader[/orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+2003-03-14 19:07:25 WebappLoader[/orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:07:25 StandardManager[/orb]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:07:25 StandardManager[/orb]: Seeding of random number generator has been completed
+2003-03-14 19:07:25 StandardWrapper[/orb:default]: Loading container servlet default
+2003-03-14 19:07:25 StandardWrapper[/orb:invoker]: Loading container servlet invoker
+2003-03-14 19:07:25 HostConfig[localhost]: Deploying web application directory pird
+2003-03-14 19:07:25 StandardHost[localhost]: Installing web application at context path /pird from URL file:C:\Chialin\Tomcat41\webapps\pird
+2003-03-14 19:07:25 WebappLoader[/pird]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\pird
+2003-03-14 19:07:25 WebappLoader[/pird]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\classes
+2003-03-14 19:07:25 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\lastmod.jar
+2003-03-14 19:07:25 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:07:25 StandardManager[/pird]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:07:25 StandardManager[/pird]: Seeding of random number generator has been completed
+2003-03-14 19:07:25 StandardWrapper[/pird:default]: Loading container servlet default
+2003-03-14 19:07:25 StandardWrapper[/pird:invoker]: Loading container servlet invoker
+2003-03-14 19:07:25 HostConfig[localhost]: Deploying web application directory ROOT
+2003-03-14 19:07:25 StandardHost[localhost]: Installing web application at context path  from URL file:C:\Chialin\Tomcat41\webapps\ROOT
+2003-03-14 19:07:25 WebappLoader[]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\_
+2003-03-14 19:07:25 StandardManager[]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:07:25 StandardManager[]: Seeding of random number generator has been completed
+2003-03-14 19:07:25 StandardWrapper[:default]: Loading container servlet default
+2003-03-14 19:07:25 StandardWrapper[:invoker]: Loading container servlet invoker
+2003-03-14 19:07:26 HostConfig[localhost]: Deploying web application directory tomcat-docs
+2003-03-14 19:07:26 StandardHost[localhost]: Installing web application at context path /tomcat-docs from URL file:C:\Chialin\Tomcat41\webapps\tomcat-docs
+2003-03-14 19:07:26 WebappLoader[/tomcat-docs]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\tomcat-docs
+2003-03-14 19:07:26 StandardManager[/tomcat-docs]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:07:26 StandardManager[/tomcat-docs]: Seeding of random number generator has been completed
+2003-03-14 19:07:26 StandardWrapper[/tomcat-docs:default]: Loading container servlet default
+2003-03-14 19:07:26 StandardWrapper[/tomcat-docs:invoker]: Loading container servlet invoker
+2003-03-14 19:07:26 HostConfig[localhost]: Deploying web application directory webdav
+2003-03-14 19:07:26 StandardHost[localhost]: Installing web application at context path /webdav from URL file:C:\Chialin\Tomcat41\webapps\webdav
+2003-03-14 19:07:26 WebappLoader[/webdav]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\webdav
+2003-03-14 19:07:26 StandardManager[/webdav]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:07:26 StandardManager[/webdav]: Seeding of random number generator has been completed
+2003-03-14 19:07:26 StandardWrapper[/webdav:default]: Loading container servlet default
+2003-03-14 19:07:26 StandardWrapper[/webdav:invoker]: Loading container servlet invoker
+2003-03-14 19:08:12 StandardHost[localhost]: Removing web application at context path /tomcat-docs
+2003-03-14 19:08:12 StandardHost[localhost]: Removing web application at context path /admin
+2003-03-14 19:08:12 StandardHost[localhost]: Removing web application at context path /gid
+2003-03-14 19:08:12 StandardHost[localhost]: Removing web application at context path /pird
+2003-03-14 19:08:12 StandardHost[localhost]: Removing web application at context path /webdav
+2003-03-14 19:08:12 StandardHost[localhost]: Removing web application at context path /examples
+2003-03-14 19:08:12 StandardHost[localhost]: Removing web application at context path /manager
+2003-03-14 19:08:12 StandardHost[localhost]: Removing web application at context path /Copy of orb
+2003-03-14 19:08:12 StandardHost[localhost]: Removing web application at context path /orb
+2003-03-14 19:08:12 StandardHost[localhost]: Removing web application at context path 
+2003-03-14 19:08:34 HostConfig[localhost]: Deploying configuration descriptor admin.xml
+2003-03-14 19:08:37 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2003-03-14 19:08:37 WebappLoader[/manager]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\manager
+2003-03-14 19:08:37 ContextConfig[/manager]: Configured an authenticator for method BASIC
+2003-03-14 19:08:37 StandardManager[/manager]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:08:38 StandardManager[/manager]: Seeding of random number generator has been completed
+2003-03-14 19:08:38 StandardWrapper[/manager:default]: Loading container servlet default
+2003-03-14 19:08:38 StandardWrapper[/manager:invoker]: Loading container servlet invoker
+2003-03-14 19:08:38 HostConfig[localhost]: Deploying web application directory Copy of orb
+2003-03-14 19:08:38 StandardHost[localhost]: Installing web application at context path /Copy of orb from URL file:C:\Chialin\Tomcat41\webapps\Copy of orb
+2003-03-14 19:08:38 WebappLoader[/Copy of orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\Copy of orb
+2003-03-14 19:08:38 WebappLoader[/Copy of orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\classes
+2003-03-14 19:08:38 WebappLoader[/Copy of orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:08:38 ContextConfig[/Copy of orb]: WARNING: Security role name tomcat used in an <auth-constraint> without being defined in a <security-role>
+2003-03-14 19:08:38 ContextConfig[/Copy of orb]: WARNING: Security role name role1 used in an <auth-constraint> without being defined in a <security-role>
+2003-03-14 19:08:38 ContextConfig[/Copy of orb]: Configured an authenticator for method FORM
+2003-03-14 19:08:38 StandardManager[/Copy of orb]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:08:38 StandardManager[/Copy of orb]: Seeding of random number generator has been completed
+2003-03-14 19:08:38 StandardWrapper[/Copy of orb:default]: Loading container servlet default
+2003-03-14 19:08:38 StandardWrapper[/Copy of orb:invoker]: Loading container servlet invoker
+2003-03-14 19:08:38 HostConfig[localhost]: Deploying web application directory gid
+2003-03-14 19:08:38 StandardHost[localhost]: Installing web application at context path /gid from URL file:C:\Chialin\Tomcat41\webapps\gid
+2003-03-14 19:08:38 WebappLoader[/gid]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\gid
+2003-03-14 19:08:38 WebappLoader[/gid]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\classes
+2003-03-14 19:08:38 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\lastmod.jar
+2003-03-14 19:08:38 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:08:38 StandardManager[/gid]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:08:38 StandardManager[/gid]: Seeding of random number generator has been completed
+2003-03-14 19:08:38 StandardWrapper[/gid:default]: Loading container servlet default
+2003-03-14 19:08:38 StandardWrapper[/gid:invoker]: Loading container servlet invoker
+2003-03-14 19:08:38 HostConfig[localhost]: Deploying web application directory orb
+2003-03-14 19:08:38 StandardHost[localhost]: Installing web application at context path /orb from URL file:C:\Chialin\Tomcat41\webapps\orb
+2003-03-14 19:08:38 WebappLoader[/orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+2003-03-14 19:08:38 WebappLoader[/orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+2003-03-14 19:08:38 WebappLoader[/orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:08:38 StandardManager[/orb]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:08:38 StandardManager[/orb]: Seeding of random number generator has been completed
+2003-03-14 19:08:38 StandardWrapper[/orb:default]: Loading container servlet default
+2003-03-14 19:08:38 StandardWrapper[/orb:invoker]: Loading container servlet invoker
+2003-03-14 19:08:39 HostConfig[localhost]: Deploying web application directory pird
+2003-03-14 19:08:39 StandardHost[localhost]: Installing web application at context path /pird from URL file:C:\Chialin\Tomcat41\webapps\pird
+2003-03-14 19:08:39 WebappLoader[/pird]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\pird
+2003-03-14 19:08:39 WebappLoader[/pird]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\classes
+2003-03-14 19:08:39 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\lastmod.jar
+2003-03-14 19:08:39 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\oraclejdbc.jar
+2003-03-14 19:08:39 StandardManager[/pird]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:08:39 StandardManager[/pird]: Seeding of random number generator has been completed
+2003-03-14 19:08:39 StandardWrapper[/pird:default]: Loading container servlet default
+2003-03-14 19:08:39 StandardWrapper[/pird:invoker]: Loading container servlet invoker
+2003-03-14 19:08:39 HostConfig[localhost]: Deploying web application directory ROOT
+2003-03-14 19:08:39 StandardHost[localhost]: Installing web application at context path  from URL file:C:\Chialin\Tomcat41\webapps\ROOT
+2003-03-14 19:08:39 WebappLoader[]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\_
+2003-03-14 19:08:39 StandardManager[]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:08:39 StandardManager[]: Seeding of random number generator has been completed
+2003-03-14 19:08:39 StandardWrapper[:default]: Loading container servlet default
+2003-03-14 19:08:39 StandardWrapper[:invoker]: Loading container servlet invoker
+2003-03-14 19:08:39 HostConfig[localhost]: Deploying web application directory tomcat-docs
+2003-03-14 19:08:39 StandardHost[localhost]: Installing web application at context path /tomcat-docs from URL file:C:\Chialin\Tomcat41\webapps\tomcat-docs
+2003-03-14 19:08:39 WebappLoader[/tomcat-docs]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\tomcat-docs
+2003-03-14 19:08:39 StandardManager[/tomcat-docs]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:08:39 StandardManager[/tomcat-docs]: Seeding of random number generator has been completed
+2003-03-14 19:08:39 StandardWrapper[/tomcat-docs:default]: Loading container servlet default
+2003-03-14 19:08:39 StandardWrapper[/tomcat-docs:invoker]: Loading container servlet invoker
+2003-03-14 19:08:39 HostConfig[localhost]: Deploying web application directory webdav
+2003-03-14 19:08:39 StandardHost[localhost]: Installing web application at context path /webdav from URL file:C:\Chialin\Tomcat41\webapps\webdav
+2003-03-14 19:08:39 WebappLoader[/webdav]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\webdav
+2003-03-14 19:08:39 StandardManager[/webdav]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:08:39 StandardManager[/webdav]: Seeding of random number generator has been completed
+2003-03-14 19:08:39 StandardWrapper[/webdav:default]: Loading container servlet default
+2003-03-14 19:08:39 StandardWrapper[/webdav:invoker]: Loading container servlet invoker
+2003-03-14 19:10:08 StandardHost[localhost]: Removing web application at context path /tomcat-docs
+2003-03-14 19:10:08 StandardHost[localhost]: Removing web application at context path /admin
+2003-03-14 19:10:08 StandardHost[localhost]: Removing web application at context path /gid
+2003-03-14 19:10:08 StandardHost[localhost]: Removing web application at context path /pird
+2003-03-14 19:10:08 StandardHost[localhost]: Removing web application at context path /webdav
+2003-03-14 19:10:08 StandardHost[localhost]: Removing web application at context path /examples
+2003-03-14 19:10:08 StandardHost[localhost]: Removing web application at context path /manager
+2003-03-14 19:10:08 StandardHost[localhost]: Removing web application at context path /Copy of orb
+2003-03-14 19:10:08 StandardHost[localhost]: Removing web application at context path /orb
+2003-03-14 19:10:08 StandardHost[localhost]: Removing web application at context path 

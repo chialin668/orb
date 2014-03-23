@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	<context-param>
+      		<param-name>log_file</param-name>
+      		<param-value>login_attempts.txt</param-value>
+      		<description>
+        		Log file for logging login attempts
+      		</description>
+    	</context-param>
+
+
+	<context-param>
+      		<param-name>driver</param-name>
+      		<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+      		<description>
+        		Database driver for connection pooling
+      		</description>
+    	</context-param>
+	<context-param>
+      		<param-name>connection_string</param-name>
+      		<param-value>jdbc:oracle:thin:@cchouxp:1521:orcl</param-value>
+      		<description>
+        		Database driver for connection pooling
+      		</description>
+    	</context-param>
+	<context-param>
+      		<param-name>username</param-name>
+      		<param-value>pird</param-value>
+      		<description>
+        		Database username
+      		</description>
+    	</context-param>
+	<context-param>
+      		<param-name>password</param-name>
+      		<param-value>pird</param-value>
+      		<description>
+        		Database password
+      		</description>
+    	</context-param>
+	<context-param>
+      		<param-name>gid_connection_string</param-name>
+      		<param-value>jdbc:oracle:thin:@dnareports:1521:orcl</param-value>
+      		<description>
+        		Database driver for connection pooling
+      		</description>
+    	</context-param>
+	<context-param>
+      		<param-name>gid_username</param-name>
+      		<param-value>gid</param-value>
+      		<description>
+        		Database username
+      		</description>
+    	</context-param>
+	<context-param>
+      		<param-name>gid_password</param-name>
+      		<param-value>gid</param-value>
+      		<description>
+        		Database password
+      		</description>
+    	</context-param>
+
+	<context-param>
+      		<param-name>product_name</param-name>
+      		<param-value>CDRS Patient Database</param-value>
+		<description>
+			Product Name
+      		</description>
+    	</context-param>				
+
+	<context-param>
+      		<param-name>product_version</param-name>
+      		<param-value>v 1.0Beta-5</param-value>
+      		<description>
+        		Product Version
+      		</description>
+    	</context-param>
+
+	<context-param>
+      		<param-name>data_access_layer_class</param-name>
+      		<param-value>com.dnas.lqt.data.patient.PatientDataAccessImpl</param-value>
+      		<description>
+        		Class for our session bean DATA_ACCESS_LAYER.  This will
+			change depending on whether we are in the patient DB or
+			then genotype DB.
+      		</description>
+    	</context-param>
+	
+
+
+	<servlet>
+		<servlet-name>
+			Login
+		</servlet-name>
+		<servlet-class>
+			com.dnas.lqt.servlet.Login
+		</servlet-class>
+		
+      		<load-on-startup>5</load-on-startup>		
+	</servlet>
+
+ 	<servlet-mapping>
+        <servlet-name>invoker</servlet-name>
+        <url-pattern>/servlet/*</url-pattern>
+    	</servlet-mapping>
+
+
+</web-app>

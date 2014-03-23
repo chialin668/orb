@@ -1,0 +1,48 @@
+// This is the license for the full development version of foldertree,
+// for the purchased number of clients.
+//
+//**************************************************************** 
+// This script, found in:
+//
+// http://www.essence.co.uk/essence/foldertree and other locations on the Essence Associates Ltd. web site, 
+// was authored by Nigel Goodwin (goodwin@essence.co.uk). 
+// The design and code remain the intellectual property of 
+// Essence Associates Ltd. (C) Copyright 1998-1999. All rights reserved.
+//
+// Any individual or organisation ("the client") which has purchased this license, 
+// and which does not compete commercially with 
+// Essence Associates Ltd., is granted the right to use, copy or modify this 
+// modified version of the foldertree utility in a commercial implementation 
+// on a single web site which is under the sole ownership of that client.
+//
+// Commercial competitors to Essence Associates Ltd. are strictly forbidden from 
+// purchasing or using this modified version of the foldertree code. Whether a 
+// client is a commercial competitor or not is at the  sole discretion of 
+// Essence Associates Ltd.
+//
+// This software can be also embedded in the client's own products and redistributed,
+// in original or modified form, to the specified number of third parties who have 
+// purchased the client's products.
+//
+// These third parties may use foldertree, but they must not modify, copy or
+// redistribute it, nor may they have access to documentation or support 
+// unless they purchase a separate full license.
+//
+// This license does not grant the right to the client to use folder tree in 
+// individual special designs for third parties.
+//
+// The authors of this program accepts no responsibility for damages 
+// resulting from the use of this product and makes no warranty or representation, 
+// either express or implied, including but not limited to, any implied warranty of 
+// merchantability or fitness for a particular purpose.
+//
+// By using this software, you signify that you have read this notice and 
+// accept its terms.
+//
+// This notice must be kept in full at the top of this foldertree code.
+//********************************************************************* 
+
+
+
+
+

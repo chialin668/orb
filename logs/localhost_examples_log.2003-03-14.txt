@@ -1,0 +1,599 @@
+2003-03-14 18:43:10 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 18:43:10 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-14 18:43:10 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 18:43:11 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-03-14 18:43:11 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 18:43:11 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 18:43:11 ContextListener: contextInitialized()
+2003-03-14 18:43:11 SessionListener: contextInitialized()
+2003-03-14 18:43:12 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 18:43:12 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 18:48:49 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 231 milliseconds
+2003-03-14 18:48:49 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 231 milliseconds
+2003-03-14 18:51:56 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 10 milliseconds
+2003-03-14 18:55:13 StandardContext[/examples]: Reloading this Context has started
+2003-03-14 18:55:13 SessionListener: contextDestroyed()
+2003-03-14 18:55:13 ContextListener: contextDestroyed()
+2003-03-14 18:55:13 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 18:55:13 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-14 18:55:13 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 18:55:13 ContextListener: contextInitialized()
+2003-03-14 18:55:13 SessionListener: contextInitialized()
+2003-03-14 18:55:13 ContextListener: attributeAdded('org.apache.catalina.resources', 'org.apache.naming.resources.ProxyDirContext@424193')
+2003-03-14 18:55:13 ContextListener: attributeAdded('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5f4a7f')
+2003-03-14 18:55:13 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 18:55:13 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 18:55:13 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 18:55:13 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 18:55:13 StandardContext[/examples]: Reloading this Context is completed
+2003-03-14 18:55:16 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 30 milliseconds
+2003-03-14 18:55:16 StandardWrapper[/examples:org.apache.catalina.INVOKER.ERD-global.js]: Marking servlet org.apache.catalina.INVOKER.ERD-global.js as unavailable
+2003-03-14 18:55:16 invoker: Cannot allocate servlet instance for path /examples/servlet/ERD-global.js
+javax.servlet.ServletException: Wrapper cannot find servlet class ERD-global.js or a class it depends on
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:890)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:666)
+	at org.apache.catalina.servlets.InvokerServlet.serveRequest(InvokerServlet.java:416)
+	at org.apache.catalina.servlets.InvokerServlet.doGet(InvokerServlet.java:180)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+----- Root Cause -----
+java.lang.ClassNotFoundException: ERD-global.js
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1428)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1274)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:884)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:666)
+	at org.apache.catalina.servlets.InvokerServlet.serveRequest(InvokerServlet.java:416)
+	at org.apache.catalina.servlets.InvokerServlet.doGet(InvokerServlet.java:180)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-03-14 18:55:16 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 10 milliseconds
+2003-03-14 18:55:16 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 10 milliseconds
+2003-03-14 18:55:23 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 18:55:23 StandardWrapper[/examples:org.apache.catalina.INVOKER.ERD-global.js]: Marking servlet org.apache.catalina.INVOKER.ERD-global.js as unavailable
+2003-03-14 18:55:23 invoker: Cannot allocate servlet instance for path /examples/servlet/ERD-global.js
+javax.servlet.ServletException: Wrapper cannot find servlet class ERD-global.js or a class it depends on
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:890)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:666)
+	at org.apache.catalina.servlets.InvokerServlet.serveRequest(InvokerServlet.java:416)
+	at org.apache.catalina.servlets.InvokerServlet.doGet(InvokerServlet.java:180)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+----- Root Cause -----
+java.lang.ClassNotFoundException: ERD-global.js
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1428)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1274)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:884)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:666)
+	at org.apache.catalina.servlets.InvokerServlet.serveRequest(InvokerServlet.java:416)
+	at org.apache.catalina.servlets.InvokerServlet.doGet(InvokerServlet.java:180)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-03-14 18:55:23 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 10 milliseconds
+2003-03-14 18:55:23 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 10 milliseconds
+2003-03-14 18:57:40 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 18:57:40 StandardWrapper[/examples:org.apache.catalina.INVOKER.ERD-global.js]: Marking servlet org.apache.catalina.INVOKER.ERD-global.js as unavailable
+2003-03-14 18:57:40 invoker: Cannot allocate servlet instance for path /examples/servlet/ERD-global.js
+javax.servlet.ServletException: Wrapper cannot find servlet class ERD-global.js or a class it depends on
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:890)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:666)
+	at org.apache.catalina.servlets.InvokerServlet.serveRequest(InvokerServlet.java:416)
+	at org.apache.catalina.servlets.InvokerServlet.doGet(InvokerServlet.java:180)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+----- Root Cause -----
+java.lang.ClassNotFoundException: ERD-global.js
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1428)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1274)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:884)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:666)
+	at org.apache.catalina.servlets.InvokerServlet.serveRequest(InvokerServlet.java:416)
+	at org.apache.catalina.servlets.InvokerServlet.doGet(InvokerServlet.java:180)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at filters.ExampleFilter.doFilter(ExampleFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-03-14 18:57:40 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 10 milliseconds
+2003-03-14 18:57:40 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 10 milliseconds
+2003-03-14 18:57:43 StandardContext[/examples]: Reloading this Context has started
+2003-03-14 18:57:43 SessionListener: contextDestroyed()
+2003-03-14 18:57:43 ContextListener: contextDestroyed()
+2003-03-14 18:57:43 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 18:57:43 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-14 18:57:43 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 18:57:44 ContextListener: contextInitialized()
+2003-03-14 18:57:44 SessionListener: contextInitialized()
+2003-03-14 18:57:44 ContextListener: attributeAdded('org.apache.catalina.resources', 'org.apache.naming.resources.ProxyDirContext@424193')
+2003-03-14 18:57:44 ContextListener: attributeAdded('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5f4a7f')
+2003-03-14 18:57:44 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 18:57:44 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 18:57:44 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 18:57:44 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 18:57:44 StandardContext[/examples]: Reloading this Context is completed
+2003-03-14 18:57:52 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 18:57:52 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 18:57:52 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 18:58:03 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 18:58:03 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 18:59:49 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 18:59:50 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:00:02 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:00:02 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:00:29 StandardContext[/examples]: Reloading this Context has started
+2003-03-14 19:00:29 SessionListener: contextDestroyed()
+2003-03-14 19:00:29 ContextListener: contextDestroyed()
+2003-03-14 19:00:29 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:00:29 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-14 19:00:29 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:00:29 ContextListener: contextInitialized()
+2003-03-14 19:00:29 SessionListener: contextInitialized()
+2003-03-14 19:00:29 ContextListener: attributeAdded('org.apache.catalina.resources', 'org.apache.naming.resources.ProxyDirContext@424193')
+2003-03-14 19:00:29 ContextListener: attributeAdded('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5f4a7f')
+2003-03-14 19:00:29 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:00:29 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:00:29 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:00:29 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:00:29 StandardContext[/examples]: Reloading this Context is completed
+2003-03-14 19:00:30 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 19:00:30 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:00:33 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:00:33 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:01:41 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:01:41 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:01:42 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:01:42 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:01:56 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:01:56 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:01:58 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:01:58 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:01:59 StandardContext[/examples]: Reloading this Context has started
+2003-03-14 19:01:59 SessionListener: contextDestroyed()
+2003-03-14 19:01:59 ContextListener: contextDestroyed()
+2003-03-14 19:01:59 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:01:59 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-14 19:01:59 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:02:00 ContextListener: contextInitialized()
+2003-03-14 19:02:00 SessionListener: contextInitialized()
+2003-03-14 19:02:00 ContextListener: attributeAdded('org.apache.catalina.resources', 'org.apache.naming.resources.ProxyDirContext@424193')
+2003-03-14 19:02:00 ContextListener: attributeAdded('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5f4a7f')
+2003-03-14 19:02:00 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:02:00 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:02:00 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:02:00 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:02:00 StandardContext[/examples]: Reloading this Context is completed
+2003-03-14 19:02:15 StandardContext[/examples]: Reloading this Context has started
+2003-03-14 19:02:15 SessionListener: contextDestroyed()
+2003-03-14 19:02:15 ContextListener: contextDestroyed()
+2003-03-14 19:02:15 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:02:15 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-14 19:02:15 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:02:15 ContextListener: contextInitialized()
+2003-03-14 19:02:15 SessionListener: contextInitialized()
+2003-03-14 19:02:15 ContextListener: attributeAdded('org.apache.catalina.resources', 'org.apache.naming.resources.ProxyDirContext@424193')
+2003-03-14 19:02:15 ContextListener: attributeAdded('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5f4a7f')
+2003-03-14 19:02:15 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:02:15 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:02:15 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:02:15 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:02:15 StandardContext[/examples]: Reloading this Context is completed
+2003-03-14 19:02:30 StandardContext[/examples]: Reloading this Context has started
+2003-03-14 19:02:30 SessionListener: contextDestroyed()
+2003-03-14 19:02:30 ContextListener: contextDestroyed()
+2003-03-14 19:02:30 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:02:30 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-14 19:02:30 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:02:30 ContextListener: contextInitialized()
+2003-03-14 19:02:30 SessionListener: contextInitialized()
+2003-03-14 19:02:30 ContextListener: attributeAdded('org.apache.catalina.resources', 'org.apache.naming.resources.ProxyDirContext@424193')
+2003-03-14 19:02:30 ContextListener: attributeAdded('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5f4a7f')
+2003-03-14 19:02:30 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:02:30 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:02:30 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:02:30 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:02:30 StandardContext[/examples]: Reloading this Context is completed
+2003-03-14 19:02:31 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 30 milliseconds
+2003-03-14 19:02:31 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:03:15 StandardContext[/examples]: Reloading this Context has started
+2003-03-14 19:03:15 SessionListener: contextDestroyed()
+2003-03-14 19:03:15 ContextListener: contextDestroyed()
+2003-03-14 19:03:15 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:03:15 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-14 19:03:15 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:03:15 ContextListener: contextInitialized()
+2003-03-14 19:03:15 SessionListener: contextInitialized()
+2003-03-14 19:03:15 ContextListener: attributeAdded('org.apache.catalina.resources', 'org.apache.naming.resources.ProxyDirContext@424193')
+2003-03-14 19:03:15 ContextListener: attributeAdded('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5f4a7f')
+2003-03-14 19:03:15 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:03:15 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:03:15 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:03:15 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:03:15 StandardContext[/examples]: Reloading this Context is completed
+2003-03-14 19:03:16 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 19:03:16 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:03:42 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:03:42 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:03:47 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:03:47 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:04:00 StandardContext[/examples]: Reloading this Context has started
+2003-03-14 19:04:00 SessionListener: contextDestroyed()
+2003-03-14 19:04:00 ContextListener: contextDestroyed()
+2003-03-14 19:04:00 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:04:00 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-14 19:04:00 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:04:00 ContextListener: contextInitialized()
+2003-03-14 19:04:00 SessionListener: contextInitialized()
+2003-03-14 19:04:01 ContextListener: attributeAdded('org.apache.catalina.resources', 'org.apache.naming.resources.ProxyDirContext@424193')
+2003-03-14 19:04:01 ContextListener: attributeAdded('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5f4a7f')
+2003-03-14 19:04:01 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:04:01 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:04:01 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:04:01 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:04:01 StandardContext[/examples]: Reloading this Context is completed
+2003-03-14 19:04:11 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 30 milliseconds
+2003-03-14 19:04:11 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:04:18 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:04:18 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:04:27 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:04:27 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:04:30 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:04:30 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:04:31 StandardContext[/examples]: Reloading this Context has started
+2003-03-14 19:04:31 SessionListener: contextDestroyed()
+2003-03-14 19:04:31 ContextListener: contextDestroyed()
+2003-03-14 19:04:31 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:04:31 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-03-14 19:04:31 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:04:31 ContextListener: contextInitialized()
+2003-03-14 19:04:31 SessionListener: contextInitialized()
+2003-03-14 19:04:31 ContextListener: attributeAdded('org.apache.catalina.resources', 'org.apache.naming.resources.ProxyDirContext@424193')
+2003-03-14 19:04:31 ContextListener: attributeAdded('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5f4a7f')
+2003-03-14 19:04:31 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:04:31 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:04:31 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:04:31 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:04:31 StandardContext[/examples]: Reloading this Context is completed
+2003-03-14 19:04:43 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5f4a7f')
+2003-03-14 19:04:43 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@1681ea')
+2003-03-14 19:04:43 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@2b600f')
+2003-03-14 19:04:43 SessionListener: contextDestroyed()
+2003-03-14 19:04:43 ContextListener: contextDestroyed()
+2003-03-14 19:04:52 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:04:52 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\examples\WEB-INF\classes
+2003-03-14 19:04:52 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:04:52 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-03-14 19:04:52 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:04:52 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:04:52 ContextListener: contextInitialized()
+2003-03-14 19:04:52 SessionListener: contextInitialized()
+2003-03-14 19:04:52 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:04:53 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:05:07 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 70 milliseconds
+2003-03-14 19:05:07 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 80 milliseconds
+2003-03-14 19:05:07 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 10 milliseconds
+2003-03-14 19:05:07 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 19:05:37 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@2e533a')
+2003-03-14 19:05:37 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5a18ac')
+2003-03-14 19:05:37 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@a0544')
+2003-03-14 19:05:37 SessionListener: contextDestroyed()
+2003-03-14 19:05:37 ContextListener: contextDestroyed()
+2003-03-14 19:05:46 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:05:46 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\examples\WEB-INF\classes
+2003-03-14 19:05:46 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:05:46 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-03-14 19:05:46 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:05:46 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:05:46 ContextListener: contextInitialized()
+2003-03-14 19:05:46 SessionListener: contextInitialized()
+2003-03-14 19:05:46 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:05:46 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:05:59 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 80 milliseconds
+2003-03-14 19:05:59 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 80 milliseconds
+2003-03-14 19:05:59 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 19:05:59 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 19:07:12 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@2e533a')
+2003-03-14 19:07:12 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5a18ac')
+2003-03-14 19:07:12 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@a0544')
+2003-03-14 19:07:12 SessionListener: contextDestroyed()
+2003-03-14 19:07:12 ContextListener: contextDestroyed()
+2003-03-14 19:07:20 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:07:20 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\examples\WEB-INF\classes
+2003-03-14 19:07:20 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:07:20 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-03-14 19:07:20 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:07:20 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:07:20 ContextListener: contextInitialized()
+2003-03-14 19:07:20 SessionListener: contextInitialized()
+2003-03-14 19:07:20 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:07:20 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:07:34 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 80 milliseconds
+2003-03-14 19:07:34 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 80 milliseconds
+2003-03-14 19:07:35 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 19:07:35 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 19:08:12 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@5d17d7')
+2003-03-14 19:08:12 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@48376b')
+2003-03-14 19:08:12 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@2e533a')
+2003-03-14 19:08:12 SessionListener: contextDestroyed()
+2003-03-14 19:08:12 ContextListener: contextDestroyed()
+2003-03-14 19:08:33 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:08:33 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\examples\WEB-INF\classes
+2003-03-14 19:08:33 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:08:33 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-03-14 19:08:34 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:08:34 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:08:34 ContextListener: contextInitialized()
+2003-03-14 19:08:34 SessionListener: contextInitialized()
+2003-03-14 19:08:34 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:08:34 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:09:02 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 90 milliseconds
+2003-03-14 19:09:02 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 90 milliseconds
+2003-03-14 19:09:03 InvokerFilter(ApplicationFilterConfig[name=Servlet Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 19:09:03 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 19:09:33 StandardContext[/examples]: Reloading this Context has started
+2003-03-14 19:09:33 SessionListener: contextDestroyed()
+2003-03-14 19:09:33 ContextListener: contextDestroyed()
+2003-03-14 19:09:33 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:09:33 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\examples\WEB-INF\classes
+2003-03-14 19:09:33 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:09:33 ContextListener: contextInitialized()
+2003-03-14 19:09:33 SessionListener: contextInitialized()
+2003-03-14 19:09:33 ContextListener: attributeAdded('org.apache.catalina.resources', 'org.apache.naming.resources.ProxyDirContext@5a18ac')
+2003-03-14 19:09:33 ContextListener: attributeAdded('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@a0544')
+2003-03-14 19:09:33 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:09:33 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:09:33 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:09:33 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:09:33 StandardContext[/examples]: Reloading this Context is completed
+2003-03-14 19:09:38 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 20 milliseconds
+2003-03-14 19:09:38 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:09:42 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:09:42 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:09:46 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:09:46 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 10 milliseconds
+2003-03-14 19:09:49 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:09:49 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 10 milliseconds
+2003-03-14 19:09:53 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:09:53 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:10:03 StandardContext[/examples]: Reloading this Context has started
+2003-03-14 19:10:03 SessionListener: contextDestroyed()
+2003-03-14 19:10:03 ContextListener: contextDestroyed()
+2003-03-14 19:10:03 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-03-14 19:10:03 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\examples\WEB-INF\classes
+2003-03-14 19:10:03 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-03-14 19:10:03 ContextListener: contextInitialized()
+2003-03-14 19:10:03 SessionListener: contextInitialized()
+2003-03-14 19:10:03 ContextListener: attributeAdded('org.apache.catalina.resources', 'org.apache.naming.resources.ProxyDirContext@5a18ac')
+2003-03-14 19:10:03 ContextListener: attributeAdded('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@a0544')
+2003-03-14 19:10:03 StandardWrapper[/examples:default]: Loading container servlet default
+2003-03-14 19:10:03 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-03-14 19:10:03 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-03-14 19:10:03 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-03-14 19:10:03 StandardContext[/examples]: Reloading this Context is completed
+2003-03-14 19:10:05 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 30 milliseconds
+2003-03-14 19:10:05 InvokerFilter(ApplicationFilterConfig[name=Path Mapped Filter, filterClass=filters.ExampleFilter]): 0 milliseconds
+2003-03-14 19:10:08 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@a0544')
+2003-03-14 19:10:08 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@51c778')
+2003-03-14 19:10:08 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@7eb366')
+2003-03-14 19:10:08 SessionListener: contextDestroyed()
+2003-03-14 19:10:08 ContextListener: contextDestroyed()

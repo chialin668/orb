@@ -1,0 +1,102 @@
+
+	quotation mark &#34; &quot; "
+      ampersand &#38; &amp; &
+      less-than sign &#60; &lt; <
+      greater-than sign &#62; &gt; >
+      non-breaking space &#160; &nbsp;
+      inverted exclamation &#161; &iexcl; ¡
+      cent sign  &#162; &cent; ¢
+      pound sterling &#163; &pound; £
+      general currency sign &#164; &curren; ¤
+      yen sign &#165; &yen; ¥
+      broken vertical bar &#166; &brvbar; ¦
+      section sign &#167; &sect; §
+      umlaut(dieresis) &#168; &uml; ¨
+      copyright &#169; &copy; ©
+      feminineordinal &#170; &ordf; ª
+      left angle quote, guillemotleft &#171; &laquo;
+
+      not sign &#172; &not; ¬
+      soft hyphen &#173; &shy; ­
+      registered trademark &#174; &reg; ®
+      macron accent &#175; &macr; ¯
+      degree sign &#176; &deg; °
+      plus or minus &#177; &plusmn; ±
+      superscript two &#178; &sup2; ²
+      superscript three &#179; &sup3; ³
+      acute accent &#180; &acute; ´
+      micro sign (Mu) &#181; &micro; µ
+      paragraph sign &#182; &para; ¶
+      middle dot &#183; &middot; ·
+      cedilla &#184; &cedil; ¸
+      superscript one &#185; &sup1; ¹
+      masculine ordinal &#186; &ordm; º
+      right angle quote, guillemotright  &#187; &raquo; »
+      fraction one-fourth &#188; &frac14; ¼
+      fraction one-half &#189; &frac12; ½
+      fraction three-fourths &#190; &frac34; ¾
+      inverted question mark &#191; &iquest; ¿
+      capital A, grave accent &#192; &Agrave; À
+      capital A, acute accent &#193; &Aacute; Á
+      capital A, circumflex accent &#194; &Acirc;  Â
+      capital A, tilde &#195; &Atilde; Ã
+      capital A, dieresis or umlaut mark &#196; &Auml; Ä
+      capital A, ring (Angstrom) &#197; &Aring; Å
+      capital AE diphthong (ligature) &#198; &AElig; Æ
+      capital C, cedilla &#199; &Ccedil; Ç
+      capital E, grave accent &#200; &Egrave; È
+      capital E, acute accent &#201; &Eacute; É
+      capital E, circumflex accent &#202; &Ecirc; Ê
+      capital E, dieresis or umlaut mark &#203; &Euml; Ë
+      capital I, grave accent &#204; &Igrave; Ì
+      capital I, acute accent &#205; &Iacute; Í
+      capital I, circumflex accent &#206; &Icirc; Î
+      capital I, dieresis or umlaut mark &#207; &Iuml; Ï
+      capital Eth, Icelandic &#208; &ETH; Ð
+      capital N, tilde &#209; &Ntilde; Ñ
+      capital O, grave accent &#210; &Ograve; Ò
+      capital O, acute accent &#211; &Oacute; Ó
+      capital O, circumflex accent &#212; &Ocirc; Ô
+      capital O, tilde &#213; &Otilde; Õ
+      capital O, dieresis or umlaut mark &#214; &Ouml; Ö
+      multiply sign &#215; &times; ×
+      capital O, slash &#216; &Oslash; Ø
+      capital U, grave accent &#217; &Ugrave; Ù
+      capital U, acute accent &#218; &Uacute; Ú
+      capital U, circumflex accent &#219; &Ucirc; Û
+      capital U, dieresis or umlaut mark &#220; &Uuml; Ü
+      capital Y, acute accent &#221; &Yacute; Ý
+      capital THORN, Icelandic &#222; &THORN; Þ
+      small sharp s, German (sz ligature) &#223; &szlig; ß
+      small a, grave accent &#224; &agrave; à
+      small a, acute accent &#225; &aacute; á
+      small a, circumflex accent &#226; &acirc; â
+      small a, tilde &#227; &atilde; ã
+      small a, dieresis or umlaut mark &#228; &auml; ä
+      small a, ring &#229; &aring; å
+      small ae diphthong (ligature) &#230; &aelig; æ
+      small c, cedilla &#231; &ccedil; ç
+      small e, grave accent &#232; &egrave; è
+      small e, acute accent &#233; &eacute; é
+      small e, circumflex accent &#234; &ecirc; ê
+      small e, dieresis or umlaut mark &#235; &euml; ë
+      small i, grave accent &#236; &igrave; ì
+      small i, acute accent &#237; &iacute; í
+      small i, circumflex accent &#238; &icirc; î
+      small i, dieresis or umlaut mark &#239; &iuml; ï
+      small eth, Icelandic &#240; &eth; ð
+      small n, tilde &#241; &ntilde; ñ
+      small o, grave accent &#242; &ograve; ò
+      small o, acute accent &#243; &oacute; ó
+      small o, circumflex accent &#244; &ocirc; ô
+      small o, tilde &#245; &otilde; õ
+      small o, dieresis or umlaut mark &#246; &ouml; ö
+      division sign &#247; &divide; ÷
+      small o, slash &#248; &oslash; ø
+      small u, grave accent &#249; &ugrave; ù
+      small u, acute accent &#250; &uacute; ú
+      small u, circumflex accent &#251; &ucirc; û
+      small u, dieresis or umlaut mark &#252; &uuml; ü
+      small y, acute accent &#253; &yacute; ý
+      small thorn, Icelandic &#254; &thorn; þ
+      small y, dieresis or umlaut mark &#255; &yuml; ÿ

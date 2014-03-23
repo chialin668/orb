@@ -1,0 +1,145 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--
+// =========================================================================
+//
+// tools.html - main page to launch the extra tools samples included with XML for <SCRIPT>
+//
+// =========================================================================
+//
+// Copyright (C) 2001, 2002 - David Joham (djoham@yahoo.com)
+//
+// This library is free software; you can redistribute it and/or
+// modify it under the terms of the GNU Lesser General Public
+// License as published by the Free Software Foundation; either
+// version 2.1 of the License, or (at your option) any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+// Lesser General Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public
+// License along with this library; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+-->
+
+
+<head>
+    <title>
+        XML for &lt;SCRIPT&gt; Cross Platform XML Parsing in JavaScript - Tools
+    </title>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
+</head>
+
+<body>
+
+    <form name="frmForm" id="frmForm" method="get" action="noaction">
+        <!-- logo -->
+        <div id="logo" class="titleLogo">
+            <img src="./images/titleImage.jpg" width="459" height="75" alt="XML for &lt;SCRIPT&gt; logo">
+        </div>
+
+        <!-- main page square -->
+        <div class="mainContentArea">
+            <br>
+        </div>
+
+        <!-- navigation bar -->
+        <div class="leftImage"></div>
+
+        <!-- credit where credit is due -->
+        <p>
+            <a href="http://validator.w3.org/check/referer"><img src="./images/valid-html401.png" class="validHTMLImage" alt="HTML 4.01 strict HTML" /></a><br />
+            <a href="http://www.sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=14016" class="sourceForgeImage" alt="Visit Sourceforge.net" /></a>
+        </p>
+        <p>
+        <div class="linkBar">
+            <div class="hoverNavigation"><a class="navigation" href="./../index.html">Home</a></div>
+            <div class="hoverNavigation"><a class="navigation" href="./documentation.html">Documentation</a></div>
+            <div class="hoverNavigation"><a class="navigation" href="./caseStudies.html">Case&nbsp;Studies</a></div>
+            <div class="hoverNavigation"><a class="navigation" href="./sampleApplications.html">Sample&nbsp;Code</a></div>
+            <div class="hoverNavigation"><a class="navigation" href="./testSuites.html">Test&nbsp;Suites</a></div>
+            <div class="hoverNavigation"><a class="navigation" href="./history.html">History</a></div>
+            <div class="currentLocation">Tools</div>
+            <div class="hoverNavigation"><a class="navigation" href="./download.html">Download</a></div>
+        </div>
+
+
+        <div  class="contentDiv">
+            <div class="contentDivBackground">
+                <br>
+
+                <div class="pageHeader">
+                    Tools
+                </div>
+
+                <p>
+                    XML for &lt;SCRIPT&gt; includes a number of tools that make development easier.
+                </p>
+
+                <br>
+
+                <div class="accent">
+                    Saving and retrieving XML
+                </div>
+
+                <p>
+                    In many instances, it is nice to be able to save an XML stream onto a client's hard drive. Sadly (or thankfully, depending on your perspective)
+                    this is made difficult if not impossible to do by the browsers. Each browser does have methods allowing this type of activity, but these methods
+                    are not cross platform and can raise serious security concerns with users.
+                </p>
+
+                <p>
+                    XML for &lt;SCRIPT&gt; attempts to resolve this information by providing an interface for saving and retrieving XML streams using cookies.
+                    This interface allows programmers to save data for a specified period of time and retrieve that data when needed.
+                    It is not a requirement to save XML, any string data is supported by the interface.
+                </p>
+
+                <p>
+                    For an example of the functionality provided by this interface, click the button below and see the documentation under the MISC tab.
+                </p>
+
+                <input type="button" class="launchButton" onclick="launchXMLIOSample()" value="Launch">
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="accent">
+                    Escaping XML into valid HTML
+                </div>
+
+                <p>
+                    Escaping XML into valid HTML can be an error prone and expensive process. The escaped HTML is very difficult to read with the human eye and
+                    is much larger than the original XML source.
+                <p>
+
+                <p>
+                    XML for &lt;SCRIPT&gt; attempts to resolve this situation by converting your XML into valid HTML not by escaping the XML, but by replacing the XML
+                    markup tags with high ascii characters which are not likely to be found in your XML data.
+                </p>
+
+                <p>
+                    For an example of the functionality provided by this interface, click the button below and see the documentation under the MISC tab. This example
+                    is very useful if you have XML that you wish to hard code into HTML and place on your web page.
+                </p>
+
+                <input type="button" class="launchButton" onclick="launchXMLEscapeSample()" value="Launch">
+
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

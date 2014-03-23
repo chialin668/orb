@@ -1,0 +1,34 @@
+# Makefile for Java files
+
+JC	= javac
+CFLAGS	= -O
+RM	= rm -f
+
+# generic
+JAVA	= $(wildcard *.java)
+CLASS	= $(patsubst %.java, %.class, $(JAVA))
+
+# suffix rules
+.SUFFIXES: .java .class
+
+.java.class:
+	$(JC) $(CFLAGS) $<
+
+all: $(CLASS)
+
+
+# sorting source and class files
+#SORTJ	= $(wildcard *Sort*.java)
+#SORTC	= $(patsubst %.java, %.class, $(SORTJ))
+
+Client.class : Probe.class
+
+
+clean:
+	$(RM) *.class
+
+package: clean
+	$(RM) java.tgz
+	tar -zcvf java.tgz -C ../ java/
+
+

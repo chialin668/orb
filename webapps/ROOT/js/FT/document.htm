@@ -1,0 +1,421 @@
+<html>
+<head>
+<link rel="stylesheet" href="ftEssstyle.css">
+<!-- Infrastructure code for the tree -->
+<script language = "Javascript" src = "ft.js"></script>
+<script language = "Javascript" src = "ftoptions.js"></script>
+<script>
+function helpdoc(docname,identifier,description) //constructor 
+{ 
+  //constant data 
+ this.docname = docname
+ this.description = description
+ this.identifier = identifier
+
+this.drawdoc = drawdoc 
+} 
+function drawdoc(){
+
+var dstrbuf = "<HTML><HEAD><TITLE>" + this.docname + "</TITLE><link rel='stylesheet' href='ftEssstyle.css'></HEAD><BODY><P>"
+dstrbuf += "<CENTER><H1>" + this.docname + "</H1></CENTER><BR>"
+dstrbuf +=  this.description
+dstrbuf +=  "</BODY></HTML>"
+
+self.basefrm.window.document.write(dstrbuf)
+self.basefrm.window.document.close()
+}
+function adddoc(docname, identifier, description) {
+newdoc = new helpdoc(docname, identifier, description)
+indexofDoc[nDoc] = newdoc
+idofDoc[nDoc] = identifier
+nDoc++
+return newdoc
+}
+function outputdoc(id){
+var found = false
+for (var i=0; i < nDoc; i++)
+{
+if (idofDoc[i] == id) 
+   {
+   found = true
+  indexofDoc[i].drawdoc() 
+   }
+}
+if (!found) {
+locstr = location.href
+int1 = locstr.lastIndexOf("/")
+int1 = Math.max(locstr.lastIndexOf("\\"),int1)
+locstr = locstr.substring(0,int1+1)
+int2 = id.lastIndexOf("\.htm")
+if (int2 > 0)
+self.basefrm.window.location.href = locstr+id
+else
+{
+if (bV == 2) self.basefrm.window.location.href = "view-source:" + locstr+id
+else if (bV == 1) self.basefrm.window.location.href = locstr+id
+else window.open(locstr+id,"")
+}
+}
+}
+indexofDoc = new Array()
+idofDoc = new Array()
+nDoc = 0
+</script>
+
+<script>
+
+commonLink = "javascript:parent.outputdoc("
+styleSheetFile = "ftEssstyle.css"
+bodyOption = 'BGCOLOR="#FFFFFF" BACKGROUND = "Essback.gif"' 
+
+useTextLinks = 1
+fT = gFld("<i>Folder Tree Documentation</i>", "")
+      insDoc(fT, gLnk("Quick start", "1)"))	
+	aux1 = insFld(fT, gFld("Overview", ""))	
+	     	insDoc(aux1, gLnk("Background", "2)"))
+		insDoc(aux1, gLnk("Browser support", "3)"))
+		insDoc(aux1, gLnk("Configurability", "4)"))
+ 		insDoc(aux1, gLnk("Applications", "5)"))
+		insDoc(aux1, gLnk("Performance", "6)"))
+		insDoc(aux1, gLnk("Limitations", "7)"))
+		insDoc(aux1, gLnk("Audience", "8)"))
+		insDoc(aux1, gLnk("Reference sites", "9)"))
+ 		insDoc(aux1, gLnk("Architecture", "12)"))
+   aux1 = insFld(fT, gFld("Technical Details", ""))
+	      aux2 = insFld(aux1, gFld("Defining the menu structure", ""))
+ 			insDoc(aux2, gLnk("Description", "13)"))
+ 			insDoc(aux2, gLnk("Defining folders and documents", "14)"))
+	      aux2 = insFld(aux1, gFld("Setting icons", ""))
+ 			insDoc(aux2, gLnk("Setting default icons", "15)"))
+			insDoc(aux2, gLnk("Setting individual folder and item icons", "16)"))
+	      aux2 = insFld(aux1, gFld("Setting fonts", ""))
+ 			insDoc(aux2, gLnk("Setting default fonts", "17)"))
+			insDoc(aux2, gLnk("Setting individual folder and item icons", "18)"))
+	      aux2 = insFld(aux1, gFld("Setting other node options", ""))
+ 			insDoc(aux2, gLnk("Setting folder open state", "19)"))
+			insDoc(aux2, gLnk("Setting node target frame", "22)"))
+			insDoc(aux2, gLnk("Setting node link type", "20)"))
+ 			insDoc(aux2, gLnk("Setting status bar text", "21)"))
+ 			insDoc(aux2, gLnk("Setting user defined data", "61)"))
+ 			insDoc(aux2, gLnk("Getting user defined data", "62)"))
+	      aux2 = insFld(aux1, gFld("Setting cascading node options", ""))
+ 			insDoc(aux2, gLnk("Setting node width", "201)"))
+			insDoc(aux2, gLnk("Setting node height", "202)"))
+			insDoc(aux2, gLnk("Setting node background image", "203)"))
+
+	      insDoc(aux1, gLnk("Setting other options", "\"otheroptions.htm\" )"))
+ 		insDoc(aux1, gLnk("Style sheets", "23)"))
+		insDoc(aux1, gLnk("Setting up HTML files", "24)"))
+   aux1 = insFld(fT, gFld("Future enhancements", "25)"))
+ 		insDoc(aux1, gLnk("GUI menu builder", "26)"))
+    aux1 = insFld(fT, gFld("Performance options", ""))
+		insDoc(aux1, gLnk(".jar files", "27)"))
+ 		insDoc(aux1, gLnk("Using the SUID", "28)"))
+     aux1 = insFld(fT, gFld("Utilities", ""))
+ 		insDoc(aux1, gLnk("Visual Basic examples", "29)"))
+    aux1 = insFld(fT, gFld("Frequently asked questions", ""))
+ 		insDoc(aux1, gLnk("Will it work on version 3 browsers?", "30)"))
+		insDoc(aux1, gLnk("Can I modify the script?", "31)"))
+		insDoc(aux1, gLnk("How can I change backgrounds?", "32)"))
+ 		insDoc(aux1, gLnk("Can I change options at run time?", "34)"))
+		insDoc(aux1, gLnk("How do I migrate from version 2?", "\"migrating.htm\" )"))
+     aux1 = insFld(fT, gFld("Known bugs", ""))
+ 		insDoc(aux1, gLnk("Styles in Navigator", "38)"))
+  		insDoc(aux1, gLnk("Gaps in tree icons", "39)"))
+   aux1 = insFld(fT, gFld("Examples", ""))
+ 		insDoc(aux1, gLnk("Example 0 (default)", "40)"))
+      	insDoc(aux1, gLnk("Open expanded, with header and footer", "41)"))
+		insDoc(aux1, gLnk("No tree icons", "42)"))
+		insDoc(aux1, gLnk("Specific node open", "43)"))
+		insDoc(aux1, gLnk("Large tree. Dynamic loading", "44)"))
+		insDoc(aux1, gLnk("Very large tree with secondary storage", "45)"))
+		insDoc(aux1, gLnk("Scrolling through large tree", "46)"))
+		insDoc(aux1, gLnk("Highlight selected node", "47)"))
+		insDoc(aux1, gLnk("No top node and text wrapping", "48)"))
+		insDoc(aux1, gLnk("Mouseover expand and collapse", "49)"))
+		insDoc(aux1, gLnk("Tree and target in same frame", "50)"))
+		insDoc(aux1, gLnk("Expand and collapse all", "51)"))
+		insDoc(aux1, gLnk("Checkboxes", "52)"))
+		insDoc(aux1, gLnk("No frames", "53)"))
+		insDoc(aux1, gLnk("Tree in table cell", "54)"))
+		insDoc(aux1, gLnk("Reposition", "55)"))
+		insDoc(aux1, gLnk("Complex frames", "56)"))
+		insDoc(aux1, gLnk("Web Explorer example", "63)"))
+		insDoc(aux1, gLnk("Lots of nodes within one folder", "80)"))
+		insDoc(aux1, gLnk("Setting state from another frame", "81)"))
+		insDoc(aux1, gLnk("Opening link in window", "82)"))
+		insDoc(aux1, gLnk("Complex set of frames and menus", "83)"))
+		insDoc(aux1, gLnk("Radio buttons on specified nodes", "84)"))
+		insDoc(aux1, gLnk("More complex checkboxes", "85)"))
+		insDoc(aux1, gLnk("Setting target for specified node", "86)"))
+		insDoc(aux1, gLnk("Frameless menu with checkboxes", "87)"))
+		insDoc(aux1, gLnk("Frameless menu", "88)"))
+		insDoc(aux1, gLnk("Frameless menu within table", "89)"))
+		insDoc(aux1, gLnk("Right to left tree", "90)"))
+		insDoc(aux1, gLnk("Horizontal cascading menu", "91)"))
+		insDoc(aux1, gLnk("Horizontal cascading menu with background images", "92)"))
+		insDoc(aux1, gLnk("Vertical cascading menu", "93)"))
+		insDoc(aux1, gLnk("Vertical cascading menu with background images", "94)"))
+ 	insDoc(fT, gLnk("Developer tool", "64)"))
+ aux1 = insFld(fT, gFld("Version history", ""))
+ 		insDoc(aux1, gLnk("Version 4.00", "70)"))
+ 		insDoc(aux1, gLnk("Version 4.01", "71)"))
+ 		insDoc(aux1, gLnk("Version 4.02", "72)"))
+ 		insDoc(aux1, gLnk("Version 4.03", "73)"))
+ 		insDoc(aux1, gLnk("Version 4.04", "\"readme404.txt\")"))
+ 		insDoc(aux1, gLnk("Version 4.05", "\"readme405.txt\")"))
+ 		insDoc(aux1, gLnk("Version 4.06", "\"readme406.txt\")"))
+ 		insDoc(aux1, gLnk("Version 4.50", "\"readme450.txt\")"))
+ 		insDoc(aux1, gLnk("Version 4.60", "\"readme460.txt\")"))
+ 		insDoc(aux1, gLnk("Version 4.70", "\"readme470.txt\")"))
+ 		insDoc(aux1, gLnk("Version 5.00", "\"readme500.txt\")"))
+
+  aux1 = insFld(fT, gFld("Licenses", ""))
+		insDoc(aux1, gLnk("Evaluation License", "\"evallicense.txt\" )"))
+ 		insDoc(aux1, gLnk("Full License", "\"fulllicense.txt\" )"))
+ 		insDoc(aux1, gLnk("Developer License", "\"devlicense.txt\" )"))
+</script>
+<script>
+adddoc("Quick start",1," After downloading the file ft.zip, unzip it into a new folder. You will have to edit files to create your own tree. You should only try this if you have at least some programming skills, although knowledge of Javascript is useful. <OL> <LI>After unzipping all the files, copy the following files into the area where you will be creating your web page: <UL> <LI>ftb.gif</LI> <LI>ftd.gif</LI> <LI>ftdo.gif</LI><LI>ftfc.gif</LI> <LI>ftfo.gif</LI><LI>ftvl.gif</LI> <LI>ftn.gif</LI> <LI>ftfn.gif</LI><LI>ftln.gif</LI><LI>ftmn.gif</LI>  <LI>ftmfn.gif</LI>  <LI>ftmln.gif</LI> <LI>ftpn.gif</LI>  <LI>ftpfn.gif</LI> <LI>ftpln.gif</LI> <LI>ftoptions.js</LI> <LI>ftstyle.css</LI> <LI>ft.js</LI> <LI>ftexampl0.htm</LI> <LI>ftblank.htm</LI> <LI>ftexampl0.js</LI> </UL> <LI> Start by looking at the HTML file ftexample0.htm <LI> You only need to edit two files: ftexample0.js and ftexample0.htm itself.</LI> <LI> If you want the names of the folders and documents to be links themselves, include</LI> <OL><TT>useTextLinks = 1</TT></OL> at the top of the file. <LI> Edit ftexample0.js with your folder and document names and links. Start with the root folder with the command fT = gFld('Some text','linkURL').&nbsp; 'gFld' takes a name and and optional URL, and returns the folder.<BR> Place a folder inside another folder by using the function 'insFld([parent folder], [child folder])'.</LI> <LI> To create a document link use the function 'gLnk'. It takes two arguments:</LI> <BR>&nbsp;&nbsp;&nbsp;&nbsp; Title: Text to be displayed in the tree. <BR>&nbsp;&nbsp;&nbsp;&nbsp; Link: URL of the document <P>To place the document inside the tree use the function 'insDoc([parent folder], [document link])'. <LI> If you want to rename this or any other of the files included in the .ZIP, you will have to take in account the file dependencies: ftexampl0.htm includes ftbase.htm, ftstyle.css, ft.js, and ftoptions.js .</LI> <LI>ftoptions.js contains the user definable options. Either change values in this file, or (preferred), specify the altered values at the top of the menu definition file.</LI><LI>Have a look at the other examples, and examine their .js menu definition files.</LI> </OL> <P>When you're done with the installation process and your site goes public, <b>please don't forget to announce the site</B>. Share the URL with other developers and join the email group. ")
+</script>
+<script>
+adddoc("Background",2,"<p>In 1997, Marcelino Martins (http://www.geocities.com/Paris/LeftBank/2178/) published a simple, well designed Javascript utility, Folder Tree Version 1, which provided web page designers the ability to produce tree structured menus. This was architected so that, as nodes were collapsed or expanded, the complete tree was rewritten. This supported version 3 or later of Internet Explorer or Netscape Navigator.</p> <p>This was rewritten by Marcelino Martins to take advantage of the emerging DHTML capability of Internet Explorer and Netscape Navigator browsers, so that as nodes were collapsed or expanded, the relevant parts of the tree were made visible or invisible. This became version 2. This supported version 4 or later of Internet Explorer or Netscape Navigator. </p> <p>Towards the end of 1998, Nigel Goodwin of Essence Associates Ltd. re - architected version 2 the Folder Tree script to greatly improve performance for large trees. This, in some cases, resulted in performance improvements of over a hundredfold. Some features were available, but not documented, so were only used by the author. </p> <p>At about the same time, Roger Bedard of CompSolutions-CSI (http://www.CompSolutions-CSI.com) also modified version 2, and added many options to allow much more configurability to the style, and look and feel, of the script. This became version 3e. </p> <p>It became clear that a version of folder tree which combined the performance improvements and the greater configurability of the look and feel would be a very useful product which could be widely used It also became clear that, if the script was to be widely used, a significant amount of effort would be needed to support and promote it, as well as continue to enhance it. </p> <p>Essence Associates therefore, with the support and cooperation of Marcelino Martins and Roger Bedard, decided to produce the first commercial release, version 4, which combines the best features of previous versions. This was released in March 1999. </p> <p>In addition to the previous performance improvements, and the look and feel improvements, this version 4 of folder tree also provided support for version 3 or later of Internet Explorer or Netscape Navigator (whilst transparently taking advantage of DHTML capabilities of later versions), corrected various bugs, added a few extra look and feel features, and was designed to be fully supported and documented. </p> <p>The script is ideal for both intranet and internet site navigation. The folder-tree structure displays a navigational map that gives the professional look and feel of Windows Explorer. The script also makes use of the latest Javascript and DHTML technologies, but is intelligent enough to work with older browsers which do not support DHTML. </p> ")
+</script>
+<script>
+adddoc("Browser support",3," <p>Folder tree has been tested on Internet Explorer versions 3 and 4, and Netscape Navigator versions 3 (16 bit), 3.04 (32 bit), 4.01, 4.5, 6.0 and 6.2. It has been tested on PC, MacIntosh and UNIX platforms. </p> ")
+</script>
+<script>
+adddoc("Configurability",4," <ul> <li>customization of individual folder images</li> <li>customization of individual document images</li> <li>individual control of&nbsp; (+/-) sign images, folder images, folder text, document images, and document text</li> <li>control of mouse-click and mouse-over behavior</li> <li>option to enable the collapsing of previous branches when accessing new branches</li> <li>ability to specify text which appears on status bar or in tool tip</li> <li>option to control the initial state (expanded/collapsed) of the tree, including individual nodes</li> <li>option to include a header or footer at the beginning or end of the tree. This might be, for example, a company logo or advertisement</li> <li>control of the font behavior of the route folder, all sub-folders, and all documents</li> <li>various bug fixes, such as the window size and refresh bugs for Netscape</li> <li>flexible management of customisable images</li> <li>performance enhancements</li> <li>hooks for database access or secondary cache storage, for very large trees</li> </ul> ")
+</script>
+<script>
+ adddoc("Applications",5," <p>There is a wide variety of applications which can make use of folder tree. Often, web sites contain a host of interlinking pages, and it can become very difficult to follow the structure. User become lost. In other cases, there is a large catalogue of database information, which is difficult to manage and manipulate. </p> <p>In fact, almost every web site has some menu, and folder tree is designed to make the creation of these menus easy and trouble free. Whereas, even in web page design tools, a lot of the menu creation still has to be hand crafted, by using folder tree you can very quickly generate a fully functioning and, most importantly, consistent looking menu structure. </p> <p>In some cases, search facilities, and site navigation charts, can try to alleviate these problems, but a proper solution requires some structured navigation tool which users are familiar with. This is what folder tree can give you. </p> <p>Folder tree can help in </p> <ul> <li>web site navigation</li> <li>indexing of large documents</li> <li>cataloguing, for example document catalogues or spare parts catalogues</li> </ul> ")
+</script>
+<script>
+ adddoc("Performance",6," <P>Very rough indicative benchmarks are as follows. The timings are for the initial loading, use a local server, and are based on a 133MHz Pentium II processor. </p> <P>The original version 2 took 60 secs to load a menu of 120 nodes. The new version 4 takes about 5 secs to load 500 nodes. </p> <P>Using special data structures described in the documentation, version 4 takes about 10 seconds to load a tree structure consisting of over 20,000 nodes. </p> <P>More information on performance can be found in the section headed 'performance options'. </p> <P>Performance depends critically on speed of the local client processor. Once the menu definition file and other files have been downloaded at the start, there should be little if any server acess during menu manipulation. </p> ")
+</script>
+<script>
+ adddoc("Limitations",7," <p>The author is not aware of any limitations, apart from those imposed by the supporting browser and client hardware. There is no imposed limit on the size of tree. Trees have been successfully implemented with over 20,000 nodes. </p> ")
+</script>
+<script>
+adddoc("Audience",8,"<P>The main audience for this script is web ages designers who have at least some programming excperience") 
+</script>
+<script>
+adddoc("Reference sites",9," <p>The following sites are using folder tree (this version and previous versions): </p> <ul> <li><a href='http://www.essence.co.uk/essence/WIME'>Essence Associates</a></li> </ul> ")
+</script>
+<script>
+bstrbuf = "<p>The architecture is designed to take advantage of DHTML capabilities where they are supported, and to take account of various performance issues. </p> <p>The performance issues are: </p> <ul> <li>There is a large overhead for each server access. It is best to retrieve data in significant amounts each time the server is accessed.</li> <li>There is a large performance overhead for creating the DHTML objects and drawing them.</li> <li>Loading Javascript data structures is a relatively fast process.</li> <li>With increasing CPU performance, more burden should be put on the local client rather than the network link.</li> <li>Users do not mind a short (less than a second) delay when a node is expanded/collapsed, but they do mind a long delay before any menu appears</li> <li>For very large trees, users are unlikely to want to see more than a small proportion of the complete tree.</li> </ul> <p>To understand the architecture, it is necessary to understand that data about the menu tree can be held at various different levels. </p> <ul> <li>Level 0. This is the level internal to the browser, which controls DHTML objects in the Document Object Model. These objects can be manipulated by Javascript. For example, a branch in the tree can be held as an object, and Javascript controls whether they are visible or not by manipulating these objects. These objects are populated, from the level 1 data structure, on an as-needed basis. </li> <li>Level 1. This is the primary data structure managed by the folder tree Javascript. The data structures are defined in the constructor foldertree functions &quot;Folder&quot; and &quot;Item&quot;. These structures are fully populated at start-up using the menu definition file.</li> <li>Level 2. This is the secondary data structure, which might be managed by some user-written functions. "
+bstrbuf += "It could be wrtten using Javascript, Java or some other language. It could involve some database access. It could be held locally on the client, or onthe server. There is a function in folder tree &quot;addToTree&quot; which can be adapted by the user. This function is called when a folder is clicked open but there are no child nodes. The clicked folder identifier is passed as an argument, the SUID for the clicked folder is obtained, the relevant subnodes are obtained, and suitable calls to insFld and insDoc are made to add nodes to the level 1 (primary) data structure. More discussion of level 2 data structures may be found under &quot;Performance options&quot;.</li> </ul> <p>At start up, the level 1 data structure is populated, as well as, if used, the level 2 data structure. Then the correct DHTML objects are created for the initial state of the tree. As the user expands and contracts the tree, if possible the DHTML objects are used, but if they have not yet been written the level 1 data structure is used to create them. If the data is not in the level 1, the level 2 data structure is searched, and level 1 data structures are extended. </p> <p>If a node is expanded or contracted, and the  DHTML objects already exist, the response is almost instantaneous. If level 1 data structures are used, the rersponse is normally very fast, as only the new sub-nodes have to be drawn. The new nodes are inserted into the existing DHTML objects. Note - Internet Explorer and Netscape Navigator use very different methods for inserting new DHTML elements. Internet Explorer automatically adjusts the position of surrounding elements, whereas in Navigator this has to be performed using Javascript. </p> <p>For version 3 of Internet Explorer and Netscape Navigator, DHTML objects are not available, so level 0 data structures do not exist. Instead, as the user expands and collapses, the visible part of the tree is redrawn from scratch. This still gives quite good performance, as the complete fully expanded tree does not have to be drawn. </p> "
+adddoc("Architecture",12,bstrbuf)
+</script>
+<script>
+adddoc("Defining the menu structure",13," <p>The following is a general description of how to set up a menu definition file. </p> <ul> <li>The menu definition file defines the structure of folders and documents.</li> <li>Folders and documents are referred to as nodes in a tree. Folders have structure (sub-nodes) beneath them, whereas documents do not.</li> <li>This structure corresponds to the common folders and file structure of MS Windows 95/98, and the folder tree structure corresponds to the Windows Explorer tree.</li> <li>In the same way that a Windows 95/98 folder does not have to contain any files or sub-folders, a folder tree folder does not have to contain any documents or sub-folders.</li> <li>The inserts always begin with the root folder insert, followed by any order of folder and document inserts.</li> <li>The order in which folders and documents appear in the definition file defines the order in which they appear in the menu.</li> <li>When a folder or document is inserted, the containing folder is specified, using any simple identifier. By convention, identifiers aux1, aux2 etc. are used, indicating level 1, level 2 etc. This identifier is then used in subsequent menu definition statements. The same identifier can later be used to identify some other folder.</li> <li>Normally, documents do not need to be identified. However, if an individual document has special characteristics which need to be set (for eample font or images), then it need to be identified.</li> <li>The root folder, at the top level, must be identified using &quot;fT&quot;</li> <li>The easiest way to learn how to define menu structures is to look at some simple examples, as found in this documentation.</li> </ul> ")
+</script>
+<script>
+adddoc("Menu structure details",14," <p>The detailed definition of the menu definition statements is as follows. </p> <ul> <li>The top level (root) folder insert statement is: <p><code>fT = gFld(Label, Reference, SUID) </code></p> </li> <li>The insert statement for other folders is <p><code>folderid = insFld(ContainingFolderid, gFld(Label, Reference, SUID)) </code></p> </li> <li>The insert statement for documents is normally <p><code>insFld(ContainingFolderid, gLnk(Label, Reference, SUID)) </code></p> </li> <li>Where a document needs to be identified, for example when setting individual icons or fonts, the insert statement is <p><code>docid = insFld(ContainingFolderid, gLnk(Label, Reference, SUID))</code> </p> </li> </ul> <p>where: </p> <center> <table border='0' cellpadding='5' cellspacing='0' width='100%'> <tr> <th align='left'>Name</th> <th align='left'>Mandatory/optional</th> <th align='left'>Type</th> </tr> <tr> <td colspan='3'><font color='#000000' size='2' face='Times New Roman'><em><strong>folderid</strong></em></font> is any name used to identify the folder. </td> </tr> <tr> <td>&nbsp;</td> <td>Mandatory</td> <td>Text (no quotes) </td> </tr> <tr> <td colspan='3'><font color='#000000' size='2' face='Times New Roman'><em><strong>docid</strong></em></font> is any name used to identify the document. </td> </tr> <tr> <td>&nbsp;</td> <td>Optional</td> <td>Text (no quotes)</td> </tr> <tr> <td colspan='3'><font color='#000000' size='2' face='Times New Roman'><em><strong>ContainingFolderid</strong></em></font> is the previously defined identifier of the containing folder. </td> </tr> <tr> <td>&nbsp;</td> <td>Mandatory</td> <td>String (with quotes).</td> </tr> <tr> <td colspan='3'><font color='#000000' size='2' face='Times New Roman'><em><strong>Label </strong></em></font>is the text label which appears on the menu for the folder. </td> </tr> <tr> <td>&nbsp;</td> <td>Mandatory</td> <td>String (with quotes).</td> </tr> <tr> <td colspan='3'><font color='#000000' size='2' face='Times New Roman'><em><strong>Reference </strong></em></font>is the URL reference. </td> </tr> <tr> <td>&nbsp;</td> <td>Mandatory. <br> May be set to blank. </td> <td>String (with quotes).</td> </tr> <tr> <td colspan='3'><font color='#000000' size='2' face='Times New Roman'><em><strong>SUID </strong></em></font>is the Surrogate unique identifier. This is unique number. See &lt;Performance options&gt; and &lt;Architecture&gt; for more details. </td> </tr> <tr> <td>&nbsp;</td> <td>Optional </td> <td>Integer.</td> </tr> </table> </center> ")
+</script>
+<script>
+ adddoc("Setting default icons",15," <p>The plus/minus signs, vertical bars etc. of the tree are not held as user configurable options, although there is a description under FAQ's if you really want to change these. </p> <p>The other icons are all user configurable. Icons may be set dependng on whether folders are open or not, and whether the mouse is over them or not. Icons maybe set for individual folders or documents, and defaults may be set for folders and documents. Icons set for individual folders or documents take precedence over defaults. </p> <p>If the default icon is set to blank, and the icon for the individual node has not been set, then a blank icon will appear. This can be used, for example, so that icons are normally blank but appear when the mouse goes over the node.</p> <p>In general, you need to be careful that the font sizes are the same whether the mouse is over the node or not, as otherwise they may become distorted or chopped.</p><p>The default icons are set in the ftoptions.js file. The icons for individual folders or documents are set in the menu definition file. </p> <p>The directory path for icons may be set by changing the variable &quot;iconFolder&quot;. This specifies a relative URL path. The default value is blank. </p> <p>The default icons which may be set are: </p> <center> <table border='0' cellpadding='10' cellspacing='0' width='100%'> <tr> <th align='left'>Variable</th> <th align='left'>Default value</th> <th align='left'>Description</th> </tr> <tr> <td><nobr> topOpenFolderIcon </nobr> </td> <td>ftfo.gif </td> <td>Icon file for open top folder </td> </tr> <tr> <td><nobr> topClosedFolderIcon </nobr> </td> <td>ftfc.gif</td> <td>Icon file for closed top folder</td> </tr> <tr> <td><nobr> openFolderIcon</nobr> </td> <td>ftfo.gif</td> <td>Icon file for other open folders</td> </tr> <tr> <td><nobr> closedFolderIcon </nobr> </td> <td>ftfc.gif</td> <td>Icon file for other closed folders</td> </tr> <tr> <td><nobr> documentIcon </nobr> </td> <td>ftd.gif</td> <td>Icon file for documents</td> </tr> <tr> <td><nobr> topOpenFolderIconOver </nobr> </td> <td>ftfo.gif</td> <td>Icon file for open top folder, mouse over</td> </tr> <tr> <td><nobr> topClosedFolderIconOver </nobr> </td> <td>ftfc.gif</td> <td>Icon file for closed top folder, mouse over</td> </tr> <tr> <td><nobr> openFolderIconOver </nobr> </td> <td>ftfo.gif</td> <td>Icon file for other open folders, mouse over</td> </tr> <tr> <td><nobr> closedFolderIconOver </nobr> </td> <td>ftfc.gif</td> <td>Icon file for other closed folders, mouse over</td> </tr> <tr> <td><nobr> documentIconOver</nobr> </td> <td>ftd.gif</td> <td>Icon file for documents, mouse over</td> </tr> </table> </center> ")
+</script>
+<script>
+adddoc("Setting node icons",16," <p>Icons may be set for individual folders or documents. Icons may be set depending on whether a folder is open or closed, and whether a mouse is over the icon or not. These are embedded in the menu definition file, using the folder or document identifier. </p> <p>To ease use, a data structure is used to hold the set of icons, and reference is then made to this data structure for individual nodes. To create the image data structure, insert calls to the function </p> <p><code>addImage(imagename,imagefile) </code></p> <p>where</p> <p>&quot;imagename&quot; is an image name (choose any unique name according to your wishes, enclosed in quotes). </p> <p>&quot;imagefile&quot; is the file name, enclosed in quotes. </p> <p>The image name is then used when specifying an image for an individual node. </p> <p>The function to set icons for a document is: </p> <p><code>docid.setIcon(iconName, iconNameOver) </code></p> <p>where</p> <p>docid is the identifier of the document, as specified in the menu definition file <br> iconName is the image name of the icon <br> iconNameOver is the image name of the icon when the mouse is over it. </p> <p>The function to set icons for a folder is: </p> <p><code>folderid.setIcon(openIcon,closedIcon, openIconOver,closedIconOver) </code></p> <p>where</p> <p>folderid is the identifier of the folder, as specified in the menu definition file <br> openIcon is the image name of the icon when the folder is open. <br> closedIcon is the image name the icon when the folder is closed. <br> openIconOver is the image name of the icon when the folder is open and the mouse is over it. <br> closedIconOver is the image name the icon when the folder is closed and the mouse is over it. <br> </p> ")
+</script>
+<script>
+ adddoc("Setting default fonts",17," <p>Fonts are all user configurable. Fonts maybe set for individual folders or documents, level defaults may be set depending on the level in the tree structure, and overall defaults may be set for folders and documents. Icons set for individual folders or documents take precedence over level defaults which take precedence over overall defaults. </p> <p>In all cases, the variable is set to any valid HTML font tag, as a string enclosed in quotes, for example &quot;&lt;font face=Arial size=4 color=008080&gt;&quot;</p> <p>The default fonts which may be set are: </p> <center> <table border='0' cellpadding='10' cellspacing='0' width='100%'> <tr> <th align='left'>Variable</th> <th align='left'>Default value</th> <th align='left'>Description</th> </tr> <tr> <td>defFolderFont</td> <td>&quot;&lt;font&gt;&quot; </td> <td>This sets the default font for all folders. If blank or &quot;&lt;font&gt;&quot;, the browser default is used.</td> </tr> <tr> <td>defDocFont</td> <td>&quot;&quot;</td> <td>This sets the default font for all documents. If blank or &quot;&lt;font&gt;&quot;, the browser default is used.</td> </tr> <tr> <td><nobr> levelDefFont[0] </nobr> </td> <td>&quot;&quot;</td> <td>This sets the default font for all folders or documents on level 0 (the top level).</td> </tr> <tr> <td><nobr> levelDefFont[1]</nobr> </td> <td>&quot;&quot;</td> <td>This sets the default font for all folders or documents on level 1 (the level below the top level).</td> </tr> <tr> <td><nobr> levelDefFont[2]</nobr> </td> <td>&quot;&quot;</td> <td>This sets the default font for all folders or documents on level 2.</td> </tr> <tr> <td><nobr> levelDefFont[n]</nobr> </td> <td>&quot;&quot;</td> <td>Default fonts can be set for any menu level n, by setting the appropriate array element.</td> </tr> </table> </center> ")
+</script>
+<script>
+adddoc("Setting node fonts",18," Fonts may be set for individual nodes. </p> <p>The function to set fonts for a node is: </p> <p><code>nodeid.setFont(font)</code> </p> <p>where:</p> <p>nodeid is the identifier of the node (folder or document), as specified in the menu definition file <br> font is any valid HTML for the font tag, as a string enclosed in quotes. </p> ")
+</script>
+<script>
+ adddoc("Setting folder open state",19,"The initial open state for a folder may be set to true (open) or false (closed). The setting for an individual folder takes precedence over the overall default open state. </p> <p>The function to set a folder to be initially in the open state is: </p> <p><code>folderid.setInitial(initial) </code></p> <p>where:</p> <p>folderid is the identifier of the folder, as specified in the menu definition file <br> Initial is the initial open state. If true, the folder starts open. If false, the folder starts closed. </p> ")
+</script>
+<script>
+adddoc("Setting node link type",20," <p>The function to set the link type for a node is: </p> <p><code>nodeid.setLinkType(linkType) </code></p> <p>where:</p> <p>nodeid is the identifier of the node (folder or document), as specified in the menu definition file <br> linkType is the link type. A value of 0 specifies the type of link. 0 for relative URL, 1 for full URL (http), 2 for full URL (ftp), 3 for full URL (telnet).</P><p> Where a value of 1, 2 or 3 is specified, the link in the node definition omits the initial http://, ftp:// or telnet://.</p> ")
+</script>
+<script>
+adddoc("Setting node target frame",22," <p>The function to set the target frame for a node is: </p> <p><code>nodeid.setTarget(targetFrame) </code></p> <p>where:</p> <p>nodeid is the identifier of the node (folder or document), as specified in the menu definition file <br> targetFrame is the target frame. A value of 0 specifies the base frame, 1 for a new window, 2 for the overall current window. If targetFrame is set to a string, that named frame is used. </p> ")
+</script>
+<script>
+adddoc("Setting status bar text",21," <p>The function to set the status bar text for a node is: </p> <p><code>nodeid.setStatusBar(statusText) </code></p> <p>where:</p> <p>nodeid is the identifier of the node (folder or document), as specified in the menu definition file <br> statusText is the text string, enclosed in quotes, which appears on the status bar or tool tip when the mouse is over the relevant icon. By default, the label is used. </td> ")
+</script>
+<script>
+adddoc("Setting user defined data",61," <p>The function to set user defined data for a node is: </p> <p><code>nodeid.setUserDef(name,text) </code></p> <p>where:</p> <p>nodeid is the identifier of the node (folder or document), as specified in the menu definition file <br> name is the user defined property name, enclosed in quotes, and text is the value of the property. </td> ")
+</script>
+<script>
+adddoc("Getting user defined data",62," <p>The function to get user defined data for a node is: </p> <p><code>nodeid.getUserDef(name) </code></p> <p>where:</p> <p>nodeid is the identifier of the node (folder or document), as specified in the menu definition file <br> name is the user defined property name, enclosed in quotes. The function returns the value of the property. </td> ")
+</script>
+<script>
+adddoc("Style sheets",23," <p>There is a file called 'ftstyle.css'. This style sheet can be used for a multitude of purposes. By default, the background colour of the folder tree site map, as well as text decoration, is controlled from this file. The current setting is as follows:<br> <br> <code>BODY &#123;background-color: white&#125;<br> </code><br> </p> <P> This file can be used, for example, to set a background image. In this case the setting would be: <br> <br> <code>BODY &#123;BODY {background-image: url(XXX.gif)}&#125; </code><br><br>where XXX.gif is the name of the background gif file.<P>Alternatively, a new style sheet file can be created, and the option styleSheetFile changed to the new file name. This may be convenient if you need several different styles on the same web site.</p> ")
+</script>
+<script>
+adddoc("Setup of html files",24," <p>Setup of the HTM file used to host the folder-tree script is relatively simple. Between the &lt;HEAD&gt; ... &lt;/HEAD&gt;tags, you will need to insert the following javascript calls, which employ the folder-tree scriptings. The insertions are as follows:<br> <br><pre> <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;ftstyle.css&quot;&gt;<br> &lt;script LANGUAGE=&quot;Javascript&quot; src=&quot;ftv400.js&quot;&gt;&lt;/script&gt;<br> &lt;script LANGUAGE=&quot;Javascript&quot; src=&quot;ftoptions.js&quot;&gt;&lt;/script&gt;<br> &lt;script LANGUAGE=&quot;Javascript&quot; src=&quot;mydefinitionfile.js&quot;&gt;&lt;/script&gt;<br> </code><br></pre> * it is important to use the proper path to where the *.js and *.css files reside (for the sake of this example, the files are in the root path)<br> </p> ")
+</script>
+<script>
+adddoc("Future enhancements",25," <p>Future projects for the folder-tree script involve a graphical user interface, designed to ease the construction and implementation of the folder-tree site map. </p> ")
+</script>
+<script>
+adddoc("Menu builder",26," <p>A grahical menu builder to create the menu structure and set options will be created. </p> ")
+</script>
+<script>
+adddoc("JAR format",27," <p>Significant download performance improvements can be made by using the JAR format. This is normally used for Java classes, but Netscape (but, unfortunately, not Internet Explorer) can use JAR files for Javascript. </p> <p>To take advantage of this, change the script statement to: </p> <p><code>&lt;script LANGUAGE=&quot;Javascript&quot; src=&quot;mymenudef.js&quot; archive=&quot;mymenudef.jar&quot; &gt;&lt;/script&gt; </code></p> <p>The archive tag will be ignored by Internet Explorer. </p> <p>To create a JAR file, first download a Java Development Kit (JDK) from Sun. Then create a batch file (.bat) containing the statement </p> <p>jar.exe cf myfile.jar myfile.js </p> <p>This will create an unsigned JAR file. Then copy this file into the same directory as the .js file (you will need to retain the .js file to preserve support for Internet Explorer). </p> ")
+</script>
+<script>
+adddoc("Use of suid",28," <p>The SUID is the Surrogate Unique Identifier which can be set for each node. It can be used, for example, for linking the menu to a database. There are utility functions which can retrieve this number when a node is clicked. It does not have to be unique within folder tree, but it should refer to some unique record in a database or file. </p> ")
+</script>
+<script>
+adddoc("VB example",29," <p>This gives example Visual Basic code to generate a menu from a database. To be completed.</p> ")
+</script>
+<script>
+ adddoc("Version 3 browser support",30," <P><B>Q:</B> <B>Will it work on version 3 browsers? </B> <p><B>A:</B> The folder tree version 4 script will support Internet Explorer and Netscape version 3 browsers, including Netscape Navigator 16 bit version 3. However, Internet Explorer 3 does not support the use of Java script files, and all version 3 browsers have limitations on the size of Javascript. If you want to support those users who still have these browsers, you will need to embed the Javascript into the HTML document explicitly within &lt;script&gt;&lt;/script&gt; tags. You will also need to separate out long Javascript into chunks, separated within &lt;script&gt;&lt;/script&gt; tags, so that each chunk is within the size limitation.</p> <P>The file document.htm is an example of how to provide maximum cross browser support.</P> <p>Earlier versions of browsers have limitations in the length of Javascript code, so it is unwise to have very large trees unless you separate them into chunks. Internet Explorer version 3 has a limit of 64K on the total size of Javascript in a document.</p> ")
+</script>
+<script>
+adddoc("Can I modify the script?",31," <P><B>Q:</B> <B>Can I modify the script?</B> <p><B>A:</B>You are free to modify the script however you wish, provided the terms of the license are followed. If the modification is of general use, you are strongly recommended to submit it to Essence Associates, so that it can be considered in future development plans. It is obviously best if such modifications are clearly documented. </p> ")
+</script>
+<script>
+adddoc("How can I change backgrounds?",32," <P><B>Q:</B> <B>How can I change the background color of the left frame (the one with the tree)? </B> <P><B>A:</B> Edit the file ftstyle.css. This file defines the CSS styles for the script. Refer to CSS documentation for more details. Alternatively, create a new style sheet file, and set the option styleSheetFile to refer to this file. An example of background style is in the main file index.html, which uses style sheet file ftEssstyle.css. ")
+</script>
+<script>
+ adddoc("Run time options",34," <P><B>Q:</B> <B>Can I change options at run time?</B> <P><B>A:</B> Yes, options can be changed at run time. Global options can be set at any time. For example, a form can be used in the base frame to set values of the options, and the results can immediately be seen in the menu frame. However, options for individual folders need a bit of Javascript code to identify the relevant node. This capability will be fully taken advantage of in the forthcoming graphical menu builder. </p> ")
+</script>
+<script>
+adddoc("Hour glass bug",38," <p>On Netscape Navigator, using styles to define fonts causes problems when reloading. It fails with NN4.5, but is a bit better with NN4.7. As a workaround styles are ignored for NN4.</p> ")
+</script>
+<script>
+ adddoc("Font size bug",39," <p>If the font or icon size is set to a size larger than the icons, the tree icons (plus/minus signs, vertical bars etc.) begin to have gaps between them. </p> ")
+</script>
+<script>
+adddoc("Example 0( default base case)",40," <p>Basic tree menu. All defaults used. <P><A href='ftexampl0.htm' target = '_blank'>Click here to demonstrate.</A> <P><A href='javascript:parent.outputdoc(\"ftexampl0.js\");'>Click here to show menu definition file.</A></p> ")
+</script>
+<script>
+ adddoc("Example 1",41," <p>Menu which starts fully expanded, and with various font settings. Header and footer included. Note icons change as you move mouse over them. Not a nice user interface, but it illustrates the flexible options. </p> <P><A href='ftexampl1.htm' target = '_blank'>Click here to demonstrate.</A> <P><A href='javascript:parent.outputdoc(\"ftexampl1.js\");'>Click here to show menu definition file.</A></p> ")
+</script>
+<script>
+ adddoc("Example 2",42," <p>Simple menu without plus/minus signs. Expands/contracts as you move mouse over icons. </p> <P><A href='ftexampl2.htm' target = '_blank'>Click here to demonstrate.</A> <P><A href='javascript:parent.outputdoc(\"ftexampl2.js\");'>Click here to show menu definition file.</A></p> ")
+</script>
+<script>
+ adddoc("Example 3",43," <p>Same as example 0, but with a node specified to be open on start-up, and two nodes (Athens and United States) with a special status bar or tool tip text. </p> <P><A href='ftexampl3.htm' target = '_blank'>Click here to demonstrate.</A> <P><A href='javascript:parent.outputdoc(\"ftexampl3.js\");'>Click here to show menu definition file.</A></p> ")
+</script>
+<script>
+ adddoc("Example 4",44," <p>A large tree (over 2500 nodes) which uses the jar format. This will work on versions 4 of Internet Explorer and Netscape Navigator. The compressed jar format will only be taken advantage of with Navigator. Also illustrates uses of commonLink option, and use of Javascript code to write out details of selected node.</p> Illustrates use of dynamic downloading from web of incremental menu data, to reduce initial startup download time.<P>Performance depends on CPU speed of client machine. Download of jar file is relatively fast. </P><P>Note that most time is spent creating the data structure for the details, (see file equipdraw.js and equipform.js) rather than the menu itself.</P> <P><A href='ftexampl4.htm' target = '_blank'>Click here to demonstrate.</A> <P><A href='javascript:parent.outputdoc(\"ftexampl4.js\");'>Click here to show menu definition file.</A></p> ")
+</script>
+<script>
+  adddoc("Example 5",45," <p>Illustrates use of secondary storage, to manage a menu with over 20,000 nodes. The level 2 data structure <CODE>node</CODE> is populated, and this is used to dynamically populate the normal level 1 data structures. This improves performance because the <CODE>node</CODE> data structure is simpler than <CODE>folder</CODE> or <CODE>item</CODE>, and the data model for <CODE>node</CODE> takes account of the fact that the same folder or item may appear more than once in the tree structure.</p> <P><A href='ftexampl5.htm' target = '_blank'>Click here to demonstrate.</A> <P><A href='javascript:parent.outputdoc(\"ftexampl5.js\");'>Click here to show menu definition file.</A></p> ")
+</script>
+<script>
+  adddoc("Example 6",46," <p>Illustrates use of secondary storage, and special functions to move through data. Note this example is not complete, but is presented as an illustration.</p> <P><A href='ftexampl6.htm' target = '_blank'>Click here to demonstrate.</A> <P><A href='javascript:parent.outputdoc(\"ftexampl6.js\");'>Click here to show menu definition file.</A></p> ")
+</script>
+<script>
+  adddoc("Example 7",47," <p>Illustrates use of different icon to highlight the last selected node.</p> <P><A href='ftexampl7.htm' target = '_blank'>Click here to demonstrate.</A> <P><A href='javascript:parent.outputdoc(\"ftexampl7.js\");'>Click here to show menu definition file.</A></p> ")
+</script>
+<script>
+  adddoc("Example 8",48," <p>Illustrates use of no top folder displayed, and wrapping of text.</p> <P><A href='ftexampl8.htm' target = '_blank'>Click here to demonstrate.</A> <P><A href='javascript:parent.outputdoc(\"ftexampl8.js\");'>Click here to show menu definition file.</A></p> ")
+</script>
+<script>
+  adddoc("Example 9",49," <p>Illustrates use of mouseovers to expand and collapse menus, no top folder displayed, and no tree icons. This is becoming similar to standard pop up or drop down menus.</p> <P><A href='ftexampl9.htm' target = '_blank'>Click here to demonstrate.</A> <P><A href='javascript:parent.outputdoc(\"ftexampl9.js\");'>Click here to show menu definition file.</A></p> ")
+</script>
+<script>
+  adddoc("Example 10",50," <p>Illustrates use of the same frame for the menu tree and the links.</p> <P><A href='ftexampl10.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 11",51," <p>Illustrates use of the expand all and collapse all functions.</p> <P><A href='ftexampl11.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 12",52," <p>Illustrates use of checkboxes within a form.</p> <P><A href='ftexampl12.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 13",53," <p>Illustrates use of frameless menu.</p> <P><A href='ftexampl13.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 14",54," <p>Illustrates use of menu tree within table.</p> <P><A href='ftexampl14.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 15",55," <p>Illustrates use of repositioning of the tree.</p> <P><A href='ftexampl15.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 16",56," <p>Illustrates use of complex frame structures.</p> <P><A href='ftexampl16.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 17",80," <p>Lots of nodes within one folder.</p> <P><A href='ftexampl17.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 18",81," <p>Setting state from another frame.</p> <P><A href='ftexampl18.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 19",82," <p>Opening link in window.</p> <P><A href='ftexampl19.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 20",83," <p>Complex set of frames and menus.</p> <P><A href='ftexampl20.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 21",84," <p>Radio buttons on specified nodes.</p> <P><A href='ftexampl21.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 22",85," <p>More complex checkboxes.</p> <P><A href='ftexampl22.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 23",86," <p>Setting target for specified nodes.</p> <P><A href='ftexampl23.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 24",87," <p>Frameless menu with checkboxes.</p> <P><A href='ftexampl24.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 25",88," <p>Frameless menu.</p> <P><A href='ftexampl25.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 26",89," <p>Frameless menu within table.</p> <P><A href='ftexampl26.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Example 27",90," <p>Left to right menus.</p> <P><A href='ftexampl27.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Cascade 0",91," <p>Horizontal cascading menus.</p> <P><A href='ftexcasc0.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Cascade 1",92," <p>Horizontal cascading  menus.</p> <P><A href='ftexcasc1.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Cascade 2",93," <p>Vertical cascading menus.</p> <P><A href='ftexcasc2.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Cascade 3",94," <p>Vertical cascading  menus.</p> <P><A href='ftexcasc3.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+
+<script>
+  adddoc("Web Explorer example",63," <p>Illustrates use of Perl/CGI script to dynamically present the structure of files and directories on a web site, in a Windows Explorer style user interface.</p> <P><A href='http://www.essence.co.uk/cgi-bin/essence-explore.pl' target = '_blank'>Click here to demonstrate.</A> <P>Perl source is only available to full license purchasers</p> ")
+</script>
+<script>
+  adddoc("Developer tool",64," <p>Illustrates a prototype tool to help build menus and user interface styles.</p> <P><A href='devtool.htm' target = '_blank'>Click here to demonstrate.</A>")
+</script>
+<script>
+  adddoc("Version 4.00",70," <p>First commercial release. Released 24 March 1999. Base version for future support and version history.")
+</script>
+<script>
+  adddoc("Version 4.01",71," <p>Released 2 April 1999. Includes the following additional features and bug fixes: <UL> <LI>MacIntosh now fully supported with Netscape 4 and above. It also probably works with Netscape 3, but this is as yet untested. Support on MacIntosh for Internet Explorer is also as yet untested. There were previously errors with Netscape 4 on MacIntosh because of the way in which Java applets were loaded.</LI><LI>Improved support for Internet Explorer 4 and above. Extra checks are now included for Java applet security and permissions, particularly where unsigned Java applets are disallowed. If unsigned Java applets are disallowed, Foldertree now degrades to a safer (but lower performance) mode.</LI> <LI>Checks whether Java is enabled, and issues appropriate error message if not. Foldertree then degrades to a safer (but lower performance) mode.</LI> <LI>Corrects Netscape hourglass bug, where the mouse cursor remained an hourglass after clicking a node. It now correctly changes back to the default.</LI> <LI>Corrects wrong URL link in ftbase.htm .</LI>  <LI>Corrects menu structure error in example 5.</LI><LI>Added full support for blank node icons. If the default image file name is set to blank, the icon does not appear. This can be used for example, to blank out all node icons, or to have node icons appear only when the mouse is over them.</LI><LI>Added ability to have space between icons and text links. This is done using new user variables folderIconSpace and documentIconSpace</LI> <LI>When the useTextLinks variable is set, text appears as a link only when it has some reference. This is a more intuitive user interface. Previously, text appeared to be a link even if no link had been defined.</LI></UL>")
+</script>
+<script>
+  adddoc("Version 4.02",72," <p>Released 12 April 1999. Provides support for Netscape Navigator version 3 (16 bit and 32 bit). The documentation has also been adapted so that version 3 browsers can fully use it.")
+</script>
+<script>
+  adddoc("Version 4.03",73," <p>Released 23 April 1999. Improvements to documentation, error checking, and error messages. Provides better feedback on Internet Explorer configuration options. Corrects bug on folder open/close with Netscape version 3. To ease migration between releases, standardised script file name to ft.js (and jar version to ft.jar), and version number is contained at top of this file.")
+</script>
+<script>
+adddoc("To be completed",100,"<P>To be completed")
+</script>
+<script>
+ adddoc("Setting cascading node width",201,"The node width may be set by<p><code>folderid.setWidth(menuWidth, textWidth) </code></p> <p>where:</p> <p>folderid is the identifier of the folder, as specified in the menu definition file <br> menuWidth and textWidth are the widths in pixels of the node and text portion respectively.</p> ")
+</script>
+<script>
+ adddoc("Setting cascading node height",202,"The node height may be set by<p><code>folderid.setHeight(menuHeight) </code></p> <p>where:</p> <p>folderid is the identifier of the folder, as specified in the menu definition file <br> menuHeight is the height in pixels of the node.</p> ")
+</script>
+<script>
+ adddoc("Setting cascading node background images",203,"The node backgrounds may be set by<p><code>folderid.setBack(imageName, imageNameOver) </code></p> <p>where:</p> <p>folderid is the identifier of the folder, as specified in the menu definition file <br> imagename and imageNameOver are the names of the images, previosuly set using addIcon, of the background image and background image for mouse overs respectively.</p> ")
+</script>
+
+
+</head>
+
+<FRAMESET cols="200,*" onLoad="self.blank()"> 
+  <FRAME SRC = "ftblank.htm" name="menufrm" > 
+  <FRAME SRC="ftbase.htm" name="basefrm"> 
+</FRAMESET> 
+
+</HTML>

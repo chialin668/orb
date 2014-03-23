@@ -1,0 +1,716 @@
+2003-04-02 14:19:21 HostConfig[localhost]: Deploying configuration descriptor admin.xml
+2003-04-02 14:19:27 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2003-04-02 14:19:27 WebappLoader[/manager]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\manager
+2003-04-02 14:19:27 ContextConfig[/manager]: Configured an authenticator for method BASIC
+2003-04-02 14:19:27 StandardManager[/manager]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 14:19:27 StandardManager[/manager]: Seeding of random number generator has been completed
+2003-04-02 14:19:27 StandardWrapper[/manager:default]: Loading container servlet default
+2003-04-02 14:19:27 StandardWrapper[/manager:invoker]: Loading container servlet invoker
+2003-04-02 14:19:27 HostConfig[localhost]: Deploying web application directory Copy of orb
+2003-04-02 14:19:27 StandardHost[localhost]: Installing web application at context path /Copy of orb from URL file:C:\Chialin\Tomcat41\webapps\Copy of orb
+2003-04-02 14:19:27 WebappLoader[/Copy of orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\Copy of orb
+2003-04-02 14:19:27 WebappLoader[/Copy of orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\classes
+2003-04-02 14:19:27 WebappLoader[/Copy of orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\lib\oraclejdbc.jar
+2003-04-02 14:19:27 ContextConfig[/Copy of orb]: WARNING: Security role name tomcat used in an <auth-constraint> without being defined in a <security-role>
+2003-04-02 14:19:27 ContextConfig[/Copy of orb]: WARNING: Security role name role1 used in an <auth-constraint> without being defined in a <security-role>
+2003-04-02 14:19:28 ContextConfig[/Copy of orb]: Configured an authenticator for method FORM
+2003-04-02 14:19:28 StandardManager[/Copy of orb]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 14:19:28 StandardManager[/Copy of orb]: Seeding of random number generator has been completed
+2003-04-02 14:19:28 StandardWrapper[/Copy of orb:default]: Loading container servlet default
+2003-04-02 14:19:28 StandardWrapper[/Copy of orb:invoker]: Loading container servlet invoker
+2003-04-02 14:19:28 HostConfig[localhost]: Deploying web application directory gid
+2003-04-02 14:19:28 StandardHost[localhost]: Installing web application at context path /gid from URL file:C:\Chialin\Tomcat41\webapps\gid
+2003-04-02 14:19:28 WebappLoader[/gid]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\gid
+2003-04-02 14:19:28 WebappLoader[/gid]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\classes
+2003-04-02 14:19:28 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\lastmod.jar
+2003-04-02 14:19:28 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\oraclejdbc.jar
+2003-04-02 14:19:28 StandardManager[/gid]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 14:19:28 StandardManager[/gid]: Seeding of random number generator has been completed
+2003-04-02 14:19:28 StandardWrapper[/gid:default]: Loading container servlet default
+2003-04-02 14:19:28 StandardWrapper[/gid:invoker]: Loading container servlet invoker
+2003-04-02 14:19:28 HostConfig[localhost]: Deploying web application directory orb
+2003-04-02 14:19:28 StandardHost[localhost]: Installing web application at context path /orb from URL file:C:\Chialin\Tomcat41\webapps\orb
+2003-04-02 14:19:28 WebappLoader[/orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+2003-04-02 14:19:28 WebappLoader[/orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+2003-04-02 14:19:28 WebappLoader[/orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+2003-04-02 14:19:28 WebappLoader[/orb]: Deploy JAR /WEB-INF/lib/xerces.jar to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\xerces.jar
+2003-04-02 14:19:29 StandardManager[/orb]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 14:19:29 StandardManager[/orb]: Seeding of random number generator has been completed
+2003-04-02 14:19:29 StandardWrapper[/orb:default]: Loading container servlet default
+2003-04-02 14:19:29 StandardWrapper[/orb:invoker]: Loading container servlet invoker
+2003-04-02 14:19:29 HostConfig[localhost]: Deploying web application directory pird
+2003-04-02 14:19:29 StandardHost[localhost]: Installing web application at context path /pird from URL file:C:\Chialin\Tomcat41\webapps\pird
+2003-04-02 14:19:29 WebappLoader[/pird]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\pird
+2003-04-02 14:19:29 WebappLoader[/pird]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\classes
+2003-04-02 14:19:29 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\lastmod.jar
+2003-04-02 14:19:29 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\oraclejdbc.jar
+2003-04-02 14:19:29 StandardManager[/pird]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 14:19:29 StandardManager[/pird]: Seeding of random number generator has been completed
+2003-04-02 14:19:29 StandardWrapper[/pird:default]: Loading container servlet default
+2003-04-02 14:19:29 StandardWrapper[/pird:invoker]: Loading container servlet invoker
+2003-04-02 14:19:29 HostConfig[localhost]: Deploying web application directory ROOT
+2003-04-02 14:19:29 StandardHost[localhost]: Installing web application at context path  from URL file:C:\Chialin\Tomcat41\webapps\ROOT
+2003-04-02 14:19:29 WebappLoader[]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\_
+2003-04-02 14:19:29 StandardManager[]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 14:19:29 StandardManager[]: Seeding of random number generator has been completed
+2003-04-02 14:19:29 StandardWrapper[:default]: Loading container servlet default
+2003-04-02 14:19:29 StandardWrapper[:invoker]: Loading container servlet invoker
+2003-04-02 14:19:30 HostConfig[localhost]: Deploying web application directory tomcat-docs
+2003-04-02 14:19:30 StandardHost[localhost]: Installing web application at context path /tomcat-docs from URL file:C:\Chialin\Tomcat41\webapps\tomcat-docs
+2003-04-02 14:19:30 WebappLoader[/tomcat-docs]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\tomcat-docs
+2003-04-02 14:19:30 StandardManager[/tomcat-docs]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 14:19:30 StandardManager[/tomcat-docs]: Seeding of random number generator has been completed
+2003-04-02 14:19:30 StandardWrapper[/tomcat-docs:default]: Loading container servlet default
+2003-04-02 14:19:30 StandardWrapper[/tomcat-docs:invoker]: Loading container servlet invoker
+2003-04-02 14:19:30 HostConfig[localhost]: Deploying web application directory webdav
+2003-04-02 14:19:30 StandardHost[localhost]: Installing web application at context path /webdav from URL file:C:\Chialin\Tomcat41\webapps\webdav
+2003-04-02 14:19:30 WebappLoader[/webdav]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\webdav
+2003-04-02 14:19:30 StandardManager[/webdav]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 14:19:30 StandardManager[/webdav]: Seeding of random number generator has been completed
+2003-04-02 14:19:30 StandardWrapper[/webdav:default]: Loading container servlet default
+2003-04-02 14:19:30 StandardWrapper[/webdav:invoker]: Loading container servlet invoker
+2003-04-02 15:56:20 Error compiling file: C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\/ERD_0002dxml_jsp.java     [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:46: illegal character: \92
+String xml = request.getParameter("xml");\
+                                         ^
+1 error
+
+2003-04-02 15:56:20 Info: Compile: javaFileName=C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\/ERD_0002dxml_jsp.java
+    classpath=/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/xerces.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/xerces.jar;C:/Chialin/Tomcat41/shared/classes/;C:/Chialin/Tomcat41/common/classes/;C:/Chialin/Tomcat41/common/endorsed/xercesImpl.jar;C:/Chialin/Tomcat41/common/endorsed/xmlParserAPIs.jar;C:/Chialin/Tomcat41/common/lib/activation.jar;C:/Chialin/Tomcat41/common/lib/ant.jar;C:/Chialin/Tomcat41/common/lib/commons-collections.jar;C:/Chialin/Tomcat41/common/lib/commons-dbcp.jar;C:/Chialin/Tomcat41/common/lib/commons-logging-api.jar;C:/Chialin/Tomcat41/common/lib/commons-pool.jar;C:/Chialin/Tomcat41/common/lib/jasper-compiler.jar;C:/Chialin/Tomcat41/common/lib/jasper-runtime.jar;C:/Chialin/Tomcat41/common/lib/jdbc2_0-stdext.jar;C:/Chialin/Tomcat41/common/lib/jndi.jar;C:/Chialin/Tomcat41/common/lib/jta.jar;C:/Chialin/Tomcat41/common/lib/mail.jar;C:/Chialin/Tomcat41/common/lib/naming-common.jar;C:/Chialin/Tomcat41/common/lib/naming-factory.jar;C:/Chialin/Tomcat41/common/lib/naming-resources.jar;C:/Chialin/Tomcat41/common/lib/servlet.jar;C:/Chialin/Tomcat41/common/lib/tools.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\xerces.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\xerces.jar
+     cp=C:\Chialin\Tomcat41\shared\classes
+     cp=C:\Chialin\Tomcat41\common\classes
+     cp=C:\Chialin\Tomcat41\common\endorsed\xercesImpl.jar
+     cp=C:\Chialin\Tomcat41\common\endorsed\xmlParserAPIs.jar
+     cp=C:\Chialin\Tomcat41\common\lib\activation.jar
+     cp=C:\Chialin\Tomcat41\common\lib\ant.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-collections.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-dbcp.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-logging-api.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-pool.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-compiler.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-runtime.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jdbc2_0-stdext.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jndi.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jta.jar
+     cp=C:\Chialin\Tomcat41\common\lib\mail.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-common.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-factory.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-resources.jar
+     cp=C:\Chialin\Tomcat41\common\lib\servlet.jar
+     cp=C:\Chialin\Tomcat41\common\lib\tools.jar
+     work dir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    srcDir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    include=jsp/erd/ERD_0002dxml_jsp.java
+Exception compiling Compile failed; see the compiler error output for details.
+
+2003-04-02 15:56:20 Exception: 
+Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:842)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:308)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:536)
+
+2003-04-02 15:56:20 StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP
+
+An error occurred at line: 5 in the jsp file: /jsp/erd/ERD-xml.jsp
+
+Generated servlet error:
+    [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:46: illegal character: \92
+String xml = request.getParameter("xml");\
+                                         ^
+1 error
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:130)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:293)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:340)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:536)
+
+2003-04-02 17:29:18 Error compiling file: C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\/ERD_0002dxml_jsp.java     [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:52: xml is already defined in _jspService(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+String xml = request.getParameter("mailcontent");
+       ^
+1 error
+
+2003-04-02 17:29:18 Info: Compile: javaFileName=C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\/ERD_0002dxml_jsp.java
+    classpath=/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/xerces.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/xerces.jar;C:/Chialin/Tomcat41/shared/classes/;C:/Chialin/Tomcat41/common/classes/;C:/Chialin/Tomcat41/common/endorsed/xercesImpl.jar;C:/Chialin/Tomcat41/common/endorsed/xmlParserAPIs.jar;C:/Chialin/Tomcat41/common/lib/activation.jar;C:/Chialin/Tomcat41/common/lib/ant.jar;C:/Chialin/Tomcat41/common/lib/commons-collections.jar;C:/Chialin/Tomcat41/common/lib/commons-dbcp.jar;C:/Chialin/Tomcat41/common/lib/commons-logging-api.jar;C:/Chialin/Tomcat41/common/lib/commons-pool.jar;C:/Chialin/Tomcat41/common/lib/jasper-compiler.jar;C:/Chialin/Tomcat41/common/lib/jasper-runtime.jar;C:/Chialin/Tomcat41/common/lib/jdbc2_0-stdext.jar;C:/Chialin/Tomcat41/common/lib/jndi.jar;C:/Chialin/Tomcat41/common/lib/jta.jar;C:/Chialin/Tomcat41/common/lib/mail.jar;C:/Chialin/Tomcat41/common/lib/naming-common.jar;C:/Chialin/Tomcat41/common/lib/naming-factory.jar;C:/Chialin/Tomcat41/common/lib/naming-resources.jar;C:/Chialin/Tomcat41/common/lib/servlet.jar;C:/Chialin/Tomcat41/common/lib/tools.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\xerces.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\xerces.jar
+     cp=C:\Chialin\Tomcat41\shared\classes
+     cp=C:\Chialin\Tomcat41\common\classes
+     cp=C:\Chialin\Tomcat41\common\endorsed\xercesImpl.jar
+     cp=C:\Chialin\Tomcat41\common\endorsed\xmlParserAPIs.jar
+     cp=C:\Chialin\Tomcat41\common\lib\activation.jar
+     cp=C:\Chialin\Tomcat41\common\lib\ant.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-collections.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-dbcp.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-logging-api.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-pool.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-compiler.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-runtime.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jdbc2_0-stdext.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jndi.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jta.jar
+     cp=C:\Chialin\Tomcat41\common\lib\mail.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-common.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-factory.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-resources.jar
+     cp=C:\Chialin\Tomcat41\common\lib\servlet.jar
+     cp=C:\Chialin\Tomcat41\common\lib\tools.jar
+     work dir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    srcDir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    include=jsp/erd/ERD_0002dxml_jsp.java
+Exception compiling Compile failed; see the compiler error output for details.
+
+2003-04-02 17:29:18 Exception: 
+Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:842)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:308)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:536)
+
+2003-04-02 17:29:18 StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP
+
+An error occurred at line: 5 in the jsp file: /jsp/erd/ERD-xml.jsp
+
+Generated servlet error:
+    [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:52: xml is already defined in _jspService(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+String xml = request.getParameter("mailcontent");
+       ^
+1 error
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:130)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:293)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:340)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:536)
+
+2003-04-02 21:05:23 Error compiling file: C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\/ERD_0002dxml_jsp.java     [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:48: unclosed string literal
+System.out.println("-------> xml);
+                   ^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:48: ')' expected
+System.out.println("-------> xml);
+                                  ^
+2 errors
+
+2003-04-02 21:05:23 Info: Compile: javaFileName=C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\/ERD_0002dxml_jsp.java
+    classpath=/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/xerces.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/xerces.jar;C:/Chialin/Tomcat41/shared/classes/;C:/Chialin/Tomcat41/common/classes/;C:/Chialin/Tomcat41/common/endorsed/xercesImpl.jar;C:/Chialin/Tomcat41/common/endorsed/xmlParserAPIs.jar;C:/Chialin/Tomcat41/common/lib/activation.jar;C:/Chialin/Tomcat41/common/lib/ant.jar;C:/Chialin/Tomcat41/common/lib/commons-collections.jar;C:/Chialin/Tomcat41/common/lib/commons-dbcp.jar;C:/Chialin/Tomcat41/common/lib/commons-logging-api.jar;C:/Chialin/Tomcat41/common/lib/commons-pool.jar;C:/Chialin/Tomcat41/common/lib/jasper-compiler.jar;C:/Chialin/Tomcat41/common/lib/jasper-runtime.jar;C:/Chialin/Tomcat41/common/lib/jdbc2_0-stdext.jar;C:/Chialin/Tomcat41/common/lib/jndi.jar;C:/Chialin/Tomcat41/common/lib/jta.jar;C:/Chialin/Tomcat41/common/lib/mail.jar;C:/Chialin/Tomcat41/common/lib/naming-common.jar;C:/Chialin/Tomcat41/common/lib/naming-factory.jar;C:/Chialin/Tomcat41/common/lib/naming-resources.jar;C:/Chialin/Tomcat41/common/lib/servlet.jar;C:/Chialin/Tomcat41/common/lib/tools.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\xerces.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\xerces.jar
+     cp=C:\Chialin\Tomcat41\shared\classes
+     cp=C:\Chialin\Tomcat41\common\classes
+     cp=C:\Chialin\Tomcat41\common\endorsed\xercesImpl.jar
+     cp=C:\Chialin\Tomcat41\common\endorsed\xmlParserAPIs.jar
+     cp=C:\Chialin\Tomcat41\common\lib\activation.jar
+     cp=C:\Chialin\Tomcat41\common\lib\ant.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-collections.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-dbcp.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-logging-api.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-pool.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-compiler.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-runtime.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jdbc2_0-stdext.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jndi.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jta.jar
+     cp=C:\Chialin\Tomcat41\common\lib\mail.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-common.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-factory.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-resources.jar
+     cp=C:\Chialin\Tomcat41\common\lib\servlet.jar
+     cp=C:\Chialin\Tomcat41\common\lib\tools.jar
+     work dir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    srcDir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    include=jsp/erd/ERD_0002dxml_jsp.java
+Exception compiling Compile failed; see the compiler error output for details.
+
+2003-04-02 21:05:23 Exception: 
+Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:842)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:308)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:536)
+
+2003-04-02 21:05:23 StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP
+
+An error occurred at line: 5 in the jsp file: /jsp/erd/ERD-xml.jsp
+
+Generated servlet error:
+    [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:48: unclosed string literal
+System.out.println("-------> xml);
+                   ^
+
+
+
+An error occurred at line: 5 in the jsp file: /jsp/erd/ERD-xml.jsp
+
+Generated servlet error:
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:48: ')' expected
+System.out.println("-------> xml);
+                                  ^
+2 errors
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:130)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:293)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:340)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:536)
+
+2003-04-02 21:05:24 Error compiling file: C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\/ERD_0002dxml_jsp.java     [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:48: unclosed string literal
+System.out.println("-------> xml);
+                   ^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:48: ')' expected
+System.out.println("-------> xml);
+                                  ^
+2 errors
+
+2003-04-02 21:05:24 Info: Compile: javaFileName=C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\/ERD_0002dxml_jsp.java
+    classpath=/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/xerces.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/xerces.jar;C:/Chialin/Tomcat41/shared/classes/;C:/Chialin/Tomcat41/common/classes/;C:/Chialin/Tomcat41/common/endorsed/xercesImpl.jar;C:/Chialin/Tomcat41/common/endorsed/xmlParserAPIs.jar;C:/Chialin/Tomcat41/common/lib/activation.jar;C:/Chialin/Tomcat41/common/lib/ant.jar;C:/Chialin/Tomcat41/common/lib/commons-collections.jar;C:/Chialin/Tomcat41/common/lib/commons-dbcp.jar;C:/Chialin/Tomcat41/common/lib/commons-logging-api.jar;C:/Chialin/Tomcat41/common/lib/commons-pool.jar;C:/Chialin/Tomcat41/common/lib/jasper-compiler.jar;C:/Chialin/Tomcat41/common/lib/jasper-runtime.jar;C:/Chialin/Tomcat41/common/lib/jdbc2_0-stdext.jar;C:/Chialin/Tomcat41/common/lib/jndi.jar;C:/Chialin/Tomcat41/common/lib/jta.jar;C:/Chialin/Tomcat41/common/lib/mail.jar;C:/Chialin/Tomcat41/common/lib/naming-common.jar;C:/Chialin/Tomcat41/common/lib/naming-factory.jar;C:/Chialin/Tomcat41/common/lib/naming-resources.jar;C:/Chialin/Tomcat41/common/lib/servlet.jar;C:/Chialin/Tomcat41/common/lib/tools.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\xerces.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\xerces.jar
+     cp=C:\Chialin\Tomcat41\shared\classes
+     cp=C:\Chialin\Tomcat41\common\classes
+     cp=C:\Chialin\Tomcat41\common\endorsed\xercesImpl.jar
+     cp=C:\Chialin\Tomcat41\common\endorsed\xmlParserAPIs.jar
+     cp=C:\Chialin\Tomcat41\common\lib\activation.jar
+     cp=C:\Chialin\Tomcat41\common\lib\ant.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-collections.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-dbcp.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-logging-api.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-pool.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-compiler.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-runtime.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jdbc2_0-stdext.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jndi.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jta.jar
+     cp=C:\Chialin\Tomcat41\common\lib\mail.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-common.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-factory.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-resources.jar
+     cp=C:\Chialin\Tomcat41\common\lib\servlet.jar
+     cp=C:\Chialin\Tomcat41\common\lib\tools.jar
+     work dir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    srcDir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    include=jsp/erd/ERD_0002dxml_jsp.java
+Exception compiling Compile failed; see the compiler error output for details.
+
+2003-04-02 21:05:24 Exception: 
+Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:842)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:308)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:536)
+
+2003-04-02 21:05:25 StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP
+
+An error occurred at line: 5 in the jsp file: /jsp/erd/ERD-xml.jsp
+
+Generated servlet error:
+    [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:48: unclosed string literal
+System.out.println("-------> xml);
+                   ^
+
+
+
+An error occurred at line: 5 in the jsp file: /jsp/erd/ERD-xml.jsp
+
+Generated servlet error:
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\erd\ERD_0002dxml_jsp.java:48: ')' expected
+System.out.println("-------> xml);
+                                  ^
+2 errors
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:130)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:293)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:340)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:536)
+
+2003-04-02 21:45:55 StandardHost[localhost]: Removing web application at context path /orb
+2003-04-02 21:45:55 StandardHost[localhost]: Removing web application at context path /admin
+2003-04-02 21:45:55 StandardHost[localhost]: Removing web application at context path /webdav
+2003-04-02 21:45:55 StandardHost[localhost]: Removing web application at context path /pird
+2003-04-02 21:45:55 StandardHost[localhost]: Removing web application at context path /examples
+2003-04-02 21:45:55 StandardHost[localhost]: Removing web application at context path /tomcat-docs
+2003-04-02 21:45:55 StandardHost[localhost]: Removing web application at context path /Copy of orb
+2003-04-02 21:45:55 StandardHost[localhost]: Removing web application at context path /gid
+2003-04-02 21:45:55 StandardHost[localhost]: Removing web application at context path 
+2003-04-02 21:45:55 StandardHost[localhost]: Removing web application at context path /manager
+2003-04-02 21:46:09 HostConfig[localhost]: Deploying configuration descriptor admin.xml
+2003-04-02 21:46:17 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2003-04-02 21:46:17 WebappLoader[/manager]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\manager
+2003-04-02 21:46:17 ContextConfig[/manager]: Configured an authenticator for method BASIC
+2003-04-02 21:46:17 StandardManager[/manager]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 21:46:17 StandardManager[/manager]: Seeding of random number generator has been completed
+2003-04-02 21:46:17 StandardWrapper[/manager:default]: Loading container servlet default
+2003-04-02 21:46:17 StandardWrapper[/manager:invoker]: Loading container servlet invoker
+2003-04-02 21:46:17 HostConfig[localhost]: Deploying web application directory Copy of orb
+2003-04-02 21:46:17 StandardHost[localhost]: Installing web application at context path /Copy of orb from URL file:C:\Chialin\Tomcat41\webapps\Copy of orb
+2003-04-02 21:46:17 WebappLoader[/Copy of orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\Copy of orb
+2003-04-02 21:46:17 WebappLoader[/Copy of orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\classes
+2003-04-02 21:46:17 WebappLoader[/Copy of orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\lib\oraclejdbc.jar
+2003-04-02 21:46:17 ContextConfig[/Copy of orb]: WARNING: Security role name tomcat used in an <auth-constraint> without being defined in a <security-role>
+2003-04-02 21:46:17 ContextConfig[/Copy of orb]: WARNING: Security role name role1 used in an <auth-constraint> without being defined in a <security-role>
+2003-04-02 21:46:17 ContextConfig[/Copy of orb]: Configured an authenticator for method FORM
+2003-04-02 21:46:17 StandardManager[/Copy of orb]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 21:46:17 StandardManager[/Copy of orb]: Seeding of random number generator has been completed
+2003-04-02 21:46:17 StandardWrapper[/Copy of orb:default]: Loading container servlet default
+2003-04-02 21:46:17 StandardWrapper[/Copy of orb:invoker]: Loading container servlet invoker
+2003-04-02 21:46:17 HostConfig[localhost]: Deploying web application directory gid
+2003-04-02 21:46:17 StandardHost[localhost]: Installing web application at context path /gid from URL file:C:\Chialin\Tomcat41\webapps\gid
+2003-04-02 21:46:17 WebappLoader[/gid]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\gid
+2003-04-02 21:46:17 WebappLoader[/gid]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\classes
+2003-04-02 21:46:17 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\lastmod.jar
+2003-04-02 21:46:17 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\oraclejdbc.jar
+2003-04-02 21:46:18 StandardManager[/gid]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 21:46:18 StandardManager[/gid]: Seeding of random number generator has been completed
+2003-04-02 21:46:18 StandardWrapper[/gid:default]: Loading container servlet default
+2003-04-02 21:46:18 StandardWrapper[/gid:invoker]: Loading container servlet invoker
+2003-04-02 21:46:18 HostConfig[localhost]: Deploying web application directory orb
+2003-04-02 21:46:18 StandardHost[localhost]: Installing web application at context path /orb from URL file:C:\Chialin\Tomcat41\webapps\orb
+2003-04-02 21:46:18 WebappLoader[/orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+2003-04-02 21:46:18 WebappLoader[/orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+2003-04-02 21:46:18 WebappLoader[/orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+2003-04-02 21:46:18 WebappLoader[/orb]: Deploy JAR /WEB-INF/lib/xerces.jar to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\xerces.jar
+2003-04-02 21:46:19 StandardManager[/orb]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 21:46:19 StandardManager[/orb]: Seeding of random number generator has been completed
+2003-04-02 21:46:19 StandardWrapper[/orb:default]: Loading container servlet default
+2003-04-02 21:46:19 StandardWrapper[/orb:invoker]: Loading container servlet invoker
+2003-04-02 21:46:19 HostConfig[localhost]: Deploying web application directory pird
+2003-04-02 21:46:19 StandardHost[localhost]: Installing web application at context path /pird from URL file:C:\Chialin\Tomcat41\webapps\pird
+2003-04-02 21:46:19 WebappLoader[/pird]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\pird
+2003-04-02 21:46:19 WebappLoader[/pird]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\classes
+2003-04-02 21:46:19 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\lastmod.jar
+2003-04-02 21:46:19 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\oraclejdbc.jar
+2003-04-02 21:46:19 StandardManager[/pird]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 21:46:19 StandardManager[/pird]: Seeding of random number generator has been completed
+2003-04-02 21:46:19 StandardWrapper[/pird:default]: Loading container servlet default
+2003-04-02 21:46:19 StandardWrapper[/pird:invoker]: Loading container servlet invoker
+2003-04-02 21:46:19 HostConfig[localhost]: Deploying web application directory ROOT
+2003-04-02 21:46:19 StandardHost[localhost]: Installing web application at context path  from URL file:C:\Chialin\Tomcat41\webapps\ROOT
+2003-04-02 21:46:19 WebappLoader[]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\_
+2003-04-02 21:46:19 StandardManager[]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 21:46:19 StandardManager[]: Seeding of random number generator has been completed
+2003-04-02 21:46:19 StandardWrapper[:default]: Loading container servlet default
+2003-04-02 21:46:19 StandardWrapper[:invoker]: Loading container servlet invoker
+2003-04-02 21:46:19 HostConfig[localhost]: Deploying web application directory tomcat-docs
+2003-04-02 21:46:19 StandardHost[localhost]: Installing web application at context path /tomcat-docs from URL file:C:\Chialin\Tomcat41\webapps\tomcat-docs
+2003-04-02 21:46:19 WebappLoader[/tomcat-docs]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\tomcat-docs
+2003-04-02 21:46:19 StandardManager[/tomcat-docs]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 21:46:19 StandardManager[/tomcat-docs]: Seeding of random number generator has been completed
+2003-04-02 21:46:19 StandardWrapper[/tomcat-docs:default]: Loading container servlet default
+2003-04-02 21:46:19 StandardWrapper[/tomcat-docs:invoker]: Loading container servlet invoker
+2003-04-02 21:46:19 HostConfig[localhost]: Deploying web application directory webdav
+2003-04-02 21:46:19 StandardHost[localhost]: Installing web application at context path /webdav from URL file:C:\Chialin\Tomcat41\webapps\webdav
+2003-04-02 21:46:19 WebappLoader[/webdav]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\webdav
+2003-04-02 21:46:20 StandardManager[/webdav]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 21:46:20 StandardManager[/webdav]: Seeding of random number generator has been completed
+2003-04-02 21:46:20 StandardWrapper[/webdav:default]: Loading container servlet default
+2003-04-02 21:46:20 StandardWrapper[/webdav:invoker]: Loading container servlet invoker

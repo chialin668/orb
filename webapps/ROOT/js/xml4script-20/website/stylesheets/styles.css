@@ -1,0 +1,358 @@
+/*
+// =========================================================================
+//
+// styles.css -  stylesheet definitions for the main XML for <SCRIPT> web site
+//
+// =========================================================================
+//
+// Copyright (C) 2001, 2002 - David Joham (djoham@yahoo.com)
+//
+// This library is free software; you can redistribute it and/or
+// modify it under the terms of the GNU Lesser General Public
+// License as published by the Free Software Foundation; either
+// version 2.1 of the License, or (at your option) any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+// Lesser General Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public
+// License along with this library; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+*/
+
+/*********************************  A ELEMENTS  *********************************/
+a {
+    text-decoration: none;
+    color: #101862;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #101862;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+a.documentationLink {
+    font-weight: bold;
+    color: #101862;
+}
+
+a.documentationLink:hover {
+    color: red;
+}
+
+a.navigation {
+    color: #FFFFFF;
+}
+
+a.navigation:visited {
+    color: #FFFFFF;
+}
+
+a.navigation:hover {
+    color: red;
+}
+
+/*********************************  BODY ELEMENTS  *********************************/
+
+body {
+    background: #0000FF; /* used to make NS4 have a background that at least sorta looks good */
+    background-image: url(../images/page_background.gif);
+    background-repeat: repeat;
+    margin: 0px 0px 0px 0px;
+    font-family: verdana,geneva,arial,helvetica,sans-serif;
+    font-size: 12px;
+}
+
+
+/*********************************  DIV ELEMENTS  *********************************/
+
+div.accent {
+    font-weight: bolder;
+    color: #101862;
+}
+
+div.caseStudyImage {
+    text-align: center;
+}
+
+div.centerCode {
+    text-align: center;
+}
+
+div.contentDiv {
+    z-index:1;
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    width:495px;
+    margin: 0px 0px 0px 0px;
+    cursor: default;
+    top: 107px;
+    left: 269px;
+    border: 2px solid #333;
+    background-image: url(../images/content_background.gif);
+    background-repeat: repeat;
+}
+
+div.contentDivBackground {
+    z-index:3;
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    width:485px;
+    margin: 0px 0px 0px 0px;
+    cursor: default;
+    top: 0px;left: 0px;
+    background-image: url(../images/content_gradiant.gif);
+    background-repeat: repeat-x;
+}
+
+div.currentLocation {
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+
+div.docTitle {
+    font-weight: bolder;
+    color: #101862;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: solid #101862 1px;
+}
+
+div.header {
+    font-weight: bolder;
+}
+
+
+div.hoverNavigation {
+    width: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+div.indentFour {
+    padding-left: 40px;
+}
+
+div.indentOne {
+    padding-left: 10px;
+}
+
+div.indentThree {
+    padding-left: 30px;
+}
+
+div.indentTwo {
+    padding-left: 20px;
+}
+
+
+div.leftImage {
+    z-index:2;
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    width:213px;
+    height:796px;
+    margin: 0px 10px 0px 0px;
+    cursor: default;
+    top: 11px;left: 10px;
+    background-image: url(../images/menu.jpg);
+    background-repeat: no-repeat;
+}
+
+div.linkBar {
+    z-index:3;
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    width:213px;
+    margin: 0px 10px 0px 0px;
+    top: 275px;
+    left: 50px;
+}
+
+div.mainContentArea {
+    z-index:1;
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    width:100%;
+    height:600px;
+    margin: 0px 0px 0px 0px;
+    cursor: default;
+    top: 0px;left: 0px;
+    background-image: url(../images/page_gradiant.gif);
+    background-repeat: repeat-x;
+}
+
+div.pageHeader {
+    font-weight: bolder;
+    color: #101862;
+    border-bottom: solid #101862 1px;
+    text-align: center;
+}
+
+div.param {
+    font-weight: bolder;
+    color: #101862;
+}
+
+
+div.tabBar {
+    vertical-alignment: bottom;
+    border-bottom: solid black 1px;
+    cursor: pointer;
+    text-align: center;
+    height: 26px;
+}
+
+div.tabContent {
+    position: relative;
+    display: none;
+}
+
+div.titleLogo {
+     z-index:3;
+     position: absolute;
+     padding: 0px 0px 0px 0px;
+     width:459px;
+     height:75px;
+     margin: 0px 0px 0px 0px;
+     cursor: default;
+     top: 12px;
+     left: 287px;
+}
+
+
+/*********************************  DT ELEMENTS  *********************************/
+
+dt {
+    font-weight: bolder;
+}
+
+
+/*********************************  IMG ELEMENTS  *********************************/
+
+
+img.navImage {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 175px;
+    height: 796px;
+}
+
+
+img.sourceForgeImage {
+    position: absolute;
+    top: 150px;
+    left: 85px;
+    border: none;
+    z-index: 3;
+    height: 31px;
+    width: 88px;
+}
+
+
+img.thumbnailImage {
+    border: none;
+}
+
+
+img.titlePicture {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    border-bottom: solid black 2px;
+}
+
+img.validHTMLImage {
+    position: absolute;
+    top: 110px;
+    left: 85px;
+    border: none;
+    z-index: 3;
+    height: 31px;
+    width: 88px;
+}
+
+
+/*********************************  INPUT ELEMENTS  *********************************/
+
+input.launchButton {
+    background-color: #101C73;
+    color: #FFFFFF;
+}
+
+/*********************************  SPAN ELEMENTS  *********************************/
+
+span.boldHeading {
+    font-weight: bolder;
+}
+
+
+span.domTabText {
+    position: absolute;
+    top: 10px;
+    left: 230px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+
+span.faqTabText {
+    position: absolute;
+    top: 10px;
+    left: 140px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+span.generalTabText {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+span.miscTabText {
+    position: absolute;
+    top: 10px;
+    left: 420px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+
+span.saxTabText {
+    position: absolute;
+    top: 10px;
+    left: 330px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+

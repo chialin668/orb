@@ -1,0 +1,35 @@
+h3 {
+	color: red
+}
+
+/*** CL_DB_TABLE ***/
+.CL_DB_TABLE {
+	position:relative;
+	cursor:hand;
+	background: #EEEEEE;
+	}
+
+/*** CL_HTML_TABLE ***/
+.CL_HTML_TABLE {
+		font: 10pt;
+		background: #EEEEEE;
+		margin: 0px;
+	}
+
+/*** CL_TEXT_INPUT ***/
+.CL_TEXT_INPUT {
+		font: 8pt;
+		background: #FFFFFF;
+		margin: 0px;
+	}
+
+/*** CL_COMMAND_TEXT ***/
+.CL_COMMAND_TEXT {
+	font: 8pt;
+}
+
+/*** CL_COMMAND ***/
+.command {
+	font: 8pt;
+}
+

@@ -1,0 +1,4025 @@
+
+<HTML>
+<HEAD>
+
+<META NAME="Generator" CONTENT="Quadralay WebWorks Publisher 5.0.2">
+<META NAME="Page" CONTENT="DefaultLast">
+<META NAME="Title" CONTENT=" Statistics Descriptions, 2 of 2">
+
+
+<TITLE> Statistics Descriptions, 2 of 2</TITLE>
+
+<LINK REL="home" HREF="../../products.htm" TITLE="Library">
+<LINK REL="toc" HREF="toc.htm" TITLE="Contents">
+<LINK REL="index" HREF="index.htm" TITLE="Index">
+<LINK REL="copyright" HREF="../../dcommon/html/cpyr.htm" TITLE="Copyright">
+<LINK REL="up" HREF="toc.htm" TITLE="Up">
+<LINK REL="next" HREF="index.htm" TITLE="Next">
+<LINK REL="previous" HREF="apc.htm" TITLE="Previous">
+
+
+</HEAD>
+
+
+
+
+<A NAME="30176"></A>
+<!--TOC=h1-"30176"-->
+<H2 CLASS="H1"><FONT FACE="Arial, Helvetica, sans-serif" COLOR="#330099"> Statistics Descriptions</FONT></H2>
+
+
+<!--/TOC=h1-->
+
+<A NAME="2213"></A>
+<P CLASS="BP">
+This section describes the statistics stored in the <CODE>V$SESSTAT</CODE> and <CODE>V$SYSSTAT</CODE> views. The statistics are listed here in alphabetical order.
+</P>
+
+<A NAME="18742"></A>
+<P CLASS="BP">
+The CLASS column contains a number representing one or more statistics class. The following class numbers are additive:
+</P>
+
+<UL CLASS="LB1">
+
+<LI CLASS="LB1" TYPE="DISC"><A NAME="18728"></A>1, User
+<P>
+
+<LI CLASS="LB1" TYPE="DISC"><A NAME="18729"></A>2, Redo
+<P>
+
+<LI CLASS="LB1" TYPE="DISC"><A NAME="18730"></A>4, Enqueue
+<P>
+
+<LI CLASS="LB1" TYPE="DISC"><A NAME="18731"></A>8, Cache
+<P>
+
+<LI CLASS="LB1" TYPE="DISC"><A NAME="18732"></A>16, OS
+<P>
+
+<LI CLASS="LB1" TYPE="DISC"><A NAME="18733"></A>32, Parallel Server
+<P>
+
+<LI CLASS="LB1" TYPE="DISC"><A NAME="18734"></A>64, SQL
+<P>
+
+<LI CLASS="LB1" TYPE="DISC"><A NAME="18735"></A>128, Debug
+<P>
+</UL>
+
+<A NAME="18725"></A>
+<P CLASS="BP">
+For example, a class value of 72 represents a statistic that relates to SQL statements and caching.
+</P>
+
+<A NAME="28687"></A>
+<P CLASS="BP">
+Some statistics are populated only if the <CODE>TIMED_STATISTICS</CODE> initialization parameter is set to <CODE>TRUE</CODE>. Those statistics are flagged in the right-hand column.
+</P>
+
+<A NAME="6529">
+
+<H5 CLASS="TTW"><FONT FACE="Helvetica,Arial,sans-serif"><EM>
+<A NAME="25920"></A>
+<STRONG><FONT FACE="Arial, Helvetica, sans-serif"><EM>Table C-1 &#32;<STRONG CLASS="Bold"><EM CLASS="Italic">Database Statistics Descriptions</EM></STRONG></EM></FONT></STRONG>
+</EM></FONT></H5>
+
+<TABLE CLASS="FormalWide" BORDER="1" FRAME="HSIDES" RULES="GROUPS" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<THEAD>
+<TR CLASS="Formal"><TH CLASS="Formal" align="left" valign="bottom">
+<A NAME="25926"></A>
+<FONT FACE="Arial, Helvetica, sans-serif"><STRONG>Name</STRONG></FONT>&nbsp;</TH>
+<TH CLASS="Formal" align="left" valign="bottom">
+<A NAME="25928"></A>
+<FONT FACE="Arial, Helvetica, sans-serif"><STRONG>Class</STRONG></FONT>&nbsp;</TH>
+<TH CLASS="Formal" align="left" valign="bottom">
+<A NAME="25930"></A>
+<FONT FACE="Arial, Helvetica, sans-serif"><STRONG>Description</STRONG></FONT>&nbsp;</TH>
+<TH CLASS="Formal" align="left" valign="bottom">
+<A NAME="28222"></A>
+<FONT FACE="Arial, Helvetica, sans-serif"><STRONG>TIMED_STATISTICS</STRONG></FONT>&nbsp;</TH>
+</TR>
+<TBODY>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="25933"></A>
+<P CLASS="TB">
+background checkpoints completed&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25935"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25937"></A>
+<P CLASS="TB">
+The number of checkpoints completed by the background process. This statistic is incremented when the background process successfully advances the thread checkpoint.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28224"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="25940"></A>
+<P CLASS="TB">
+background checkpoints started&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25942"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25944"></A>
+<P CLASS="TB">
+The number of checkpoints started by the background process. This statistics can be larger than "background checkpoints completed" if a new checkpoint overrides an incomplete checkpoint or if a checkpoint is currently under way. This statistic includes only checkpoints of the redo thread. It does not include:
+<UL CLASS="TLB">
+
+<LI CLASS="TLB" TYPE="DISC"><A NAME="25945"></A>Individual file checkpoints for operations such as offline or begin backup
+<P>
+
+<LI CLASS="TLB" TYPE="DISC"><A NAME="25946"></A>Foreground (user-requested) checkpoints (for example, performed by <CODE>ALTER SYSTEM CHECKPOINT LOCAL</CODE> statements)
+<P>
+</UL>&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28226"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="25956"></A>
+<P CLASS="TB">
+branch node splits&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25958"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25960"></A>
+<P CLASS="TB">
+Number of times an index branch block was split because of the insertion of an additional value.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28230"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="25962"></A>
+<P CLASS="TB">
+buffer is not pinned count&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25964"></A>
+<P CLASS="TB">
+72&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25966"></A>
+<P CLASS="TB">
+Number of times a buffer was free when visited. This statistic is useful only for internal debugging purposes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28232"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="25968"></A>
+<P CLASS="TB">
+buffer is pinned count&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25970"></A>
+<P CLASS="TB">
+72&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25972"></A>
+<P CLASS="TB">
+Number of times a buffer was pinned when visited. This statistic is useful only for internal debugging purposes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28234"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="25974"></A>
+<P CLASS="TB">
+bytes received via SQL*Net from client&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25976"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25978"></A>
+<P CLASS="TB">
+Total number of bytes received from the client over Net8.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28236"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="25981"></A>
+<P CLASS="TB">
+bytes received via SQL*Net from dblink&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25983"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25985"></A>
+<P CLASS="TB">
+Total number of bytes received from a database link over Net8.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28238"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="25988"></A>
+<P CLASS="TB">
+bytes sent via SQL*Net to client&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25990"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25992"></A>
+<P CLASS="TB">
+Total number of bytes sent to the client from the foreground process(es). &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28240"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="25995"></A>
+<P CLASS="TB">
+bytes sent via SQL*Net to dblink&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25997"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="25999"></A>
+<P CLASS="TB">
+Total number of bytes sent over a database link.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28242"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26002"></A>
+<P CLASS="TB">
+Cached Commit SCN referenced&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26004"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26006"></A>
+<P CLASS="TB">
+This statistic is useful only for internal debugging purposes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28244"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26010"></A>
+<P CLASS="TB">
+calls to get snapshot scn: kcmgss&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26012"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26014"></A>
+<P CLASS="TB">
+Number of times a snapshot system change number (SCN) was allocated. The SCN is allocated at the start of a transaction.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28246"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26016"></A>
+<P CLASS="TB">
+calls to kcmgas&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26018"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26020"></A>
+<P CLASS="TB">
+Number of calls to routine kcmgas to get a new SCN.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28248"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26022"></A>
+<P CLASS="TB">
+calls to kcmgcs&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26024"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26026"></A>
+<P CLASS="TB">
+Number of calls to routine kcmgcs to get a current SCN.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28250"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26028"></A>
+<P CLASS="TB">
+calls to kcmgrs&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26030"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26032"></A>
+<P CLASS="TB">
+Number of calls to routine kcsgrs to get a recent SCN.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28252"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26035"></A>
+<P CLASS="TB">
+change write time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26037"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26039"></A>
+<P CLASS="TB">
+Elapsed redo write time for changes made to CURRENT blocks in 10s of milliseconds. This statistic is populated only if the <CODE>TIME_STATISTICS</CODE> parameter is set to <CODE>TRUE</CODE>.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28254"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26042"></A>
+<P CLASS="TB">
+cleanouts and rollbacks - consistent read gets&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26044"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26046"></A>
+<P CLASS="TB">
+Number of consistent gets that require both block rollbacks and block cleanouts. See <A HREF="apc2.htm#26159">"consistent gets"</a> below.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28256"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26052"></A>
+<P CLASS="TB">
+cleanouts only - consistent read gets&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26054"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26056"></A>
+<P CLASS="TB">
+Number of consistent gets that require only block cleanouts, no rollbacks. See <A HREF="apc2.htm#26159">"consistent gets"</a> below.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28258"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26062"></A>
+<P CLASS="TB">
+cluster key scan block gets&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26064"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26066"></A>
+<P CLASS="TB">
+Number of blocks obtained in a cluster scan.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28260"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26069"></A>
+<P CLASS="TB">
+cluster key scans&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26071"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26073"></A>
+<P CLASS="TB">
+Number of cluster scans that were started.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28262"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26075"></A>
+<P CLASS="TB">
+cold recycle reads&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26077"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26079"></A>
+<P CLASS="TB">
+Number of buffers that were read through the least recently used end of the recycle cache with fast aging strategy.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28264"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26083"></A>
+<P CLASS="TB">
+commit cleanout failures: block lost&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26085"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26088"></A>
+<P CLASS="TB">
+Number of times Oracle attempted a cleanout at commit but could not find the correct block due to forced write, replacement, or switch CURRENT.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28266"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26091"></A>
+<P CLASS="TB">
+commit cleanout failures: buffer being written&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26093"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26095"></A>
+<P CLASS="TB">
+Number of times Oracle attempted a cleanout at commit, but the buffer was currently being written.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28268"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26098"></A>
+<P CLASS="TB">
+commit cleanout failures: callback failure&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26100"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26102"></A>
+<P CLASS="TB">
+Number of times the cleanout callback function returns <CODE>FALSE</CODE>.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28270"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26105"></A>
+<P CLASS="TB">
+commit cleanout failures: cannot pin&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26107"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26109"></A>
+<P CLASS="TB">
+Total number of times a commit cleanout was performed but failed because the block could not be pinned.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28272"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26112"></A>
+<P CLASS="TB">
+commit cleanout failures: hot backup in progress&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26114"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26116"></A>
+<P CLASS="TB">
+Number of times Oracle attempted block cleanout at commit during hot backup. The image of the block needs to be logged before the buffer can be made dirty.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28274"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26120"></A>
+<P CLASS="TB">
+commit cleanout failures: write disabled&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26122"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27606"></A>
+<P CLASS="TB">
+Number of times a cleanout block at commit was performed but the writes to the database had been temporarily disabled.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28276"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26128"></A>
+<P CLASS="TB">
+commit cleanouts&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26130"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26132"></A>
+<P CLASS="TB">
+Total number of times the cleanout block at commit function was performed.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28278"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26135"></A>
+<P CLASS="TB">
+commit cleanouts successfully completed&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26137"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26139"></A>
+<P CLASS="TB">
+Number of times the cleanout block at commit function completed successfully.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28280"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26141"></A>
+<P CLASS="TB">
+Commit SCN cached&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26143"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26145"></A>
+<P CLASS="TB">
+Number of times the system change number of a commit operation was cached&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28282"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26149"></A>
+<P CLASS="TB">
+consistent changes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26151"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26153"></A>
+<P CLASS="TB">
+Number of times a user process has applied rollback entries to perform a consistent read on the block.
+<A NAME="26154"></A>
+<P CLASS="TB">
+Work loads that produce a great deal of consistent changes can consume a great deal of resources. The value of this statistic should be small in relation to the "consistent gets" statistic.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28284"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26159"></A>
+<P CLASS="TB">
+consistent gets&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26161"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26163"></A>
+<P CLASS="TB">
+Number of times a consistent read was requested for a block. See also the <A HREF="apc2.htm#26149">"consistent changes"</a> and <A HREF="apc2.htm#27312">"session logical reads"</a> statistics.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28286"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26170"></A>
+<P CLASS="TB">
+CPU used by this session&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26172"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26174"></A>
+<P CLASS="TB">
+Amount of CPU time (in 10s of milliseconds) used by a session from the time a user call starts until it ends. If a user call completes within 10 milliseconds, the start and end user-call time are the same for purposes of this statistics, and 0 milliseconds are added.
+<A NAME="26175"></A>
+<P CLASS="TB">
+A similar problem can exist in the reporting by the operating system, especially on systems that suffer from many context switches.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28288"></A>
+<P CLASS="TB">
+3&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26178"></A>
+<P CLASS="TB">
+CPU used when call started&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26180"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26182"></A>
+<P CLASS="TB">
+The CPU time used when the call is started. See also <A HREF="apc2.htm#26170">"CPU used by this session"</a>, above. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28290"></A>
+<P CLASS="TB">
+3&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26188"></A>
+<P CLASS="TB">
+CR blocks created&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26190"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26192"></A>
+<P CLASS="TB">
+Number of CURRENT blocks cloned to create CR (consistent read) blocks. The most common reason for cloning is that the buffer is held in a incompatible mode.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28292"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26195"></A>
+<P CLASS="TB">
+current blocks converted for CR&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26197"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26199"></A>
+<P CLASS="TB">
+Number CURRENT blocks converted to CR state&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28294"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26201"></A>
+<P CLASS="TB">
+cursor authentications&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26203"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26205"></A>
+<P CLASS="TB">
+Number of privilege checks conducted during execution of an operation&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28296"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26209"></A>
+<P CLASS="TB">
+data blocks consistent reads - undo records applied&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26211"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26213"></A>
+<P CLASS="TB">
+Number of undo records applied to data blocks that have been rolled back for consistent read purposes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28298"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26217"></A>
+<P CLASS="TB">
+db block changes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26219"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26224"></A>
+<P CLASS="TB">
+Closely related to <A HREF="apc2.htm#26149">"consistent changes"</a>, this statistic counts the total number of changes that were part of an update or delete operation that were made to all blocks in the SGA. Such changes generate redo log entries and hence become permanent changes to the database if the transaction is committed.
+<A NAME="26225"></A>
+<P CLASS="TB">
+This approximates total database work. It statistic indicates the rate at which buffers are being dirtied (on a per-transaction or per-second basis, for example). &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28300"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26230"></A>
+<P CLASS="TB">
+db block gets&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26232"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26234"></A>
+<P CLASS="TB">
+Number of times a CURRENT block was requested. See also <A HREF="apc2.htm#26159">"consistent gets"</a>, above.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28302"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26237"></A>
+<P CLASS="TB">
+DBWR buffers scanned&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26239"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26241"></A>
+<P CLASS="TB">
+Total number of dirty and clean buffers Oracle looks at when scanning LRU sets for dirty buffers to clean. Divide by <A HREF="apc2.htm#26279">"DBWR lru scans"</a> to find the average number of buffers scanned.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28304"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26247"></A>
+<P CLASS="TB">
+DBWR checkpoint buffers written&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26249"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26251"></A>
+<P CLASS="TB">
+Number of buffers that were written for checkpoints.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28306"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26254"></A>
+<P CLASS="TB">
+DBWR checkpoints&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26256"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27662"></A>
+<P CLASS="TB">
+Number of times the DBWR was asked to scan the cache and write all blocks marked for a checkpoint or the end of recovery. This statistic is always larger than <A HREF="apc2.htm#25933">"background checkpoints completed"</a>. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28308"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26260"></A>
+<P CLASS="TB">
+DBWR cross instance writes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26262"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26264"></A>
+<P CLASS="TB">
+Oracle Parallel Server only: Number of blocks written to satisfy a lock request from another instance&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28310"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26268"></A>
+<P CLASS="TB">
+DBWR free buffers found&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26270"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26272"></A>
+<P CLASS="TB">
+Number of clean buffers that DBWR found when it was requested to make free buffers. Divide by <A HREF="apc2.htm#26290">"DBWR make free requests"</a> to find the average number of reusable buffers at the end of each LRU.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28312"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26279"></A>
+<P CLASS="TB">
+DBWR lru scans&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26281"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26283"></A>
+<P CLASS="TB">
+Number of times that DBWR scans the LRU queue looking for buffers to write. This count includes scans to fill a batch being written for another purpose (such as a checkpoint). This statistic is always greater than or equal to <A HREF="apc2.htm#26290">"DBWR make free requests"</a>.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28314"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26290"></A>
+<P CLASS="TB">
+DBWR make free requests&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26292"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26294"></A>
+<P CLASS="TB">
+Number of requests to DBWR to make some free buffers for the LRU.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28316"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26298"></A>
+<P CLASS="TB">
+DBWR revisited being-written buffer&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26300"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26302"></A>
+<P CLASS="TB">
+Number of times that DBWR tried to save a buffer for writing and found that it was already in the write batch. This statistic measures the amount of "useless" work that DBWR had to do in trying to fill the batch.
+<A NAME="26303"></A>
+<P CLASS="TB">
+Many sources contribute to a write batch. If the same buffer from different sources is considered for adding to the write batch, then all but the first attempt will be "useless" because the buffer is already marked as being written.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28318"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26306"></A>
+<P CLASS="TB">
+DBWR summed scan depth&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26308"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26310"></A>
+<P CLASS="TB">
+The current <STRONG CLASS="Bold">scan depth</STRONG> (number of buffers examined by DBWR) is added to this statistic every time DBWR scans the LRU for dirty buffers. Divide by <A HREF="apc2.htm#26279">"DBWR lru scans"</a> to find the average scan depth. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28320"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26315"></A>
+<P CLASS="TB">
+DBWR transaction table writes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26317"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26319"></A>
+<P CLASS="TB">
+Number of rollback segment headers written by DBWR. This statistic indicates how many "hot" buffers were written, causing a user process to wait while the write completed.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28322"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26323"></A>
+<P CLASS="TB">
+DBWR undo block writes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26325"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26327"></A>
+<P CLASS="TB">
+Number of rollback segment blocks written by DBWR.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28324"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26330"></A>
+<P CLASS="TB">
+DDL statements parallelized&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26332"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26334"></A>
+<P CLASS="TB">
+Number of DDL statements that were executed in parallel.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28326"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26337"></A>
+<P CLASS="TB">
+deferred (CURRENT) block cleanout applications&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26339"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26342"></A>
+<P CLASS="TB">
+Number of times cleanout records are deferred, piggyback with changes, always current get.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28328"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26344"></A>
+<P CLASS="TB">
+DFO trees parallelized&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26346"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26348"></A>
+<P CLASS="TB">
+Number of times a serial execution plan was converted to a parallel plan.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28330"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26353"></A>
+<P CLASS="TB">
+dirty buffers inspected&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26355"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26357"></A>
+<P CLASS="TB">
+Number of dirty buffers found by the user process while the it is looking for a buffer to reuse.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28332"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26361"></A>
+<P CLASS="TB">
+DML statements parallelized&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26363"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26365"></A>
+<P CLASS="TB">
+Number of DML statements that were executed in parallel.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28334"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26368"></A>
+<P CLASS="TB">
+enqueue conversions&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26370"></A>
+<P CLASS="TB">
+4&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26372"></A>
+<P CLASS="TB">
+Total number of conversions of the state of table or row lock&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28336"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26376"></A>
+<P CLASS="TB">
+enqueue deadlocks&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26378"></A>
+<P CLASS="TB">
+4&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26380"></A>
+<P CLASS="TB">
+Total number of deadlocks between table or row locks in different sessions.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28338"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26383"></A>
+<P CLASS="TB">
+enqueue releases&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26385"></A>
+<P CLASS="TB">
+4&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26387"></A>
+<P CLASS="TB">
+Total number of table or row locks released&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28340"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26390"></A>
+<P CLASS="TB">
+enqueue requests&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26392"></A>
+<P CLASS="TB">
+4&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26394"></A>
+<P CLASS="TB">
+Total number of table or row locks acquired&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28342"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26397"></A>
+<P CLASS="TB">
+enqueue timeouts&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26399"></A>
+<P CLASS="TB">
+4&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26401"></A>
+<P CLASS="TB">
+Total number of table and row locks (acquired and converted) that timed out before they could complete&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28344"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26404"></A>
+<P CLASS="TB">
+enqueue waits&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26406"></A>
+<P CLASS="TB">
+4&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26408"></A>
+<P CLASS="TB">
+Total number of waits that occurred during an enqueue convert or get because the enqueue get was deferred&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28346"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26411"></A>
+<P CLASS="TB">
+exchange deadlocks&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26413"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26415"></A>
+<P CLASS="TB">
+Number of times that a process detected a potential deadlock when exchanging two buffers and raised an internal, restartable error. Index scans are the only operations that perform exchanges.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28348"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26419"></A>
+<P CLASS="TB">
+execute count&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26421"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26423"></A>
+<P CLASS="TB">
+Total number of calls (user and recursive) that executed SQL statements.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28350"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26426"></A>
+<P CLASS="TB">
+free buffer inspected&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26428"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26430"></A>
+<P CLASS="TB">
+Number of buffers skipped over from the end of an LRU queue in order to find a reusable buffer. The difference between this statistic and <A HREF="apc2.htm#26353">"dirty buffers inspected"</a> is the number of buffers that could not be used because they had a user, a waiter, or were being read or written, or because they were busy or needed to be written after rapid aging out.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28352"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26436"></A>
+<P CLASS="TB">
+free buffer requested&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26438"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26440"></A>
+<P CLASS="TB">
+Number of times a reusable buffer or a free buffer was requested to create or load a block.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28354"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26442"></A>
+<P CLASS="TB">
+global cache blocks corrupt&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26444"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26446"></A>
+<P CLASS="TB">
+OPS only: Number of blocks that encountered a corruption or checksum failure during interconnect.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28356"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26448"></A>
+<P CLASS="TB">
+global cache convert time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26450"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26452"></A>
+<P CLASS="TB">
+OPS only: Total time elapsed during lock converts.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28358"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26454"></A>
+<P CLASS="TB">
+global cache convert timeouts&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26456"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26458"></A>
+<P CLASS="TB">
+Number of times lock converts in the global cache timed out.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28360"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26460"></A>
+<P CLASS="TB">
+global cache converts&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26462"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26464"></A>
+<P CLASS="TB">
+Number of lock converts in the global cache.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28362"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26466"></A>
+<P CLASS="TB">
+global cache cr block receive time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26468"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26470"></A>
+<P CLASS="TB">
+Total amount of time foreground processes waited for a CR block to be sent through the interconnect. This statistic divided by <A HREF="apc2.htm#26478">"global cache cr blocks received"</a> = time waited per block&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28364"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26472"></A>
+<P CLASS="TB">
+global cache cr block serve time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26474"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26476"></A>
+<P CLASS="TB">
+Total amount of time the BSP process took to construct consistent-read (CR) blocks. This statistic divided by <A HREF="apc2.htm#26484">"global cache cr blocks served"</a> = construction time per CR block&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28366"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26478"></A>
+<P CLASS="TB">
+global cache cr blocks received&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26480"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26482"></A>
+<P CLASS="TB">
+Total number of blocks received.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28368"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26484"></A>
+<P CLASS="TB">
+global cache cr blocks served&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26486"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26488"></A>
+<P CLASS="TB">
+Total number of blocks constructed by the BSP process.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28370"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26490"></A>
+<P CLASS="TB">
+global cache cr requests blocked&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26492"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26494"></A>
+<P CLASS="TB">
+Number of times foreground attempt to request a cr block and failed.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28372"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26496"></A>
+<P CLASS="TB">
+global cache cr timeouts&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26498"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26500"></A>
+<P CLASS="TB">
+Number of times a foreground process requested a consistent-read (CR) block when the request timed out.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28374"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26503"></A>
+<P CLASS="TB">
+global cache defers&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26505"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26507"></A>
+<P CLASS="TB">
+Number of times a lock was requested and the holder of the lock deferred the release.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28376"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26510"></A>
+<P CLASS="TB">
+global cache freelist waits&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26512"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28145"></A>
+<P CLASS="TB">
+System configured with fewer lock elements than buffers. Number of times foreground has to wait for a lock element.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28378"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26516"></A>
+<P CLASS="TB">
+global cache get time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26518"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26520"></A>
+<P CLASS="TB">
+Total time spent waiting. this divided by global cache gets = time waited per request.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28380"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26522"></A>
+<P CLASS="TB">
+global cache gets&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26524"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26526"></A>
+<P CLASS="TB">
+Number of locks acquired&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28382"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="28012"></A>
+<P CLASS="TB">
+global cache cr block send time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28014"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28016"></A>
+<P CLASS="TB">
+Total time spent by the BSP process in sending constructed consistent-read (CR) blocks. This statistic divided by <A HREF="apc2.htm#26484">"global cache cr blocks served"</a> = send time per CR block.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28384"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="28059"></A>
+<P CLASS="TB">
+global cache cr block log flushes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28008"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28010"></A>
+<P CLASS="TB">
+Number of log flushes of the consistent-read block&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28386"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="28000"></A>
+<P CLASS="TB">
+global cache cr block log flush time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28002"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28004"></A>
+<P CLASS="TB">
+Total time spent by the BSP process in log flushes after sending a constructed consistent-read (CR) block. This statistic divided by <A HREF="apc2.htm#26484">"global cache cr blocks served"</a> = log flush time per CR block.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28388"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27994"></A>
+<P CLASS="TB">
+global cache prepare failures&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27996"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27998"></A>
+<P CLASS="TB">
+Number of times a failure occurred during preparation for interconnect transfer.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28390"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26529"></A>
+<P CLASS="TB">
+global lock async converts&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26531"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26533"></A>
+<P CLASS="TB">
+Total number of asynchronous global lock converts.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28392"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26536"></A>
+<P CLASS="TB">
+global lock async gets&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26538"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26540"></A>
+<P CLASS="TB">
+Total number of asynchronous global lock gets.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28394"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26543"></A>
+<P CLASS="TB">
+global lock convert time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26545"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26547"></A>
+<P CLASS="TB">
+Total elapsed time in 10s of milliseconds of all synchronous (non-asynchronous) global lock converts.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28396"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26550"></A>
+<P CLASS="TB">
+global lock get time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26552"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26554"></A>
+<P CLASS="TB">
+Total elapsed time in 10s of milliseconds of all synchronous (non-asynchronous) global lock gets.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28398"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26558"></A>
+<P CLASS="TB">
+global lock releases&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26560"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26562"></A>
+<P CLASS="TB">
+Total number of synchronous global lock releases.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28400"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26565"></A>
+<P CLASS="TB">
+global lock sync converts&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26567"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26569"></A>
+<P CLASS="TB">
+Total number of synchronous global lock converts.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28402"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26572"></A>
+<P CLASS="TB">
+global lock sync gets&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26574"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26576"></A>
+<P CLASS="TB">
+Total number of synchronous global lock gets.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28404"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26579"></A>
+<P CLASS="TB">
+hot buffers moved to head of LRU&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26581"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26583"></A>
+<P CLASS="TB">
+When a hot buffer reaches the tail of its replacement list, Oracle moves it back to the head of the list to keep it from being reused. This statistic counts such moves.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28406"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26586"></A>
+<P CLASS="TB">
+immediate (CR) block cleanout applications&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26588"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26590"></A>
+<P CLASS="TB">
+Number of times cleanout records are applied immediately during consistent-read requests &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28408"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26594"></A>
+<P CLASS="TB">
+immediate (CURRENT) block cleanout applications&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26596"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26598"></A>
+<P CLASS="TB">
+Number of times cleanout records are applied immediately during current gets. Compare this statistic with <A HREF="apc2.htm#26337">"deferred (CURRENT) block cleanout applications"</a>, above.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28410"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26600"></A>
+<P CLASS="TB">
+index fast full scans (direct read)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26602"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26604"></A>
+<P CLASS="TB">
+Number of fast full scans initiated using direct read.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28412"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26606"></A>
+<P CLASS="TB">
+index fast full scans (full)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26608"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26610"></A>
+<P CLASS="TB">
+Number of fast full scans initiated for full segments.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28414"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26612"></A>
+<P CLASS="TB">
+index fast full scans (rowid ranges)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26614"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26616"></A>
+<P CLASS="TB">
+Number of fast full scans initiated with rowid endpoints specified.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28416"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26618"></A>
+<P CLASS="TB">
+instance recovery database freeze count&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26620"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26622"></A>
+<P CLASS="TB">
+Number of times the database is frozen during instance recovery.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28418"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26625"></A>
+<P CLASS="TB">
+kcmccs called get current scn&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26627"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26630"></A>
+<P CLASS="TB">
+Number of times the kernel got the CURRENT SCN when there was a need to casually confirm the SCN.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28420"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26633"></A>
+<P CLASS="TB">
+kcmgss read scn without going to DLM&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26635"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26637"></A>
+<P CLASS="TB">
+Number of times the kernel got a snapshot SCN without going to the distributed lock manager (DLM)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28422"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26641"></A>
+<P CLASS="TB">
+kcmgss waited for batching&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26643"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26645"></A>
+<P CLASS="TB">
+Number of times a database process is blocked waiting for a snapshot SCN.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28424"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26648"></A>
+<P CLASS="TB">
+leaf node splits&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26650"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26652"></A>
+<P CLASS="TB">
+Number of times an index leaf node was split because of the insertion of an additional value.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28426"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26656"></A>
+<P CLASS="TB">
+logons cumulative&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26658"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26660"></A>
+<P CLASS="TB">
+Total number of logons since the instance started. This statistic is useful only in <CODE>V$SYSSTAT</CODE>. It gives an instance overview of all processes that logged on.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28428"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26663"></A>
+<P CLASS="TB">
+logons current&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26665"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26667"></A>
+<P CLASS="TB">
+Total number of current logons. This statistic is useful only in <CODE>V$SYSSTAT</CODE>.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28430"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26669"></A>
+<P CLASS="TB">
+messages received&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26671"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal" COLSPAN="1" ROWSPAN="2">
+<A NAME="26673"></A>
+<P CLASS="TB">
+Number of messages sent and received between background processes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28432"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26675"></A>
+<P CLASS="TB">
+messages sent&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26677"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28434"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26682"></A>
+<P CLASS="TB">
+native hash arithmetic execute&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26684"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26686"></A>
+<P CLASS="TB">
+Number of hash operations performed using native arithmetic rather than Oracle NUMBERs.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28436"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26690"></A>
+<P CLASS="TB">
+native hash arithmetic fail&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26692"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26694"></A>
+<P CLASS="TB">
+Number of has operations performed using native arithmetic that failed, requiring the hash operation to be performed with Oracle NUMBERs.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28438"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26697"></A>
+<P CLASS="TB">
+next scns gotten without going to DLM&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26699"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26701"></A>
+<P CLASS="TB">
+Number of system change numbers obtained without going to the distributed lock manager or server&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28440"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26704"></A>
+<P CLASS="TB">
+no buffer to keep pinned count&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26706"></A>
+<P CLASS="TB">
+72&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26708"></A>
+<P CLASS="TB">
+Number of times a visit to a buffer attempted, but the buffer was not found where expected. Like <A HREF="apc2.htm#25962">"buffer is not pinned count"</a> and <A HREF="apc2.htm#25968">"buffer is pinned count"</a>, this statistic is useful only for internal debugging purposes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28442"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26711"></A>
+<P CLASS="TB">
+no work - consistent read gets&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26713"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26715"></A>
+<P CLASS="TB">
+Number consistent gets that require neither block cleanouts nor rollbacks. See <A HREF="apc2.htm#26159">"consistent gets"</a> above.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28444"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26721"></A>
+<P CLASS="TB">
+opened cursors cumulative&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26723"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26725"></A>
+<P CLASS="TB">
+In <CODE>V$SYSSTAT</CODE>: Total number of cursors opened since the instance started.
+<A NAME="26726"></A>
+<P CLASS="TB">
+In <CODE>V$SESSTAT</CODE>: Total number of cursors opened since the start of the session.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28446"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26729"></A>
+<P CLASS="TB">
+opened cursors current&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26731"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26733"></A>
+<P CLASS="TB">
+Total number of current open cursors. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28448"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26736"></A>
+<P CLASS="TB">
+opens of replaced files&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26738"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26740"></A>
+<P CLASS="TB">
+Total number of files that had to be reopened because they were no longer in the process file cache. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28450"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26743"></A>
+<P CLASS="TB">
+opens requiring cache replacement&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26745"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26747"></A>
+<P CLASS="TB">
+Total number of file opens that caused a current file in the process file cache to be closed.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28452"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26749"></A>
+<P CLASS="TB">
+OS All other sleep time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26751"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26753"></A>
+<P CLASS="TB">
+Time spent sleeping for reasons other than misses in the data segment (see <A HREF="apc2.htm#26761">"OS Data page fault sleep time"</a>), kernel page faults (see <A HREF="apc2.htm#26779">"OS Kernel page fault sleep time"</a>), misses in the text segment (see <A HREF="apc2.htm#26857">"OS Text page fault sleep time"</a>), or waiting for an OS locking object (see <A HREF="apc2.htm#26869">"OS User lock wait sleep time"</a>). An example of such a reason is expiration of quanta.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28454"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26755"></A>
+<P CLASS="TB">
+OS Chars read and written&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26757"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26759"></A>
+<P CLASS="TB">
+Number of bytes read and written&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28456"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26761"></A>
+<P CLASS="TB">
+OS Data page fault sleep time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26763"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26765"></A>
+<P CLASS="TB">
+Time spent sleeping due to misses in the data segment&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28458"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26767"></A>
+<P CLASS="TB">
+OS Input blocks&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26769"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26771"></A>
+<P CLASS="TB">
+Number of read I/Os&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28460"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26773"></A>
+<P CLASS="TB">
+OS Involuntary context switches&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26775"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26777"></A>
+<P CLASS="TB">
+Number of context switches that were enforced by the operating system&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28462"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26779"></A>
+<P CLASS="TB">
+OS Kernel page fault sleep time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26781"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26783"></A>
+<P CLASS="TB">
+Time spent sleeping due to OS kernel page faults&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28464"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26785"></A>
+<P CLASS="TB">
+OS Major page faults&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26787"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26789"></A>
+<P CLASS="TB">
+Number of page faults that resulted in I/O&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28466"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26791"></A>
+<P CLASS="TB">
+OS Messages received&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26793"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26795"></A>
+<P CLASS="TB">
+Number of messages received&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28468"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26797"></A>
+<P CLASS="TB">
+OS Messages sent&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26799"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26801"></A>
+<P CLASS="TB">
+Number of messages sent&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28470"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26803"></A>
+<P CLASS="TB">
+OS Minor page faults&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26805"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26807"></A>
+<P CLASS="TB">
+Number of page faults that did not result in an actual I/O&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28472"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26809"></A>
+<P CLASS="TB">
+OS Other system trap CPU time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26811"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26813"></A>
+<P CLASS="TB">
+Total amount of time to process system traps (as distinct from system calls)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28474"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26815"></A>
+<P CLASS="TB">
+OS Output blocks&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26817"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26819"></A>
+<P CLASS="TB">
+Number of write I/Os&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28476"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26821"></A>
+<P CLASS="TB">
+OS Process heap size&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26823"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26825"></A>
+<P CLASS="TB">
+Size of area in memory allocated by the process. Typically this represents memory obtained by way of malloc().&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28478"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26827"></A>
+<P CLASS="TB">
+OS Process stack size&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26829"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26831"></A>
+<P CLASS="TB">
+Size of the process stack segment.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28480"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26833"></A>
+<P CLASS="TB">
+OS Signals received&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26835"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26837"></A>
+<P CLASS="TB">
+Number of signals received&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28482"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26839"></A>
+<P CLASS="TB">
+OS Swaps&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26841"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26843"></A>
+<P CLASS="TB">
+Number of swap pages&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28484"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26845"></A>
+<P CLASS="TB">
+OS System call CPU time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26847"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26849"></A>
+<P CLASS="TB">
+Total amount of time spent executing in system mode&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28486"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26851"></A>
+<P CLASS="TB">
+OS System calls&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26853"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26855"></A>
+<P CLASS="TB">
+Number of system calls&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28488"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26857"></A>
+<P CLASS="TB">
+OS Text page fault sleep time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26859"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26861"></A>
+<P CLASS="TB">
+Time spent sleeping due to misses in the text segment.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28490"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26863"></A>
+<P CLASS="TB">
+OS User level CPU time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26865"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26867"></A>
+<P CLASS="TB">
+Total amount of time spent executing in user mode&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28492"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26869"></A>
+<P CLASS="TB">
+OS User lock wait sleep time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26871"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26873"></A>
+<P CLASS="TB">
+Total amount of time sleeping while waiting for an OS locking object&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28494"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26875"></A>
+<P CLASS="TB">
+OS Voluntary context switches&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26877"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26879"></A>
+<P CLASS="TB">
+Number of voluntary context switches (for example, when a process gives up the CPU by a SLEEP() system call).&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28496"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26881"></A>
+<P CLASS="TB">
+OS Wait-cpu (latency) time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26883"></A>
+<P CLASS="TB">
+16&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26885"></A>
+<P CLASS="TB">
+Time spent sleeping while waiting for a CPU to become available&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28498"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26887"></A>
+<P CLASS="TB">
+Parallel operations downgraded 1 to 25 pct&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26889"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal" COLSPAN="1" ROWSPAN="4">
+<A NAME="26891"></A>
+<P CLASS="TB">
+Number of times parallel execution was requested and the degree of parallelism was reduced because of insufficient parallel execution servers.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28500"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26894"></A>
+<P CLASS="TB">
+Parallel operations downgraded 25 to 50 pct&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26896"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28502"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26900"></A>
+<P CLASS="TB">
+Parallel operations downgraded 50 to 75 pct&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26902"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28504"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26906"></A>
+<P CLASS="TB">
+Parallel operations downgraded 75 to 99 pct&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26908"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28506"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26912"></A>
+<P CLASS="TB">
+Parallel operations downgraded to serial&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26914"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26916"></A>
+<P CLASS="TB">
+Number of times parallel execution was requested but execution was serial because of insufficient parallel execution servers.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28508"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26918"></A>
+<P CLASS="TB">
+Parallel operations not downgraded&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26920"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26922"></A>
+<P CLASS="TB">
+Number of times parallel execution was executed at the requested degree of parallelism.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28510"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26925"></A>
+<P CLASS="TB">
+parse count (hard)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26927"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26929"></A>
+<P CLASS="TB">
+Total number of parse calls (real parses). A hard parse is a very expensive operation in terms of memory use, because it requires Oracle to allocate a workheap and other memory structures and then build a parse tree.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28512"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26933"></A>
+<P CLASS="TB">
+parse count (total)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26935"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26937"></A>
+<P CLASS="TB">
+Total number of parse calls (hard and soft). A soft parse is a check on an object already in the shared pool, to verify that the permissions on the underlying object have not changed.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28514"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26941"></A>
+<P CLASS="TB">
+parse time cpu&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26943"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26945"></A>
+<P CLASS="TB">
+Total CPU time used for parsing (hard and soft) in 10s of milliseconds.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28516"></A>
+<P CLASS="TB">
+3&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26948"></A>
+<P CLASS="TB">
+parse time elapsed&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26950"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27849"></A>
+<P CLASS="TB">
+Total elapsed time for parsing, in 10s of milliseconds. Subtract <A HREF="apc2.htm#26941">"parse time cpu"</a> from the this statistic to determine the total waiting time for parse resources. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28518"></A>
+<P CLASS="TB">
+3&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26958"></A>
+<P CLASS="TB">
+physical reads&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26960"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26962"></A>
+<P CLASS="TB">
+Total number of data blocks read from disk. This number equals the value of <A HREF="apc2.htm#26969">"physical reads direct"</a> plus all reads into buffer cache.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28520"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26969"></A>
+<P CLASS="TB">
+physical reads direct&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26971"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26973"></A>
+<P CLASS="TB">
+Number of reads directly from disk, bypassing the buffer cache. For example, in high bandwidth, data-intensive operations such as parallel query, reads of disk blocks bypass the buffer cache to maximize transfer rates and to prevent the premature aging of shared data blocks resident in the buffer cache.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28522"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26977"></A>
+<P CLASS="TB">
+physical writes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26979"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26981"></A>
+<P CLASS="TB">
+Total number of data blocks written to disk. This number equals the value of <A HREF="apc2.htm#26988">"physical writes direct"</a> plus all writes from buffer cache.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28524"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26988"></A>
+<P CLASS="TB">
+physical writes direct&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26990"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26992"></A>
+<P CLASS="TB">
+Number of writes directly to disk, bypassing the buffer cache (as in a direct load operation).&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28526"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="26995"></A>
+<P CLASS="TB">
+physical writes non checkpoint&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="26997"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="29067"></A>
+<P CLASS="TB">
+Number of times a buffer is written for reasons other than advancement of the checkpoint. Used as a metric for determining the I/O overhead imposed by setting the <CODE>FAST_START_IO_TARGET</CODE> parameter to limit recovery I/Os. Essentially this statistic measures the number of writes that would have occurred had there been no checkpointing. Subtracting this value from <A HREF="apc2.htm#26977">"physical writes"</a> gives the extra I/O for checkpointing.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28528"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27017"></A>
+<P CLASS="TB">
+pinned buffers inspected&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27019"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27021"></A>
+<P CLASS="TB">
+Number of times a user process, when scanning the tail of the replacement list looking for a buffer to reuse, encountered a cold buffer that was pinned or had a waiter that was about to pin it. This occurrence is uncommon, because a cold buffer should not be pinned very often.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28534"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27023"></A>
+<P CLASS="TB">
+prefetched blocks&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27025"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27027"></A>
+<P CLASS="TB">
+Number of contiguous and noncontiguous blocks that were prefetched.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28536"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27029"></A>
+<P CLASS="TB">
+prefetched blocks aged out before use&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27031"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27033"></A>
+<P CLASS="TB">
+Number of contiguous and noncontiguous blocks that were prefetched but aged out before use.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28538"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27035"></A>
+<P CLASS="TB">
+process last non-idle time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27037"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27039"></A>
+<P CLASS="TB">
+The last time this process executed. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28540"></A>
+<P CLASS="TB">
+3&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="29082"></A>
+<P CLASS="TB">
+PX local messages recv'd&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27051"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27053"></A>
+<P CLASS="TB">
+Number of local messages received for parallel execution within the instance local to the current session.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28544"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27056"></A>
+<P CLASS="TB">
+PX local messages sent&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27058"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27060"></A>
+<P CLASS="TB">
+Number of local messages sent for parallel execution within the instance local to the current session.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28546"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27063"></A>
+<P CLASS="TB">
+PX remote messages recv'd&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27065"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27067"></A>
+<P CLASS="TB">
+Number of remote messages received for parallel execution within the instance local to the current session.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28548"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27070"></A>
+<P CLASS="TB">
+PX remote messages sent&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27072"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27074"></A>
+<P CLASS="TB">
+Number of remote messages sent for parallel execution within the instance local to the current session.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28550"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27077"></A>
+<P CLASS="TB">
+queries parallelized&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27079"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27081"></A>
+<P CLASS="TB">
+Number of SELECT statements executed in parallel.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28552"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27084"></A>
+<P CLASS="TB">
+recovery array read time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27086"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27088"></A>
+<P CLASS="TB">
+Elapsed time of I/O during recovery.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28554"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27091"></A>
+<P CLASS="TB">
+recovery array reads&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27093"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27095"></A>
+<P CLASS="TB">
+Number of reads performed during recovery.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28556"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27098"></A>
+<P CLASS="TB">
+recovery blocks read&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27100"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27102"></A>
+<P CLASS="TB">
+Number of blocks read during recovery.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28558"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27105"></A>
+<P CLASS="TB">
+recursive calls&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27107"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27109"></A>
+<P CLASS="TB">
+Number of recursive calls generated at both the user and system level. Oracle maintains tables used for internal processing. When Oracle needs to make a change to these tables, it internally generates an internal SQL statement, which in turn generates a recursive call.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28560"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27112"></A>
+<P CLASS="TB">
+recursive cpu usage&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27114"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27116"></A>
+<P CLASS="TB">
+Total CPU time used by non-user calls (recursive calls). Subtract this value from <A HREF="apc2.htm#26170">"CPU used by this session"</a> to determine how much CPU time was used by the user calls.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28562"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27121"></A>
+<P CLASS="TB">
+redo blocks written&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27123"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27125"></A>
+<P CLASS="TB">
+Total number of redo blocks written. This statistic divided by <A HREF="apc2.htm#27233">"redo writes"</a> equals number of blocks per write.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28564"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27131"></A>
+<P CLASS="TB">
+redo buffer allocation retries&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27133"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27135"></A>
+<P CLASS="TB">
+Total number of retries necessary to allocate space in the redo buffer. Retries are needed either because the redo writer has fallen behind or because an event such as a log switch is occurring.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28566"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27138"></A>
+<P CLASS="TB">
+redo entries&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27140"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27142"></A>
+<P CLASS="TB">
+Number of times a redo entry is copied into the redo log buffer.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28568"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27146"></A>
+<P CLASS="TB">
+redo log space requests&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27148"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27150"></A>
+<P CLASS="TB">
+Number of times the active log file is full and Oracle must wait for disk space to be allocated for the redo log entries. Such space is created by performing a log switch.
+<A NAME="27151"></A>
+<P CLASS="TB">
+Log files that are small in relation to the size of the SGA or the commit rate of the work load can cause problems. When the log switch occurs, Oracle must ensure that all committed dirty buffers are written to disk before switching to a new log file. If you have a large SGA full of dirty buffers and small redo log files, a log switch must wait for DBWR to write dirty buffers to disk before continuing.
+<A NAME="27152"></A>
+<P CLASS="TB">
+Also examine the <STRONG CLASS="Bold">log file space</STRONG> and <STRONG CLASS="Bold">log file space switch</STRONG> wait events in V$SESSION_WAIT.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28570"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27156"></A>
+<P CLASS="TB">
+redo log space wait time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27158"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27162"></A>
+<P CLASS="TB">
+Total elapsed waiting time for <A HREF="apc2.htm#27146">"redo log space requests"</a> in 10s of milliseconds. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28572"></A>
+<P CLASS="TB">
+3&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27166"></A>
+<P CLASS="TB">
+redo log switch interrupts&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27168"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27170"></A>
+<P CLASS="TB">
+Number of times that another instance asked this instance to advance to the next log file.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28574"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27173"></A>
+<P CLASS="TB">
+redo ordering marks&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27175"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27177"></A>
+<P CLASS="TB">
+Number of times that a system change number was allocated to force a redo record to have an higher SCN than a record generated in another thread using the same block.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28576"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27180"></A>
+<P CLASS="TB">
+redo size&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27182"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27184"></A>
+<P CLASS="TB">
+Total amount of redo generated in bytes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28578"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27187"></A>
+<P CLASS="TB">
+redo synch time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27189"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27194"></A>
+<P CLASS="TB">
+Elapsed time of all <A HREF="apc2.htm#27198">"redo synch writes"</a> calls in 10s of milliseconds. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28580"></A>
+<P CLASS="TB">
+3&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27198"></A>
+<P CLASS="TB">
+redo synch writes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27200"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27202"></A>
+<P CLASS="TB">
+Number of times a change being applied to the log buffer must be written out to disk due to a commit. The log buffer is a circular buffer that LGWR periodically flushes. Usually, redo that is generated and copied into the log buffer need not be flushed out to disk immediately.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28582"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27205"></A>
+<P CLASS="TB">
+redo wastage&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27207"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27209"></A>
+<P CLASS="TB">
+Number of bytes wasted because redo blocks needed to be written before they are completely full. Early writing may be needed to commit transactions, to be able to write a database buffer, or to switch logs.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28584"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27212"></A>
+<P CLASS="TB">
+redo write time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27214"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27216"></A>
+<P CLASS="TB">
+Total elapsed time of the write from the redo log buffer to the current redo log file in 10s of milliseconds. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28586"></A>
+<P CLASS="TB">
+3&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27219"></A>
+<P CLASS="TB">
+redo writer latching time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27221"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28922"></A>
+<P CLASS="TB">
+Elapsed time in 10s of milliseconds needed by LWGR to obtain and release each copy latch. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28588"></A>
+<P CLASS="TB">
+3&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27233"></A>
+<P CLASS="TB">
+redo writes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27235"></A>
+<P CLASS="TB">
+2&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27237"></A>
+<P CLASS="TB">
+Total number of writes by LGWR to the redo log files. "redo blocks written" divided by this statistic equals the number of blocks per write.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28590"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27241"></A>
+<P CLASS="TB">
+remote instance undo block writes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27243"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27245"></A>
+<P CLASS="TB">
+Number of times this instance wrote a rollback segment so that another instance could read it.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28592"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27248"></A>
+<P CLASS="TB">
+remote instance undo header writes&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27250"></A>
+<P CLASS="TB">
+40&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27252"></A>
+<P CLASS="TB">
+Number of times this instance wrote a undo header block so that another instance could read it.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28594"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27255"></A>
+<P CLASS="TB">
+rollback changes - undo records applied&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27257"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27259"></A>
+<P CLASS="TB">
+Number of undo records applied to user-requested rollback changes (not consistent-read rollbacks).&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28596"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27263"></A>
+<P CLASS="TB">
+rollbacks only - consistent read gets&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27265"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27267"></A>
+<P CLASS="TB">
+Number of consistent gets that require only block rollbacks, no block cleanouts. See <A HREF="apc2.htm#26159">"consistent gets"</a> above.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28598"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27272"></A>
+<P CLASS="TB">
+rows fetched via callback&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27274"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27276"></A>
+<P CLASS="TB">
+Rows fetched via callback. This statistics is useful primarily for internal debugging purposes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28600"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27280"></A>
+<P CLASS="TB">
+serializable aborts&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27282"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27284"></A>
+<P CLASS="TB">
+Number of times a SQL statement in a serializable isolation level had to abort.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28602"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27288"></A>
+<P CLASS="TB">
+session connect time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27290"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27292"></A>
+<P CLASS="TB">
+The connect time for the session in 10s of milliseconds. This value is useful only in <CODE>V$SESSTAT</CODE>. It is the wall clock time since the logon to this session occurred. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28604"></A>
+<P CLASS="TB">
+3&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27295"></A>
+<P CLASS="TB">
+session cursor cache count&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27297"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27299"></A>
+<P CLASS="TB">
+Total number of cursors cached. This statistic is incremented only if <CODE>SESSION_CACHED_CURSORS</CODE> &gt; 0. This statistic is the most useful in <CODE>V$SESSTAT</CODE>. If the value for this statistic in <CODE>V$SESSTAT</CODE> is close to the setting of the <CODE>SESSION_CACHED_CURSORS</CODE> parameter, the value of the parameter should be increased. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28606"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27302"></A>
+<P CLASS="TB">
+session cursor cache hits&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27304"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27306"></A>
+<P CLASS="TB">
+Number of hits in the session cursor cache. A hit means that the SQL statement did not have to be reparsed. Subtract this statistic from <A HREF="apc2.htm#26933">"parse count (total)"</a> to determine the real number of parses that occurred.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28608"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27312"></A>
+<P CLASS="TB">
+session logical reads&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27314"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27322"></A>
+<P CLASS="TB">
+The sum of <A HREF="apc2.htm#26230">"db block gets"</a> plus <A HREF="apc2.htm#26159">"consistent gets"</a>, described above.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28610"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27325"></A>
+<P CLASS="TB">
+session pga memory&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27327"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27329"></A>
+<P CLASS="TB">
+Current PGA size for the session. This statistic is useful only in <CODE>V$SESSTAT</CODE>; it has no meaning in <CODE>V$SYSSTAT</CODE>.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28612"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27332"></A>
+<P CLASS="TB">
+session pga memory max&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27334"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27336"></A>
+<P CLASS="TB">
+Peak PGA size for the session. This statistic is useful only in <CODE>V$SESSTAT</CODE>; it has no meaning in <CODE>V$SYSSTAT</CODE>.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28614"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27339"></A>
+<P CLASS="TB">
+session stored procedure space&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27341"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27343"></A>
+<P CLASS="TB">
+Amount of memory this session is using for stored procedures.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28616"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27346"></A>
+<P CLASS="TB">
+session uga memory&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27348"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27350"></A>
+<P CLASS="TB">
+Current UGA size for the session. This statistic is useful only in <CODE>V$SESSTAT</CODE>; it has no meaning in <CODE>V$SYSSTAT</CODE>.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28618"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27353"></A>
+<P CLASS="TB">
+session uga memory max&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27355"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27357"></A>
+<P CLASS="TB">
+Peak UGA size for a session. This statistic is useful only in <CODE>V$SESSTAT</CODE>; it has no meaning in <CODE>V$SYSSTAT</CODE>.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28620"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27360"></A>
+<P CLASS="TB">
+sorts (disk)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27362"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27364"></A>
+<P CLASS="TB">
+Number of sort operations that required at least one disk write.
+<A NAME="27365"></A>
+<P CLASS="TB">
+Sorts that require I/O to disk are quite resource intensive. Try increasing the size of the initialization parameter <CODE>SORT_AREA_SIZE</CODE>. For more information, see <A HREF="ch1173.htm#6773">"SORT_AREA_SIZE"</a><A HREF="ch1173.htm#6773"></a>.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28622"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27374"></A>
+<P CLASS="TB">
+sorts (memory)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27376"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27378"></A>
+<P CLASS="TB">
+Number of sort operations that were performed completely in memory and did not require any disk writes.
+<A NAME="27379"></A>
+<P CLASS="TB">
+You cannot do much better than memory sorts, except maybe no sorts at all. Sorting is usually caused by selection criteria specifications within table join SQL operations.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28624"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27382"></A>
+<P CLASS="TB">
+sorts (rows)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27384"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27386"></A>
+<P CLASS="TB">
+Total number of rows sorted.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28626"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27389"></A>
+<P CLASS="TB">
+SQL*Net roundtrips to/from client&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27391"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27393"></A>
+<P CLASS="TB">
+Total number of Net8 messages sent to and received from the client.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28628"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27396"></A>
+<P CLASS="TB">
+SQL*Net roundtrips to/from dblink&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27398"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27400"></A>
+<P CLASS="TB">
+Total number of Net8 messages sent over and received from a database link.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28630"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27403"></A>
+<P CLASS="TB">
+summed dirty queue length&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27405"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27407"></A>
+<P CLASS="TB">
+The sum of the dirty LRU queue length after every write request. Divide by <STRONG CLASS="Bold">write requests</STRONG> to get the average queue length after write completion.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28632"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27411"></A>
+<P CLASS="TB">
+switch current to new buffer&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27413"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27415"></A>
+<P CLASS="TB">
+Number of times the CURRENT block moved to a different buffer, leaving a CR block in the original buffer.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28634"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27419"></A>
+<P CLASS="TB">
+table fetch by rowid&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27421"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27423"></A>
+<P CLASS="TB">
+Number of rows that are fetched using a ROWID (usually recovered from an index).
+<A NAME="27424"></A>
+<P CLASS="TB">
+This occurrence of table scans usually indicates either non-optimal queries or tables without indexes. Therefore, this statistic should increase as you optimize queries and provide indexes in the application.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28636"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27427"></A>
+<P CLASS="TB">
+table fetch continued row&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27429"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27431"></A>
+<P CLASS="TB">
+Number of times a chained or migrated row is encountered during a fetch.
+<A NAME="27432"></A>
+<P CLASS="TB">
+Retrieving rows that span more than one block increases the logical I/O by a factor that corresponds to the number of blocks than need to be accessed. Exporting and re-importing may eliminate this problem. Evaluate the settings for the storage parameters PCTFREE and PCTUSED. This problem cannot be fixed if rows are larger than database blocks (for example, if the LONG datatype is used and the rows are extremely large).&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28638"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27442"></A>
+<P CLASS="TB">
+table scan blocks gotten&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27444"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27446"></A>
+<P CLASS="TB">
+During scanning operations, each row is retrieved sequentially by Oracle. This statistic counts the number of blocks encountered during the scan.
+<A NAME="27447"></A>
+<P CLASS="TB">
+This statistic tells you the number of database blocks that you had to get from the buffer cache for the purpose of scanning. Compare this value with the value of <A HREF="apc2.htm#26159">"consistent gets"</a> to determine how much of the consistent read activity can be attributed to scanning. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28640"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27453"></A>
+<P CLASS="TB">
+table scan rows gotten&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27455"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27457"></A>
+<P CLASS="TB">
+Number of rows that are processed during scanning operations.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28642"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27460"></A>
+<P CLASS="TB">
+table scans (cache partitions)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27462"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27464"></A>
+<P CLASS="TB">
+Number of range scans performed on tables that have the CACHE option enabled.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28644"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27467"></A>
+<P CLASS="TB">
+table scans (direct read)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27469"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27471"></A>
+<P CLASS="TB">
+Number of table scans performed with direct read (bypassing the buffer cache).&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28646"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27474"></A>
+<P CLASS="TB">
+table scans (long tables)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27476"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27482"></A>
+<P CLASS="TB">
+Long (or conversely short) tables can be defined as tables that do not meet the short table criteria as described in <A HREF="apc2.htm#27492">table scans (short tables)</a> below.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28648"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27485"></A>
+<P CLASS="TB">
+table scans (rowid ranges)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27487"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27489"></A>
+<P CLASS="TB">
+During parallel query, the number of table scans conducted with specified ROWID ranges&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28650"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27492"></A>
+<P CLASS="TB">
+table scans (short tables)&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27494"></A>
+<P CLASS="TB">
+64&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27496"></A>
+<P CLASS="TB">
+Long (or conversely short) tables can be defined by optimizer hints coming down into the row source access layer of Oracle. The table must have the CACHE option set.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28652"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27499"></A>
+<P CLASS="TB">
+total file opens&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27501"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27503"></A>
+<P CLASS="TB">
+Total number of file opens performed by the instance. Each process needs a number of files (control file, log file, database file) in order to work against the database.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28654"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27505"></A>
+<P CLASS="TB">
+transaction lock background get time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27507"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27509"></A>
+<P CLASS="TB">
+This statistic is useful only for internal debugging purposes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28656"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27511"></A>
+<P CLASS="TB">
+transaction lock background gets&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27513"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27515"></A>
+<P CLASS="TB">
+This statistic is useful only for internal debugging purposes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28658"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27517"></A>
+<P CLASS="TB">
+transaction lock foreground requests&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27519"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27521"></A>
+<P CLASS="TB">
+This statistic is useful only for internal debugging purposes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28660"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27523"></A>
+<P CLASS="TB">
+transaction lock foreground wait time&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27525"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27527"></A>
+<P CLASS="TB">
+This statistic is useful only for internal debugging purposes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28662"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27530"></A>
+<P CLASS="TB">
+transaction rollbacks&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27532"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27534"></A>
+<P CLASS="TB">
+Number of transactions being successfully rolled back.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28664"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27537"></A>
+<P CLASS="TB">
+transaction tables consistent read rollbacks&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27539"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27541"></A>
+<P CLASS="TB">
+Number of times rollback segment headers are rolled back to create consistent read blocks.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28666"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27544"></A>
+<P CLASS="TB">
+transaction tables consistent reads - undo records applied&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27546"></A>
+<P CLASS="TB">
+128&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27548"></A>
+<P CLASS="TB">
+Number of undo records applied to transaction tables that have been rolled back for consistent read purposes.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28668"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27551"></A>
+<P CLASS="TB">
+Unnecessary process cleanup for SCN batching&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27553"></A>
+<P CLASS="TB">
+32&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27555"></A>
+<P CLASS="TB">
+Total number of times that the process cleanup was performed unnecessarily because the session or process did not get the next batched SCN. The next batched SCN went to another session instead.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28670"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27558"></A>
+<P CLASS="TB">
+user calls&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27560"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27562"></A>
+<P CLASS="TB">
+Number of user calls such as login, parse, fetch, or execute.
+<A NAME="27563"></A>
+<P CLASS="TB">
+When determining activity, the ratio of user calls to RPI calls, give you an indication of how much internal work gets generated as a result of the type of requests the user is sending to Oracle.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28672"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27567"></A>
+<P CLASS="TB">
+user commits&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27569"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27571"></A>
+<P CLASS="TB">
+Number of user commits. When a user commits a transaction, the redo generated that reflects the changes made to database blocks must be written to disk. Commits often represent the closest thing to a user transaction rate.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28674"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27574"></A>
+<P CLASS="TB">
+user rollbacks&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27576"></A>
+<P CLASS="TB">
+1&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27578"></A>
+<P CLASS="TB">
+Number of times users manually issue the ROLLBACK statement or an error occurs during a user's transactions. &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28676"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27580"></A>
+<P CLASS="TB">
+write clones created in background&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27582"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal" COLSPAN="1" ROWSPAN="2">
+<A NAME="27584"></A>
+<P CLASS="TB">
+Number of times a a background or foreground process clones a CURRENT buffer that is being written. The clone becomes the new, accessible CURRENT buffer, leaving the original buffer (now the clone) to complete writing.&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28678"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="27586"></A>
+<P CLASS="TB">
+write clones created in foreground&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="27588"></A>
+<P CLASS="TB">
+8&nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="28680"></A>
+<P CLASS="TB">
+&nbsp;</TD>
+</TR>
+
+</TABLE>
+
+<TABLE CLASS="TableNote" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR CLASS="TableNote" ALIGN=LEFT VALIGN=TOP><TD CLASS="TableNote">
+
+</TD></TR>
+</TABLE>
+
+</A>
+
+<A NAME="18796"></A>
+<P CLASS="TB">
+
+
+
+
+
+
+<!-- Start Footer -->
+</DIV>
+
+<DIV CLASS="OUTD">
+<HR>
+<TABLE CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+<TR>
+<TD VALIGN="BOTTOM" WIDTH="33%">
+<TABLE CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD ALIGN="CENTER"><A HREF="apc.htm"><IMG SRC="../../dcommon/gifs/larrow.gif" ALT="Prev" BORDER="0" HEIGHT="30" WIDTH="30"></A></TD>
+<TD ALIGN="CENTER"><A HREF="apc.htm"><IMG SRC="../../dcommon/gifs/uarrow.gif" ALT="Up" BORDER="0" HEIGHT="30" WIDTH="30"></A></TD>
+<TD ALIGN="CENTER"><A HREF="index.htm"><IMG SRC="../../dcommon/gifs/rarrow.gif" ALT="Next" BORDER="0" HEIGHT="30" WIDTH="30"></A></TD>
+
+</TR>
+</TABLE>
+</TD>
+<TD ALIGN="CENTER" WIDTH="34%">
+<A HREF="../../dcommon/html/cpyr.htm"><IMG SRC="../../dcommon/gifs/oracle.gif" ALT="Oracle" BORDER="0"><BR>
+<FONT SIZE="-2">Copyright &copy; 1999 Oracle Corporation.</FONT></A>
+<BR>
+<FONT SIZE="-2">All Rights Reserved.</FONT>
+</TD>
+<TD VALIGN="BOTTOM" ALIGN="RIGHT" WIDTH="33%">
+<TABLE CELLSPACING="0" CELLPADDING="0" WIDTH="144">
+<TR>
+
+
+
+
+<TD ALIGN="CENTER" VALIGN="TOP" WIDTH="25%"><A HREF="../../products.htm"><IMG SRC="../../dcommon/gifs/prodicon.gif" ALT="" BORDER="0" HEIGHT="30" WIDTH="30"><BR>
+<FONT SIZE="-2">Library</FONT></A></TD>
+<TD ALIGN="CENTER" VALIGN="TOP" WIDTH="25%"><A HREF="../index.htm"><IMG SRC="../../dcommon/gifs/bookicon.gif" ALT="" BORDER="0" HEIGHT="30" WIDTH="30"><BR>
+<FONT SIZE="-2">Product</FONT></A></TD>
+<TD ALIGN="CENTER" VALIGN="TOP" WIDTH="25%"><A HREF="toc.htm"><IMG SRC="../../dcommon/gifs/conticon.gif" ALT="" BORDER="0" HEIGHT="30"
+WIDTH="30"><BR>
+<FONT SIZE="-2">Contents</FONT></A></TD>
+<TD ALIGN="CENTER" VALIGN="TOP" WIDTH="25%"><A HREF="index.htm"><IMG SRC="../../dcommon/gifs/indxicon.gif" ALT="" BORDER="0" HEIGHT="30"
+WIDTH="30"><BR>
+<FONT SIZE="-2">Index</FONT></A></TD>
+
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+
+</DIV>
+
+</BODY>
+</HTML>
+

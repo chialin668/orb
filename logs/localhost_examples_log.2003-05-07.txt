@@ -1,0 +1,25 @@
+2003-05-07 12:36:39 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-05-07 12:36:39 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-05-07 12:36:39 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-05-07 12:36:40 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-05-07 12:36:40 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-05-07 12:36:40 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-05-07 12:36:40 ContextListener: contextInitialized()
+2003-05-07 12:36:40 SessionListener: contextInitialized()
+2003-05-07 12:36:40 StandardWrapper[/examples:default]: Loading container servlet default
+2003-05-07 12:36:40 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-05-07 13:04:49 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@1ecd80')
+2003-05-07 13:04:49 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@45aa00')
+2003-05-07 13:04:49 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@1c0d60')
+2003-05-07 13:04:49 SessionListener: contextDestroyed()
+2003-05-07 13:04:49 ContextListener: contextDestroyed()
+2003-05-07 13:08:10 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-05-07 13:08:10 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-05-07 13:08:10 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-05-07 13:08:10 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-05-07 13:08:10 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-05-07 13:08:10 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-05-07 13:08:10 ContextListener: contextInitialized()
+2003-05-07 13:08:10 SessionListener: contextInitialized()
+2003-05-07 13:08:10 StandardWrapper[/examples:default]: Loading container servlet default
+2003-05-07 13:08:10 StandardWrapper[/examples:invoker]: Loading container servlet invoker

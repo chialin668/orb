@@ -1,0 +1,1055 @@
+2003-02-21 10:23:17 HostConfig[localhost]: Deploying configuration descriptor admin.xml
+2003-02-21 10:23:20 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2003-02-21 10:23:20 WebappLoader[/manager]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\manager
+2003-02-21 10:23:20 ContextConfig[/manager]: Configured an authenticator for method BASIC
+2003-02-21 10:23:20 StandardManager[/manager]: Seeding random number generator class java.security.SecureRandom
+2003-02-21 10:23:20 StandardManager[/manager]: Seeding of random number generator has been completed
+2003-02-21 10:23:20 StandardWrapper[/manager:default]: Loading container servlet default
+2003-02-21 10:23:20 StandardWrapper[/manager:invoker]: Loading container servlet invoker
+2003-02-21 10:23:20 HostConfig[localhost]: Deploying web application directory Copy of orb
+2003-02-21 10:23:20 StandardHost[localhost]: Installing web application at context path /Copy of orb from URL file:C:\Chialin\Tomcat41\webapps\Copy of orb
+2003-02-21 10:23:20 WebappLoader[/Copy of orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\Copy of orb
+2003-02-21 10:23:20 WebappLoader[/Copy of orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\classes
+2003-02-21 10:23:20 WebappLoader[/Copy of orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\Copy of orb\WEB-INF\lib\oraclejdbc.jar
+2003-02-21 10:23:21 ContextConfig[/Copy of orb]: WARNING: Security role name tomcat used in an <auth-constraint> without being defined in a <security-role>
+2003-02-21 10:23:21 ContextConfig[/Copy of orb]: WARNING: Security role name role1 used in an <auth-constraint> without being defined in a <security-role>
+2003-02-21 10:23:21 ContextConfig[/Copy of orb]: Configured an authenticator for method FORM
+2003-02-21 10:23:21 StandardManager[/Copy of orb]: Seeding random number generator class java.security.SecureRandom
+2003-02-21 10:23:21 StandardManager[/Copy of orb]: Seeding of random number generator has been completed
+2003-02-21 10:23:21 StandardWrapper[/Copy of orb:default]: Loading container servlet default
+2003-02-21 10:23:21 StandardWrapper[/Copy of orb:invoker]: Loading container servlet invoker
+2003-02-21 10:23:21 HostConfig[localhost]: Deploying web application directory gid
+2003-02-21 10:23:21 StandardHost[localhost]: Installing web application at context path /gid from URL file:C:\Chialin\Tomcat41\webapps\gid
+2003-02-21 10:23:21 WebappLoader[/gid]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\gid
+2003-02-21 10:23:21 WebappLoader[/gid]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\classes
+2003-02-21 10:23:21 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\lastmod.jar
+2003-02-21 10:23:21 WebappLoader[/gid]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\gid\WEB-INF\lib\oraclejdbc.jar
+2003-02-21 10:23:21 StandardManager[/gid]: Seeding random number generator class java.security.SecureRandom
+2003-02-21 10:23:21 StandardManager[/gid]: Seeding of random number generator has been completed
+2003-02-21 10:23:21 StandardWrapper[/gid:default]: Loading container servlet default
+2003-02-21 10:23:21 StandardWrapper[/gid:invoker]: Loading container servlet invoker
+2003-02-21 10:23:21 HostConfig[localhost]: Deploying web application directory orb
+2003-02-21 10:23:21 StandardHost[localhost]: Installing web application at context path /orb from URL file:C:\Chialin\Tomcat41\webapps\orb
+2003-02-21 10:23:21 WebappLoader[/orb]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+2003-02-21 10:23:21 WebappLoader[/orb]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+2003-02-21 10:23:21 WebappLoader[/orb]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+2003-02-21 10:23:21 StandardManager[/orb]: Seeding random number generator class java.security.SecureRandom
+2003-02-21 10:23:21 StandardManager[/orb]: Seeding of random number generator has been completed
+2003-02-21 10:23:21 StandardWrapper[/orb:default]: Loading container servlet default
+2003-02-21 10:23:21 StandardWrapper[/orb:invoker]: Loading container servlet invoker
+2003-02-21 10:23:22 HostConfig[localhost]: Deploying web application directory pird
+2003-02-21 10:23:22 StandardHost[localhost]: Installing web application at context path /pird from URL file:C:\Chialin\Tomcat41\webapps\pird
+2003-02-21 10:23:22 WebappLoader[/pird]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\pird
+2003-02-21 10:23:22 WebappLoader[/pird]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\classes
+2003-02-21 10:23:22 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/lastmod.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\lastmod.jar
+2003-02-21 10:23:22 WebappLoader[/pird]: Deploy JAR /WEB-INF/lib/oraclejdbc.jar to C:\Chialin\Tomcat41\webapps\pird\WEB-INF\lib\oraclejdbc.jar
+2003-02-21 10:23:22 StandardManager[/pird]: Seeding random number generator class java.security.SecureRandom
+2003-02-21 10:23:22 StandardManager[/pird]: Seeding of random number generator has been completed
+2003-02-21 10:23:22 StandardWrapper[/pird:default]: Loading container servlet default
+2003-02-21 10:23:22 StandardWrapper[/pird:invoker]: Loading container servlet invoker
+2003-02-21 10:23:22 HostConfig[localhost]: Deploying web application directory ROOT
+2003-02-21 10:23:22 StandardHost[localhost]: Installing web application at context path  from URL file:C:\Chialin\Tomcat41\webapps\ROOT
+2003-02-21 10:23:22 WebappLoader[]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\_
+2003-02-21 10:23:22 StandardManager[]: Seeding random number generator class java.security.SecureRandom
+2003-02-21 10:23:22 StandardManager[]: Seeding of random number generator has been completed
+2003-02-21 10:23:22 StandardWrapper[:default]: Loading container servlet default
+2003-02-21 10:23:22 StandardWrapper[:invoker]: Loading container servlet invoker
+2003-02-21 10:23:22 HostConfig[localhost]: Deploying web application directory tomcat-docs
+2003-02-21 10:23:22 StandardHost[localhost]: Installing web application at context path /tomcat-docs from URL file:C:\Chialin\Tomcat41\webapps\tomcat-docs
+2003-02-21 10:23:22 WebappLoader[/tomcat-docs]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\tomcat-docs
+2003-02-21 10:23:22 StandardManager[/tomcat-docs]: Seeding random number generator class java.security.SecureRandom
+2003-02-21 10:23:22 StandardManager[/tomcat-docs]: Seeding of random number generator has been completed
+2003-02-21 10:23:22 StandardWrapper[/tomcat-docs:default]: Loading container servlet default
+2003-02-21 10:23:22 StandardWrapper[/tomcat-docs:invoker]: Loading container servlet invoker
+2003-02-21 10:23:22 HostConfig[localhost]: Deploying web application directory webdav
+2003-02-21 10:23:22 StandardHost[localhost]: Installing web application at context path /webdav from URL file:C:\Chialin\Tomcat41\webapps\webdav
+2003-02-21 10:23:22 WebappLoader[/webdav]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\webdav
+2003-02-21 10:23:22 StandardManager[/webdav]: Seeding random number generator class java.security.SecureRandom
+2003-02-21 10:23:22 StandardManager[/webdav]: Seeding of random number generator has been completed
+2003-02-21 10:23:22 StandardWrapper[/webdav:default]: Loading container servlet default
+2003-02-21 10:23:22 StandardWrapper[/webdav:invoker]: Loading container servlet invoker
+2003-02-21 10:27:46 Error compiling file: C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\/Overview_0002dOLD_jsp.java     [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:7: cannot resolve symbol
+symbol: class Database  
+import Database;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:8: cannot resolve symbol
+symbol: class DBHtml  
+import DBHtml;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:9: cannot resolve symbol
+symbol: class DBHtmlSortable  
+import DBHtmlSortable;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:10: cannot resolve symbol
+symbol: class ServerSession  
+import ServerSession;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:278: cannot resolve symbol
+symbol  : class DBHtml  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	DBHtml dbh = new DBHtml(machine, port, username, password, sid);
+        ^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:278: cannot resolve symbol
+symbol  : class DBHtml  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	DBHtml dbh = new DBHtml(machine, port, username, password, sid);
+                         ^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:282: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+        ^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:282: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+                                  ^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:294: cannot resolve symbol
+symbol  : class Database  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	Database db = new Database(machine, port, username, password, sid);
+        ^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:294: cannot resolve symbol
+symbol  : class Database  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	Database db = new Database(machine, port, username, password, sid);
+                          ^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:296: cannot resolve symbol
+symbol  : class Vector  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	Vector resultVect = db.getResultVect();
+        ^
+11 errors
+
+2003-02-21 10:27:46 Info: Compile: javaFileName=C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\/Overview_0002dOLD_jsp.java
+    classpath=/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;C:/Chialin/Tomcat41/shared/classes/;C:/Chialin/Tomcat41/common/classes/;C:/Chialin/Tomcat41/common/endorsed/xercesImpl.jar;C:/Chialin/Tomcat41/common/endorsed/xmlParserAPIs.jar;C:/Chialin/Tomcat41/common/lib/activation.jar;C:/Chialin/Tomcat41/common/lib/ant.jar;C:/Chialin/Tomcat41/common/lib/commons-collections.jar;C:/Chialin/Tomcat41/common/lib/commons-dbcp.jar;C:/Chialin/Tomcat41/common/lib/commons-logging-api.jar;C:/Chialin/Tomcat41/common/lib/commons-pool.jar;C:/Chialin/Tomcat41/common/lib/jasper-compiler.jar;C:/Chialin/Tomcat41/common/lib/jasper-runtime.jar;C:/Chialin/Tomcat41/common/lib/jdbc2_0-stdext.jar;C:/Chialin/Tomcat41/common/lib/jndi.jar;C:/Chialin/Tomcat41/common/lib/jta.jar;C:/Chialin/Tomcat41/common/lib/mail.jar;C:/Chialin/Tomcat41/common/lib/naming-common.jar;C:/Chialin/Tomcat41/common/lib/naming-factory.jar;C:/Chialin/Tomcat41/common/lib/naming-resources.jar;C:/Chialin/Tomcat41/common/lib/servlet.jar;C:/Chialin/Tomcat41/common/lib/tools.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\shared\classes
+     cp=C:\Chialin\Tomcat41\common\classes
+     cp=C:\Chialin\Tomcat41\common\endorsed\xercesImpl.jar
+     cp=C:\Chialin\Tomcat41\common\endorsed\xmlParserAPIs.jar
+     cp=C:\Chialin\Tomcat41\common\lib\activation.jar
+     cp=C:\Chialin\Tomcat41\common\lib\ant.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-collections.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-dbcp.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-logging-api.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-pool.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-compiler.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-runtime.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jdbc2_0-stdext.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jndi.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jta.jar
+     cp=C:\Chialin\Tomcat41\common\lib\mail.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-common.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-factory.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-resources.jar
+     cp=C:\Chialin\Tomcat41\common\lib\servlet.jar
+     cp=C:\Chialin\Tomcat41\common\lib\tools.jar
+     work dir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    srcDir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    include=jsp/sys/Overview_0002dOLD_jsp.java
+Exception compiling Compile failed; see the compiler error output for details.
+
+2003-02-21 10:27:46 Exception: 
+Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:842)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:308)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-02-21 10:27:46 StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP
+
+An error occurred at line: 86 in the jsp file: /jsp/sys/Overview-OLD.jsp
+
+Generated servlet error:
+    [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:7: cannot resolve symbol
+symbol: class Database  
+import Database;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:8: cannot resolve symbol
+symbol: class DBHtml  
+import DBHtml;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:9: cannot resolve symbol
+symbol: class DBHtmlSortable  
+import DBHtmlSortable;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:10: cannot resolve symbol
+symbol: class ServerSession  
+import ServerSession;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:278: cannot resolve symbol
+symbol  : class DBHtml  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	DBHtml dbh = new DBHtml(machine, port, username, password, sid);
+        ^
+
+
+
+An error occurred at line: 86 in the jsp file: /jsp/sys/Overview-OLD.jsp
+
+Generated servlet error:
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:278: cannot resolve symbol
+symbol  : class DBHtml  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	DBHtml dbh = new DBHtml(machine, port, username, password, sid);
+                         ^
+
+
+
+An error occurred at line: 86 in the jsp file: /jsp/sys/Overview-OLD.jsp
+
+Generated servlet error:
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:282: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+        ^
+
+
+
+An error occurred at line: 86 in the jsp file: /jsp/sys/Overview-OLD.jsp
+
+Generated servlet error:
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:282: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+                                  ^
+
+
+
+An error occurred at line: 102 in the jsp file: /jsp/sys/Overview-OLD.jsp
+
+Generated servlet error:
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:294: cannot resolve symbol
+symbol  : class Database  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	Database db = new Database(machine, port, username, password, sid);
+        ^
+
+
+
+An error occurred at line: 102 in the jsp file: /jsp/sys/Overview-OLD.jsp
+
+Generated servlet error:
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:294: cannot resolve symbol
+symbol  : class Database  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	Database db = new Database(machine, port, username, password, sid);
+                          ^
+
+
+
+An error occurred at line: 102 in the jsp file: /jsp/sys/Overview-OLD.jsp
+
+Generated servlet error:
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:296: cannot resolve symbol
+symbol  : class Vector  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	Vector resultVect = db.getResultVect();
+        ^
+11 errors
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:130)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:293)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:340)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-02-21 10:28:30 Error compiling file: C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\/Overview_0002dOLD_jsp.java     [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:296: cannot resolve symbol
+symbol  : class Vector  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	Vector resultVect = db.getResultVect();
+        ^
+1 error
+
+2003-02-21 10:28:30 Info: Compile: javaFileName=C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\/Overview_0002dOLD_jsp.java
+    classpath=/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;C:/Chialin/Tomcat41/shared/classes/;C:/Chialin/Tomcat41/common/classes/;C:/Chialin/Tomcat41/common/endorsed/xercesImpl.jar;C:/Chialin/Tomcat41/common/endorsed/xmlParserAPIs.jar;C:/Chialin/Tomcat41/common/lib/activation.jar;C:/Chialin/Tomcat41/common/lib/ant.jar;C:/Chialin/Tomcat41/common/lib/commons-collections.jar;C:/Chialin/Tomcat41/common/lib/commons-dbcp.jar;C:/Chialin/Tomcat41/common/lib/commons-logging-api.jar;C:/Chialin/Tomcat41/common/lib/commons-pool.jar;C:/Chialin/Tomcat41/common/lib/jasper-compiler.jar;C:/Chialin/Tomcat41/common/lib/jasper-runtime.jar;C:/Chialin/Tomcat41/common/lib/jdbc2_0-stdext.jar;C:/Chialin/Tomcat41/common/lib/jndi.jar;C:/Chialin/Tomcat41/common/lib/jta.jar;C:/Chialin/Tomcat41/common/lib/mail.jar;C:/Chialin/Tomcat41/common/lib/naming-common.jar;C:/Chialin/Tomcat41/common/lib/naming-factory.jar;C:/Chialin/Tomcat41/common/lib/naming-resources.jar;C:/Chialin/Tomcat41/common/lib/servlet.jar;C:/Chialin/Tomcat41/common/lib/tools.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\shared\classes
+     cp=C:\Chialin\Tomcat41\common\classes
+     cp=C:\Chialin\Tomcat41\common\endorsed\xercesImpl.jar
+     cp=C:\Chialin\Tomcat41\common\endorsed\xmlParserAPIs.jar
+     cp=C:\Chialin\Tomcat41\common\lib\activation.jar
+     cp=C:\Chialin\Tomcat41\common\lib\ant.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-collections.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-dbcp.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-logging-api.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-pool.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-compiler.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-runtime.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jdbc2_0-stdext.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jndi.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jta.jar
+     cp=C:\Chialin\Tomcat41\common\lib\mail.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-common.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-factory.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-resources.jar
+     cp=C:\Chialin\Tomcat41\common\lib\servlet.jar
+     cp=C:\Chialin\Tomcat41\common\lib\tools.jar
+     work dir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    srcDir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    include=jsp/sys/Overview_0002dOLD_jsp.java
+Exception compiling Compile failed; see the compiler error output for details.
+
+2003-02-21 10:28:30 Exception: 
+Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:842)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:308)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-02-21 10:28:30 StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP
+
+An error occurred at line: 102 in the jsp file: /jsp/sys/Overview-OLD.jsp
+
+Generated servlet error:
+    [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Overview_0002dOLD_jsp.java:296: cannot resolve symbol
+symbol  : class Vector  
+location: class org.apache.jsp.Overview_0002dOLD_jsp
+	Vector resultVect = db.getResultVect();
+        ^
+1 error
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:130)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:293)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:340)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-02-21 10:29:11 Error compiling file: C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\/Bar_0002dNewData_jsp.java     [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Bar_0002dNewData_jsp.java:7: cannot resolve symbol
+symbol: class Database  
+import Database;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Bar_0002dNewData_jsp.java:8: cannot resolve symbol
+symbol: class DBHtmlSortable  
+import DBHtmlSortable;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Bar_0002dNewData_jsp.java:173: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Bar_0002dNewData_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+        ^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Bar_0002dNewData_jsp.java:173: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Bar_0002dNewData_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+                                  ^
+4 errors
+
+2003-02-21 10:29:11 Info: Compile: javaFileName=C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\/Bar_0002dNewData_jsp.java
+    classpath=/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;C:/Chialin/Tomcat41/shared/classes/;C:/Chialin/Tomcat41/common/classes/;C:/Chialin/Tomcat41/common/endorsed/xercesImpl.jar;C:/Chialin/Tomcat41/common/endorsed/xmlParserAPIs.jar;C:/Chialin/Tomcat41/common/lib/activation.jar;C:/Chialin/Tomcat41/common/lib/ant.jar;C:/Chialin/Tomcat41/common/lib/commons-collections.jar;C:/Chialin/Tomcat41/common/lib/commons-dbcp.jar;C:/Chialin/Tomcat41/common/lib/commons-logging-api.jar;C:/Chialin/Tomcat41/common/lib/commons-pool.jar;C:/Chialin/Tomcat41/common/lib/jasper-compiler.jar;C:/Chialin/Tomcat41/common/lib/jasper-runtime.jar;C:/Chialin/Tomcat41/common/lib/jdbc2_0-stdext.jar;C:/Chialin/Tomcat41/common/lib/jndi.jar;C:/Chialin/Tomcat41/common/lib/jta.jar;C:/Chialin/Tomcat41/common/lib/mail.jar;C:/Chialin/Tomcat41/common/lib/naming-common.jar;C:/Chialin/Tomcat41/common/lib/naming-factory.jar;C:/Chialin/Tomcat41/common/lib/naming-resources.jar;C:/Chialin/Tomcat41/common/lib/servlet.jar;C:/Chialin/Tomcat41/common/lib/tools.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\shared\classes
+     cp=C:\Chialin\Tomcat41\common\classes
+     cp=C:\Chialin\Tomcat41\common\endorsed\xercesImpl.jar
+     cp=C:\Chialin\Tomcat41\common\endorsed\xmlParserAPIs.jar
+     cp=C:\Chialin\Tomcat41\common\lib\activation.jar
+     cp=C:\Chialin\Tomcat41\common\lib\ant.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-collections.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-dbcp.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-logging-api.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-pool.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-compiler.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-runtime.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jdbc2_0-stdext.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jndi.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jta.jar
+     cp=C:\Chialin\Tomcat41\common\lib\mail.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-common.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-factory.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-resources.jar
+     cp=C:\Chialin\Tomcat41\common\lib\servlet.jar
+     cp=C:\Chialin\Tomcat41\common\lib\tools.jar
+     work dir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    srcDir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    include=jsp/sys/Bar_0002dNewData_jsp.java
+Exception compiling Compile failed; see the compiler error output for details.
+
+2003-02-21 10:29:11 Exception: 
+Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:842)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:308)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-02-21 10:29:11 StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP
+
+An error occurred at line: 19 in the jsp file: /jsp/sys/Bar-NewData.jsp
+
+Generated servlet error:
+    [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Bar_0002dNewData_jsp.java:7: cannot resolve symbol
+symbol: class Database  
+import Database;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Bar_0002dNewData_jsp.java:8: cannot resolve symbol
+symbol: class DBHtmlSortable  
+import DBHtmlSortable;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Bar_0002dNewData_jsp.java:173: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Bar_0002dNewData_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+        ^
+
+
+
+An error occurred at line: 19 in the jsp file: /jsp/sys/Bar-NewData.jsp
+
+Generated servlet error:
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Bar_0002dNewData_jsp.java:173: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Bar_0002dNewData_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+                                  ^
+4 errors
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:130)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:293)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:340)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-02-21 10:30:03 Error compiling file: C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\/Arc_0002dNewData_jsp.java     [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Arc_0002dNewData_jsp.java:7: cannot resolve symbol
+symbol: class Database  
+import Database;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Arc_0002dNewData_jsp.java:8: cannot resolve symbol
+symbol: class DBHtmlSortable  
+import DBHtmlSortable;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Arc_0002dNewData_jsp.java:173: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Arc_0002dNewData_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+        ^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Arc_0002dNewData_jsp.java:173: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Arc_0002dNewData_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+                                  ^
+4 errors
+
+2003-02-21 10:30:03 Info: Compile: javaFileName=C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\/Arc_0002dNewData_jsp.java
+    classpath=/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;C:/Chialin/Tomcat41/shared/classes/;C:/Chialin/Tomcat41/common/classes/;C:/Chialin/Tomcat41/common/endorsed/xercesImpl.jar;C:/Chialin/Tomcat41/common/endorsed/xmlParserAPIs.jar;C:/Chialin/Tomcat41/common/lib/activation.jar;C:/Chialin/Tomcat41/common/lib/ant.jar;C:/Chialin/Tomcat41/common/lib/commons-collections.jar;C:/Chialin/Tomcat41/common/lib/commons-dbcp.jar;C:/Chialin/Tomcat41/common/lib/commons-logging-api.jar;C:/Chialin/Tomcat41/common/lib/commons-pool.jar;C:/Chialin/Tomcat41/common/lib/jasper-compiler.jar;C:/Chialin/Tomcat41/common/lib/jasper-runtime.jar;C:/Chialin/Tomcat41/common/lib/jdbc2_0-stdext.jar;C:/Chialin/Tomcat41/common/lib/jndi.jar;C:/Chialin/Tomcat41/common/lib/jta.jar;C:/Chialin/Tomcat41/common/lib/mail.jar;C:/Chialin/Tomcat41/common/lib/naming-common.jar;C:/Chialin/Tomcat41/common/lib/naming-factory.jar;C:/Chialin/Tomcat41/common/lib/naming-resources.jar;C:/Chialin/Tomcat41/common/lib/servlet.jar;C:/Chialin/Tomcat41/common/lib/tools.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\shared\classes
+     cp=C:\Chialin\Tomcat41\common\classes
+     cp=C:\Chialin\Tomcat41\common\endorsed\xercesImpl.jar
+     cp=C:\Chialin\Tomcat41\common\endorsed\xmlParserAPIs.jar
+     cp=C:\Chialin\Tomcat41\common\lib\activation.jar
+     cp=C:\Chialin\Tomcat41\common\lib\ant.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-collections.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-dbcp.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-logging-api.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-pool.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-compiler.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-runtime.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jdbc2_0-stdext.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jndi.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jta.jar
+     cp=C:\Chialin\Tomcat41\common\lib\mail.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-common.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-factory.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-resources.jar
+     cp=C:\Chialin\Tomcat41\common\lib\servlet.jar
+     cp=C:\Chialin\Tomcat41\common\lib\tools.jar
+     work dir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    srcDir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    include=jsp/sys/Arc_0002dNewData_jsp.java
+Exception compiling Compile failed; see the compiler error output for details.
+
+2003-02-21 10:30:03 Exception: 
+Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:842)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:308)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-02-21 10:30:03 StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP
+
+An error occurred at line: 19 in the jsp file: /jsp/sys/Arc-NewData.jsp
+
+Generated servlet error:
+    [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Arc_0002dNewData_jsp.java:7: cannot resolve symbol
+symbol: class Database  
+import Database;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Arc_0002dNewData_jsp.java:8: cannot resolve symbol
+symbol: class DBHtmlSortable  
+import DBHtmlSortable;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Arc_0002dNewData_jsp.java:173: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Arc_0002dNewData_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+        ^
+
+
+
+An error occurred at line: 19 in the jsp file: /jsp/sys/Arc-NewData.jsp
+
+Generated servlet error:
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\Arc_0002dNewData_jsp.java:173: cannot resolve symbol
+symbol  : class DBHtmlSortable  
+location: class org.apache.jsp.Arc_0002dNewData_jsp
+	DBHtmlSortable dbhs = new DBHtmlSortable(machine, port, username, password, sid);	
+                                  ^
+4 errors
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:130)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:293)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:340)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-02-21 10:30:45 Error compiling file: C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\/JS_jsp.java     [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\JS_jsp.java:8: cannot resolve symbol
+symbol: class ServerReader  
+import ServerReader;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\JS_jsp.java:49: cannot resolve symbol
+symbol  : class ServerReader  
+location: class org.apache.jsp.JS_jsp
+	ServerReader ServerReader = new ServerReader();
+        ^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\JS_jsp.java:49: cannot resolve symbol
+symbol  : class ServerReader  
+location: class org.apache.jsp.JS_jsp
+	ServerReader ServerReader = new ServerReader();
+                                        ^
+3 errors
+
+2003-02-21 10:30:45 Info: Compile: javaFileName=C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\/JS_jsp.java
+    classpath=/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/classes/;/C:/Chialin/Tomcat41/webapps/orb/WEB-INF/lib/oraclejdbc.jar;C:/Chialin/Tomcat41/shared/classes/;C:/Chialin/Tomcat41/common/classes/;C:/Chialin/Tomcat41/common/endorsed/xercesImpl.jar;C:/Chialin/Tomcat41/common/endorsed/xmlParserAPIs.jar;C:/Chialin/Tomcat41/common/lib/activation.jar;C:/Chialin/Tomcat41/common/lib/ant.jar;C:/Chialin/Tomcat41/common/lib/commons-collections.jar;C:/Chialin/Tomcat41/common/lib/commons-dbcp.jar;C:/Chialin/Tomcat41/common/lib/commons-logging-api.jar;C:/Chialin/Tomcat41/common/lib/commons-pool.jar;C:/Chialin/Tomcat41/common/lib/jasper-compiler.jar;C:/Chialin/Tomcat41/common/lib/jasper-runtime.jar;C:/Chialin/Tomcat41/common/lib/jdbc2_0-stdext.jar;C:/Chialin/Tomcat41/common/lib/jndi.jar;C:/Chialin/Tomcat41/common/lib/jta.jar;C:/Chialin/Tomcat41/common/lib/mail.jar;C:/Chialin/Tomcat41/common/lib/naming-common.jar;C:/Chialin/Tomcat41/common/lib/naming-factory.jar;C:/Chialin/Tomcat41/common/lib/naming-resources.jar;C:/Chialin/Tomcat41/common/lib/servlet.jar;C:/Chialin/Tomcat41/common/lib/tools.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\classes
+     cp=C:\Chialin\Tomcat41\webapps\orb\WEB-INF\lib\oraclejdbc.jar
+     cp=C:\Chialin\Tomcat41\shared\classes
+     cp=C:\Chialin\Tomcat41\common\classes
+     cp=C:\Chialin\Tomcat41\common\endorsed\xercesImpl.jar
+     cp=C:\Chialin\Tomcat41\common\endorsed\xmlParserAPIs.jar
+     cp=C:\Chialin\Tomcat41\common\lib\activation.jar
+     cp=C:\Chialin\Tomcat41\common\lib\ant.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-collections.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-dbcp.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-logging-api.jar
+     cp=C:\Chialin\Tomcat41\common\lib\commons-pool.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-compiler.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jasper-runtime.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jdbc2_0-stdext.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jndi.jar
+     cp=C:\Chialin\Tomcat41\common\lib\jta.jar
+     cp=C:\Chialin\Tomcat41\common\lib\mail.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-common.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-factory.jar
+     cp=C:\Chialin\Tomcat41\common\lib\naming-resources.jar
+     cp=C:\Chialin\Tomcat41\common\lib\servlet.jar
+     cp=C:\Chialin\Tomcat41\common\lib\tools.jar
+     work dir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    srcDir=C:\Chialin\Tomcat41\work\Standalone\localhost\orb
+    include=jsp/sys/JS_jsp.java
+Exception compiling Compile failed; see the compiler error output for details.
+
+2003-02-21 10:30:45 Exception: 
+Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:842)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:308)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-02-21 10:30:45 StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP
+
+An error occurred at line: 7 in the jsp file: /jsp/sys/JS.jsp
+
+Generated servlet error:
+    [javac] Compiling 1 source file
+
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\JS_jsp.java:8: cannot resolve symbol
+symbol: class ServerReader  
+import ServerReader;
+^
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\JS_jsp.java:49: cannot resolve symbol
+symbol  : class ServerReader  
+location: class org.apache.jsp.JS_jsp
+	ServerReader ServerReader = new ServerReader();
+        ^
+
+
+
+An error occurred at line: 7 in the jsp file: /jsp/sys/JS.jsp
+
+Generated servlet error:
+C:\Chialin\Tomcat41\work\Standalone\localhost\orb\jsp\sys\JS_jsp.java:49: cannot resolve symbol
+symbol  : class ServerReader  
+location: class org.apache.jsp.JS_jsp
+	ServerReader ServerReader = new ServerReader();
+                                        ^
+3 errors
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:130)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:293)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:340)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:474)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:184)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-02-21 10:32:28 StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:248)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+----- Root Cause -----
+java.lang.NullPointerException
+	at org.apache.jsp.MainFrame_jsp._jspService(MainFrame_jsp.java:54)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:137)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:204)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:295)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:241)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:260)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2415)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:172)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:641)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline$StandardPipelineValveContext.invokeNext(StandardPipeline.java:643)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:480)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:995)
+	at org.apache.coyote.tomcat4.CoyoteAdapter.service(CoyoteAdapter.java:223)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:432)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:386)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:534)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:530)
+	at java.lang.Thread.run(Thread.java:484)
+
+2003-02-21 13:00:21 StandardHost[localhost]: Removing web application at context path /tomcat-docs
+2003-02-21 13:00:21 StandardHost[localhost]: Removing web application at context path /admin
+2003-02-21 13:00:21 StandardHost[localhost]: Removing web application at context path /gid
+2003-02-21 13:00:21 StandardHost[localhost]: Removing web application at context path /pird
+2003-02-21 13:00:21 StandardHost[localhost]: Removing web application at context path /webdav
+2003-02-21 13:00:21 StandardHost[localhost]: Removing web application at context path /examples
+2003-02-21 13:00:21 StandardHost[localhost]: Removing web application at context path /manager
+2003-02-21 13:00:21 StandardHost[localhost]: Removing web application at context path /Copy of orb
+2003-02-21 13:00:21 StandardHost[localhost]: Removing web application at context path /orb
+2003-02-21 13:00:21 StandardHost[localhost]: Removing web application at context path 

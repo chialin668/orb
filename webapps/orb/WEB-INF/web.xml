@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+	<context-param>
+      		<param-name>log_file</param-name>
+      		<param-value>login_attempts.txt</param-value>
+      		<description>
+        		Log file for logging login attempts
+      		</description>
+    	</context-param>
+
+	<context-param>
+      		<param-name>TOMCAT_ROOT</param-name>
+      		<param-value>c:\Chialin\tomcat41</param-value>
+    	</context-param>
+
+	<context-param>
+      		<param-name>WEB_SERVER_NAME</param-name>
+      		<param-value>orb</param-value>
+    	</context-param>
+
+	<context-param>
+      		<param-name>SQL_FILE_NAME</param-name>
+      		<param-value>database.sql</param-value>
+    	</context-param>
+
+	<context-param>
+      		<param-name>SERVER_FILE_NAME</param-name>
+      		<param-value>server.info</param-value>
+    	</context-param>
+
+
+	<context-param>
+      		<param-name>product_version</param-name>
+      		<param-value>v 1.0Beta-5</param-value>
+      		<description>
+        		Product Version
+      		</description>
+    	</context-param>
+
+	<servlet>
+		<servlet-name>
+			Environment
+		</servlet-name>
+		<servlet-class>
+			com.orb.sys.Environment
+		</servlet-class>
+		
+      		<load-on-startup>5</load-on-startup>		
+	</servlet>
+
+ 	<servlet-mapping>
+        <servlet-name>Environment</servlet-name>
+        <url-pattern>/Environment</url-pattern>
+    	</servlet-mapping>
+
+	<servlet-mapping>
+        <servlet-name>invoker</servlet-name>
+        <url-pattern>/servlet/*</url-pattern>
+    	</servlet-mapping>
+
+
+</web-app>

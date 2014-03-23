@@ -1,0 +1,8 @@
+B
+{
+	font: bold 26pt  times,serif;
+	text-decoration: underline;
+}
+
+.paragraph {font: 10pt/18pt helvetica, sans-serif; width: 150px;}
+.emphasis {font: bold 14pt/18pt times, serif; background-color:aliceblue;}

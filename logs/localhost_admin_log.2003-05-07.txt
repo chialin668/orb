@@ -1,0 +1,16 @@
+2003-05-07 12:36:40 WebappLoader[/admin]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\admin
+2003-05-07 12:36:40 WebappLoader[/admin]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\..\server\webapps\admin\WEB-INF\classes
+2003-05-07 12:36:40 WebappLoader[/admin]: Deploy JAR /WEB-INF/lib/struts.jar to C:\Chialin\Tomcat41\bin\..\webapps\..\server\webapps\admin\WEB-INF\lib\struts.jar
+2003-05-07 12:36:41 ContextConfig[/admin]: Configured an authenticator for method FORM
+2003-05-07 12:36:41 StandardManager[/admin]: Seeding random number generator class java.security.SecureRandom
+2003-05-07 12:36:41 StandardManager[/admin]: Seeding of random number generator has been completed
+2003-05-07 12:36:41 StandardWrapper[/admin:default]: Loading container servlet default
+2003-05-07 12:36:41 StandardWrapper[/admin:invoker]: Loading container servlet invoker
+2003-05-07 13:08:11 WebappLoader[/admin]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\admin
+2003-05-07 13:08:11 WebappLoader[/admin]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\..\server\webapps\admin\WEB-INF\classes
+2003-05-07 13:08:11 WebappLoader[/admin]: Deploy JAR /WEB-INF/lib/struts.jar to C:\Chialin\Tomcat41\bin\..\webapps\..\server\webapps\admin\WEB-INF\lib\struts.jar
+2003-05-07 13:08:11 ContextConfig[/admin]: Configured an authenticator for method FORM
+2003-05-07 13:08:11 StandardManager[/admin]: Seeding random number generator class java.security.SecureRandom
+2003-05-07 13:08:11 StandardManager[/admin]: Seeding of random number generator has been completed
+2003-05-07 13:08:11 StandardWrapper[/admin:default]: Loading container servlet default
+2003-05-07 13:08:11 StandardWrapper[/admin:invoker]: Loading container servlet invoker

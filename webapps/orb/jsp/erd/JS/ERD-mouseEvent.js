@@ -1,0 +1,621 @@
+/**
+*
+* originally: 	JavaScript Kit www.javascriptkit.com
+* modified:	Chialin Chou
+*
+**/
+
+
+var dragapproved=false;
+var x,y;
+
+
+/**
+*
+* move this object to the top 
+*
+**/
+function ev_MakeOnTop(inObj) {
+
+	var checkObj;
+	var maxZ = 0;
+
+
+	var objArray;
+	
+	if (isNS) 
+		objArray = document.getElementsByTagName("*");
+	else
+		objArray = document.all;
+
+
+	for (var i=0; i<objArray.length; i++) {
+	
+		checkObj = objArray[i].style.zIndex;
+		
+		if (checkObj != "" && checkObj > maxZ)
+			maxZ = checkObj;
+	}
+
+	var newMaxZ = maxZ + 1;
+	inObj.style.zIndex = newMaxZ;
+	
+	return newMaxZ;
+}
+
+
+/**
+*
+* move the mouse
+*
+**/
+function ev_MouseMove(){
+
+	if (event.button==1 && dragapproved && event.srcElement.className==CL_DB_TABLE){
+	
+		event.srcElement.style.pixelLeft = temp1+event.clientX - x
+		event.srcElement.style.pixelTop = temp2+event.clientY - y
+		
+		// redraw relationship when moving the table
+		var activeTableName = event.srcElement.name;			
+		
+		if (activeTableName != null) {
+		
+			if (re_RedrawRelation(activeTableName) == false) {
+				sy_logError("ERD-column", 
+						"ev_MouseMove", 
+						"Error redrawing relation for table:" + activeTableName);
+				return;
+			}
+		}
+		
+		return false
+	}
+}
+
+
+/**
+*
+* press the left button 
+*
+**/
+function ev_MouseDown(){
+
+	/////////////////////////////////////
+	//	new table
+	/////////////////////////////////////
+	if (sysModeField == MOD_TABLE) {
+
+		if (event.srcElement.className == CL_MODE_CONTROL
+				|| event.srcElement.className == CL_DB_TABLE) 
+			return;
+		
+		//
+		// create one empty table
+		//
+		var tableName = NEW_TABLE;
+		
+		var tableDiv = tb_AddEmptyTable(tableName, event.clientY, event.clientX);
+		if (tableDiv == false) {
+			sy_logError("ERD-column", 
+					"ev_MouseDown", 
+					"Error creating a new table!!");
+			return;
+		}
+
+
+		ev_MakeOnTop(tableDiv);
+		tableDiv.style.background = COLOR_OBJ_CHOSEN;
+
+		//
+		// edit this table
+		//
+		chosenTableName = tableName;
+		
+		if (tb_EditTable(tableName) == false) {
+			sy_logError("ERD-column", 
+					"ev_Dbclick", 
+					"Error change the table to edit mode!!"
+					+ "  Table name: " + tableName);
+			return;
+		}
+
+		sysModeField = MOD_SELECT;
+		
+
+	/////////////////////////////////////
+	//	relationship
+	/////////////////////////////////////
+	} else if (sysModeField == MOD_ONE2ONE
+							||
+						sysModeField == MOD_ONE2MANY
+							||
+						sysModeField == MOD_MANY2MANY) {
+
+		ev_MakeOnTop(event.srcElement);
+
+		if (event.srcElement.className == CL_DB_TABLE) {
+		
+			if (srcTableName == null) {
+			
+				//	
+				// source table
+				//
+				srcTableName = event.srcElement.id;
+
+				if (tb_HasPrimaryKey(srcTableName) == false) {
+				
+					alert("No primary key found!!");
+					srcTableName =  null;
+					return;
+				}
+				
+				event.srcElement.style.background = COLOR_OBJ_CHOSEN;
+				
+				return;
+				
+			} else {  	
+			
+				//
+				// destination table is chosen (have source table already)
+				//
+				destTableName = event.srcElement.id;
+				event.srcElement.style.background = COLOR_OBJ_CHOSEN;
+				
+				
+				if (re_HasRelationship(srcTableName, destTableName) == true) {
+				
+					var srcTable = tb_GetTableObj(srcTableName);
+					var destTable = tb_GetTableObj(destTableName);
+					srcTable.style.background = COLOR_OBJ_DEFAULT;
+					destTable.style.background = COLOR_OBJ_DEFAULT;
+					srcTableName = null;
+					destTableName = null;
+					return;
+				} 
+				
+				
+				//
+				// child/dest table has this column?
+				//
+				var pKeyTrArray = co_GetPKeyTrArray(srcTableName);
+				
+				for (var i=0;i<pKeyTrArray.length;i++) {
+				
+					var columnTr = pKeyTrArray[i];
+					var columnName = co_GetColNameByColTr(columnTr);
+					
+					if (tb_HasColumn(destTableName, columnName)) {
+								
+						alert("Found same column name in child table!!\n"
+									+ "    column name: " + columnName);
+						
+						var srcTable = tb_GetTableObj(srcTableName);
+						var destTable = tb_GetTableObj(destTableName);
+						srcTable.style.background = COLOR_OBJ_DEFAULT;
+						destTable.style.background = COLOR_OBJ_DEFAULT;
+						srcTableName = null;
+						destTableName = null;
+						return;
+					}
+				}
+
+
+				var relationType = sysModeField;  // MOD_ONE2ONE or MOD_ONE2MANY
+				
+				//
+				// MOD_MANY2MANY --> create a child table for both of them
+				//
+				if (relationType == MOD_MANY2MANY) {
+				
+					var tableName = srcTableName + "__" + destTableName;
+					
+					var srcTableDiv = tb_GetTableObj(srcTableName);
+					var destTableDiv = tb_GetTableObj(destTableName);
+					var top = (ut_GetNumber(srcTableDiv.style.top) 
+									+ ut_GetNumber(destTableDiv.style.top))/2;
+					var left = (ut_GetNumber(srcTableDiv.style.left) 
+									+ ut_GetNumber(destTableDiv.style.left))/2;
+									
+
+					//
+					// create one EMPTY table (then we'll rename the table)
+					//
+					var tableDiv = tb_AddEmptyTable(NEW_TABLE, top, left);
+					if (tableDiv == false) {
+						sy_logError("ERD-column", 
+								"ev_MouseDown", 
+								"Error creating a new table!!");
+						return;
+					}
+
+
+
+					//
+					// adding (one to one) relationships for both of the tables
+					//
+					if (!re_AddRelationship(MOD_ONE2ONE, srcTableName, NEW_TABLE, false) || 
+							!re_AddRelationship(MOD_ONE2ONE, destTableName, NEW_TABLE, false)) { 
+
+						sy_logError("ERD-mouseEvent", 
+								"ev_MouseDown", 
+								"Error adding relationship!!"
+								+ " srcTableName: " + srcTableName
+								+ " destTableName: " + destTableName
+								+ ", child: " + NEW_TABLE);
+						return;
+					}
+
+
+					//
+					// rename the table
+					//
+					var tableNameTag = tableDiv.firstChild;
+					tableNameTag.data = tableName;
+
+					if (!tb_RenameTable(NEW_TABLE, tableName)) {
+					
+						sy_logError("ERD-mouseEvent", 
+								"ev_MouseDown", 
+								"Error renaming table!!"
+								+ " old table: " + NEW_TABLE
+								+ ", new table: " + tableName);
+						return;
+					
+					}
+
+					// RE-create a short view
+					tb_ToShortView(tableName);
+
+					ev_MakeOnTop(tableDiv);
+					
+		
+				} else { // MOD_ONE2ONE and MOD_ONE2MANY
+
+
+					//
+					// adding relationship for the tables
+					//
+					if (!re_AddRelationship(relationType, srcTableName, destTableName, false)) { 
+
+						sy_logError("ERD-mouseEvent", 
+								"ev_MouseDown", 
+								"Error adding relationship!!"
+								+ " parent: " + srcTableName
+								+ ", child: " + destTableName);
+						return;
+					}
+
+
+					//
+					//	index (for adding foreign key indexe)
+					//
+					if (!in_RefreshIndexDiv(destTableName)) {
+						sy_logError("ERD-index", 
+								"ev_MouseDown", 
+								"Error refreshing indexDiv!!"
+								+ " tableName: " + destTableName);
+						return;
+					}
+					
+					// RE-create a short view
+					refreshShortView(destTableName);
+				}
+				
+
+				//
+				// done!!
+				//
+				var srcTable = tb_GetTableObj(srcTableName);
+				var destTable = tb_GetTableObj(destTableName);
+				
+				if (srcTable==null || destTable==null) {
+					var errMsg = "One of the following table is null:" 
+								+ "srcTable: " + srcTable
+								+ "destTable: " + destTable;
+								
+					sy_logError("ERD-mouseEvent", 
+							"ev_MouseDown", 
+							errMsg);
+					return;
+				}
+
+				srcTable.style.background = COLOR_OBJ_DEFAULT;
+				destTable.style.background = COLOR_OBJ_DEFAULT;
+				
+				srcTableName = null;
+				destTableName = null;
+				return;
+			}
+
+			
+		} else {
+	
+			srcTableName = null;
+			destTableName = null;
+			return;
+		}		
+		
+	/////////////////////////////////////
+	//	select an object
+	/////////////////////////////////////
+	} else if (sysModeField == MOD_SELECT) {
+	
+		// default --> select mode
+		if (event.srcElement.className==CL_DB_TABLE){
+
+			if (chosenTableName!=null)
+				return;
+
+			ev_MakeOnTop(event.srcElement);
+			event.srcElement.style.background = COLOR_OBJ_CHOSEN;
+			dragapproved = true;
+			
+			temp1 = event.srcElement.style.pixelLeft;
+			temp2 = event.srcElement.style.pixelTop;
+			x = event.clientX;
+			y = event.clientY;
+
+			
+		} else if ((event.srcElement.className == CL_PRIMARY_KEY
+					||
+				event.srcElement.className == CL_COLUMN_NAME
+					||
+				event.srcElement.className == CL_DATA_TYPE
+					||
+				event.srcElement.className == CL_DATA_LENGTH
+					||
+				event.srcElement.className == CL_NULLABLE
+					|| 
+				event.srcElement.className == CL_VALIDATE
+					|| 
+				event.srcElement.className == CL_DEFAULT)
+					&& chosenTableName != null) {
+
+			var columnTr = event.srcElement.parentElement;
+			var columnTd = columnTr.firstChild.nextSibling;  // column name
+			var text = columnTd.firstChild;
+			var columnName = text.data;
+			
+			var tableDiv = co_GetTDivByColTd(columnTd);
+			var tableName = tableDiv.id;
+
+
+			if (tableName != chosenTableName)
+				return ;
+			
+			if (chosenColumn != null && columnName != chosenColumn)
+				return;
+
+			if (choosenIndex != null)
+				return;
+
+			chosenColumn = columnName;
+			tb_SetChosenColTr(tableName, columnTr);
+			ev_MakeOnTop(tableDiv);
+
+			if (co_EditColumn(columnTd) == false) {
+				sy_logError("ERD-mouseEvent", 
+						"ev_MouseDown", 
+						"Error editing column!!"
+						+ " tableName: " + tableName
+						+ ", columnName: " + columnName);
+				return;
+			}
+
+		} 
+	
+		
+	}
+
+
+//		alert (event.srcElement.className);
+
+
+}
+
+
+/**
+*
+* release the left button
+*
+**/
+function ev_MouseUp() {
+
+	dragapproved=false;
+	
+	if (sysModeField == MOD_SELECT) {
+	
+		if (event.srcElement.className==CL_DB_TABLE){
+
+			if (choosenIndex != null)
+				return;
+
+			var tableName = event.srcElement.name;
+
+
+			event.srcElement.style.background = COLOR_OBJ_DEFAULT;
+			re_RedrawRelation(tableName);
+		}
+
+		// mouse move too fast???		
+		//if (event.srcElement.className==""){
+		//	event.srcElement.style.background = COLOR_OBJ_DEFAULT;
+		//}
+
+	} 
+}
+
+
+/**  www.ctuaa.org
+*
+* double click an object
+*
+**/
+function ev_Dbclick(e) {
+
+/* @@@
+	if (isNS) {
+	   selectedObj = e.srcElement;
+	   //alert('className = ' + selectedObj.className);
+	   
+	} else if (isIE) {
+		selectedObj = event.srcElement;
+	}
+*/
+
+
+	if (chosenTableName != null || chosenColumn != null)
+		return;
+
+	/////////////////////////////////////////////////
+	//		table
+	/////////////////////////////////////////////////
+	if (event.srcElement.className == CL_DB_TABLE) {
+
+		ev_MakeOnTop(event.srcElement);
+		event.srcElement.style.background = COLOR_OBJ_CHOSEN;
+
+		var tableName = event.srcElement.name;
+		chosenTableName = tableName;
+
+		if (tb_EditTable(tableName) == false) {
+			sy_logError("ERD-column", 
+					"ev_Dbclick", 
+					"Error change the table to edit mode!!"
+					+ "  Table name: " + tableName);
+			return;
+		}
+
+	}
+
+
+}
+
+
+/**  
+*
+* for column updates only
+*
+**/
+function ev_MouseOver() {
+
+	if (chosenTableName==null)
+		return;
+
+	if (chosenColumn != null)
+		return;
+
+//	if (choosenIndex != null)
+//		return;
+
+
+
+	if (event.srcElement.className == CL_PRIMARY_KEY
+				||
+			event.srcElement.className == CL_COLUMN_NAME
+				||
+			event.srcElement.className == CL_DATA_TYPE
+				||
+			event.srcElement.className == CL_DATA_LENGTH
+				||
+			event.srcElement.className == CL_NULLABLE
+				|| 
+			event.srcElement.className == CL_VALIDATE
+				|| 
+			event.srcElement.className == CL_DEFAULT) {
+
+
+		var columnTd = event.srcElement;
+		var objectDiv = co_GetTDivByColTd(columnTd);
+		
+		// table or index
+		var className = objectDiv.className;
+
+		if (className == CL_DB_TABLE) {
+			var tableName = objectDiv.id;
+			
+			// don't want to highlight other guy's columns
+			if (tableName != chosenTableName)  
+				return;
+
+			// working on index			
+			var indexDivId = "IND_" + tableName;
+			var indexDiv = document.getElementById(indexDivId);
+
+			if (indexDiv.style.visibility == "visible")
+				return;
+	
+			event.srcElement.parentElement.style.background = COLOR_COL_CHOSEN;
+			
+		} else if (className == CL_DB_INDEX) {
+/*			
+			var indexNameTag = objectDiv.firstChild;
+			var tagName = in_GetIndexNameByNameTag(indexNameTag);
+
+			//if (in_IsPKeyIndex(tagName) || in_IsFKeyIndex(tagName))
+			//	return;
+
+			if (tagName == chosenTableName)  // table not index
+				return;
+			
+			event.srcElement.parentElement.style.background = COLOR_COL_CHOSEN;
+*/			
+		}
+		
+		
+
+		
+	}
+}
+
+
+/**  
+*
+* for column updates only
+*
+**/
+function ev_MouseOut() {
+
+	
+	if (event.srcElement.className == CL_PRIMARY_KEY
+				||
+			event.srcElement.className == CL_COLUMN_NAME
+				||
+			event.srcElement.className == CL_DATA_TYPE
+				||
+			event.srcElement.className == CL_DATA_LENGTH
+				||
+			event.srcElement.className == CL_NULLABLE
+				|| 
+			event.srcElement.className == CL_VALIDATE
+				|| 
+			event.srcElement.className == CL_DEFAULT) {
+			
+		event.srcElement.parentElement.style.background = COLOR_COL_DEFAULT;
+	}
+}
+
+
+
+///////////////////////
+// register events
+///////////////////////
+document.onmousedown		= ev_MouseDown;
+document.onmouseup			= ev_MouseUp;
+document.onmousemove		= ev_MouseMove;
+//document.onmouseenter 	= ev_MouseEnter;
+//document.onmouseleave 	= ev_MouseLeave;
+
+document.onmouseover		= ev_MouseOver;
+document.onmouseout			= ev_MouseOut;
+
+// for Netscape!!
+if (document.addEventListener)
+   document.addEventListener("dblclick", ev_Dbclick, false)
+else
+   document.ondblclick = ev_Dbclick;
+
+
+//document.ondblclick	= ev_Dbclick
+//document.ondeactivate	= ev_DeActivate

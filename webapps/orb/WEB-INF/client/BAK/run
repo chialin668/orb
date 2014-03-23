@@ -1,0 +1,5 @@
+javac Server.java
+javah -jni Server
+gcc -G -I/usr/java/include -I/usr/java/include/solaris \
+      ServerImp.c -o libserver.so
+

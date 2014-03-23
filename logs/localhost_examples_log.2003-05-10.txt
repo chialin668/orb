@@ -1,0 +1,20 @@
+2003-05-10 12:29:34 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@542529')
+2003-05-10 12:29:34 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@53ab04')
+2003-05-10 12:29:34 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@bac2')
+2003-05-10 12:29:34 SessionListener: contextDestroyed()
+2003-05-10 12:29:34 ContextListener: contextDestroyed()
+2003-05-10 23:08:12 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-05-10 23:08:12 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-05-10 23:08:12 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-05-10 23:08:12 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-05-10 23:08:12 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-05-10 23:08:12 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-05-10 23:08:12 ContextListener: contextInitialized()
+2003-05-10 23:08:12 SessionListener: contextInitialized()
+2003-05-10 23:08:12 StandardWrapper[/examples:default]: Loading container servlet default
+2003-05-10 23:08:12 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-05-10 23:11:33 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@33f0de')
+2003-05-10 23:11:33 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@ab444')
+2003-05-10 23:11:33 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@40f1ec')
+2003-05-10 23:11:33 SessionListener: contextDestroyed()
+2003-05-10 23:11:33 ContextListener: contextDestroyed()

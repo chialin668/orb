@@ -1,0 +1,37 @@
+2003-04-02 14:19:19 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-04-02 14:19:19 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-04-02 14:19:19 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-04-02 14:19:20 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-04-02 14:19:20 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 14:19:20 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-04-02 14:19:20 ContextListener: contextInitialized()
+2003-04-02 14:19:20 SessionListener: contextInitialized()
+2003-04-02 14:19:20 StandardWrapper[/examples:default]: Loading container servlet default
+2003-04-02 14:19:20 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2003-04-02 15:59:02 SessionListener: sessionCreated('00A8873547414C4FD2756D0DD8946892')
+2003-04-02 15:59:03 SessionListener: attributeAdded('00A8873547414C4FD2756D0DD8946892', 'numguess', 'num.NumberGuessBean@1406eb6')
+2003-04-02 16:29:22 SessionListener: attributeRemoved('00A8873547414C4FD2756D0DD8946892', 'numguess', 'num.NumberGuessBean@1406eb6')
+2003-04-02 16:29:22 SessionListener: sessionDestroyed('00A8873547414C4FD2756D0DD8946892')
+2003-04-02 17:22:12 SessionListener: sessionCreated('FC7D9B63B1E6A407EF4D8AA45714A491')
+2003-04-02 17:22:45 SessionListener: attributeAdded('FC7D9B63B1E6A407EF4D8AA45714A491', 'table', 'cal.TableBean@7d2796')
+2003-04-02 17:24:16 SessionListener: attributeAdded('FC7D9B63B1E6A407EF4D8AA45714A491', 'numguess', 'num.NumberGuessBean@1289e48')
+2003-04-02 17:24:27 SessionListener: attributeAdded('FC7D9B63B1E6A407EF4D8AA45714A491', 'cart', 'sessions.DummyCart@ccc621')
+2003-04-02 17:55:23 SessionListener: attributeRemoved('FC7D9B63B1E6A407EF4D8AA45714A491', 'table', 'cal.TableBean@7d2796')
+2003-04-02 17:55:23 SessionListener: attributeRemoved('FC7D9B63B1E6A407EF4D8AA45714A491', 'numguess', 'num.NumberGuessBean@1289e48')
+2003-04-02 17:55:23 SessionListener: attributeRemoved('FC7D9B63B1E6A407EF4D8AA45714A491', 'cart', 'sessions.DummyCart@ccc621')
+2003-04-02 17:55:23 SessionListener: sessionDestroyed('FC7D9B63B1E6A407EF4D8AA45714A491')
+2003-04-02 21:45:55 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@116c054')
+2003-04-02 21:45:55 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@ad00b2')
+2003-04-02 21:45:55 ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@8d18c')
+2003-04-02 21:45:55 SessionListener: contextDestroyed()
+2003-04-02 21:45:55 ContextListener: contextDestroyed()
+2003-04-02 21:46:08 WebappLoader[/examples]: Deploying class repositories to work directory C:\Chialin\Tomcat41\work\Standalone\localhost\examples
+2003-04-02 21:46:08 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to C:\Chialin\Tomcat41\bin\..\webapps\examples\WEB-INF\classes
+2003-04-02 21:46:08 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2003-04-02 21:46:09 ContextConfig[/examples]: Configured an authenticator for method FORM
+2003-04-02 21:46:09 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2003-04-02 21:46:09 StandardManager[/examples]: Seeding of random number generator has been completed
+2003-04-02 21:46:09 ContextListener: contextInitialized()
+2003-04-02 21:46:09 SessionListener: contextInitialized()
+2003-04-02 21:46:09 StandardWrapper[/examples:default]: Loading container servlet default
+2003-04-02 21:46:09 StandardWrapper[/examples:invoker]: Loading container servlet invoker

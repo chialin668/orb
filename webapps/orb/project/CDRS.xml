@@ -1,0 +1,84 @@
+<schema>
+<table id='DB_User' left='46' top='135'>
+	<column primaryKey='p' columnName='User_WID' dataType='number' notNull='y' />
+	<column columnName='Last_Password_Mod_Date' dataType='long varchar' />
+	<column columnName='User_Name' dataType='varchar2' dataLength='32' />
+	<column columnName='MD5_Hex_Password' dataType='varchar2' dataLength='64' />
+	<column columnName='First_Name' dataType='varchar2' dataLength='32' />
+	<column columnName='Last_Name' dataType='varchar2' dataLength='32' />
+	<column columnName='Status' dataType='char' dataLength='1' />
+	<column columnName='Version_Nbr' dataType='number' dataLength='3' />
+</table>
+
+<table id='DB_User_Role' left='226' top='373'>
+	<column columnName='Version_Nbr' dataType='number' dataLength='3' />
+</table>
+
+<table id='Role' left='424' top='329'>
+	<column primaryKey='p' columnName='Role_WID' dataType='number' dataLength='12' notNull='y' validate='Status' />
+	<column columnName='Version_Nbr' dataType='number' dataLength='3' />
+	<column columnName='Role_Name12' dataType='varchar2' dataLength='32' />
+</table>
+
+<table id='Parent' left='347' top='69'>
+	<column primaryKey='p' columnName='pid' dataType='number' dataLength='12' />
+	<column columnName='pname' dataType='varchar2' dataLength='123' />
+</table>
+
+<table id='Child' left='369' top='184'>
+	<column primaryKey='p' columnName='cid' dataType='number' dataLength='12' />
+	<column primaryKey='p' columnName='pid' dataType='number' dataLength='12' />
+	<column columnName='cname' dataType='varchar2' dataLength='123' />
+</table>
+
+<relation id='DB_User__DB_User_Role'
+	 relationType='MOD_ONE2MANY'
+	 parent='DB_User'
+	 child='DB_User_Role'
+	 fromRandom='10'
+	 toRandom='23'
+	 columns='User_WID'>
+</relation>
+
+<relation id='Role__DB_User_Role'
+	 relationType='MOD_ONE2MANY'
+	 parent='Role'
+	 child='DB_User_Role'
+	 fromRandom='-12'
+	 toRandom='0'
+	 columns='Role_WID'>
+</relation>
+
+<relation id='Parent__Child'
+	 relationType='MOD_ONE2ONE'
+	 parent='Parent'
+	 child='Child'
+	 fromRandom='5'
+	 toRandom='24'
+	 columns='pid'>
+</relation>
+
+<index id='AK_UserName' tableName='DB_User' unique='y'>
+	<column columnName='User_Name' desc='y' />
+</index>
+
+<index id='AK_Names' tableName='DB_User' unique='y'>
+	<column columnName='First_Name' />
+	<column columnName='Last_Name' />
+	<column columnName='User_WID' desc='y' />
+	<column columnName='User_Name' desc='y' />
+</index>
+
+<index id='FK_Role__DB_User_Role' tableName='DB_User_Role'>
+	<column columnName='Version_Nbr' />
+	<column columnName='Role_WID' />
+</index>
+
+<index id='AK_Role_Name' tableName='Role' unique='y'>
+	<column columnName='Role_Name12' />
+</index>
+
+<validate name='Status' value='A,D,I' />
+
+</schema>
+

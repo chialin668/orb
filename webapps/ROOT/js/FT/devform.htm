@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<SCRIPT>
+function updateft(f){
+return true;
+}
+function modal(f){
+var listValue = f.options[f.selectedIndex].value
+if (listValue == "false")
+	top.modalClick = false
+else
+	top.modalClick = true
+}
+function pmtree(f){
+var listValue = f.options[f.selectedIndex].value
+if (listValue == "1")
+	top.treeLines = 1
+else
+	top.treeLines = 0
+top.backButton = false
+top.rewritepage();
+}
+function textlink(f){
+var listValue = f.options[f.selectedIndex].value
+if (listValue == "1")
+	top.useTextLinks = 1
+else
+	top.useTextLinks = 0
+top.backButton = false
+top.rewritepage();
+}
+function mopm(f){
+var listValue = f.options[f.selectedIndex].value
+if (listValue == "0")
+	top.mouseOverPMMode = 0
+else if (listValue == "1")
+	top.mouseOverPMMode = 1
+else if (listValue == "2")
+	top.mouseOverPMMode = 2
+}
+function moicon(f){
+var listValue = f.options[f.selectedIndex].value
+if (listValue == "0")
+	top.mouseOverIconMode = 0
+else if (listValue == "1")
+	top.mouseOverIconMode = 1
+else if (listValue == "2")
+	top.mouseOverIconMode = 2
+}
+function showopt(){
+var w = window.open("","Optionfile","resizable,status,width=625,height=400");
+var d = w.document;
+d.write('<HTML><BODY>');
+d.write('<CENTER>Cut and paste these values to your options file</CENTER><P>')
+d.write('<PRE>')
+d.write('modalClick = '+top.modalClick + "\n" )
+d.write('treeLines = '+top.treeLines + "\n")
+d.write('useTextLinks = '+top.useTextLinks + "\n")
+d.write('mouseOverPMMode = '+top.mouseOverPMMode + "\n")
+d.write('mouseOverIconMode = '+top.mouseOverIconMode + "\n")
+d.write('</PRE></BODY></HTML>');
+d.close();
+
+}
+</SCRIPT>
+<FORM NAME="optionconfig" onSubmit="updateft(this);">
+<CENTER>
+<FONT size=3><P>Please fill out the following fields, and then click on the update foldertree button.
+</FONT><BR>
+<TABLE BORDER=0 CELLSPACING = 6 width="90%">
+<TR>
+<TH ALIGN="LEFT" >Select whether modal or not</TH><TD>
+<SELECT NAME="modalopt" size=1 onChange="modal(this);">
+<OPTION VALUE="false" SELECTED >No
+<OPTION VALUE="true">Yes
+</SELECT>
+</TD>
+<TH ALIGN="LEFT" >Select whether plus/minus signs should be visible</TH><TD>
+<SELECT NAME="pmtreeopt" size=1 onChange="pmtree(this);">
+<OPTION VALUE="1" SELECTED >Yes
+<OPTION VALUE="0">No
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TH ALIGN="LEFT" >Select whether text should be used as links</TH><TD>
+<SELECT NAME="textlinkopt" size=1 onChange="textlink(this);">
+<OPTION VALUE="1" >Yes
+<OPTION VALUE="0" SELECTED>No
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TH ALIGN="LEFT" >Select mode on mouse over plus/minus</TH><TD>
+<SELECT NAME="mopmopt" size=1 onChange="mopm(this);">
+<OPTION VALUE="0" SELECTED >No action
+<OPTION VALUE="1">Open only
+<OPTION VALUE="2">Open and close
+</SELECT>
+</TD>
+<TH ALIGN="LEFT" >Select mode on mouse over icons</TH><TD>
+<SELECT NAME="moiconopt" size=1 onChange="moicon(this);">
+<OPTION VALUE="0" SELECTED >No action
+<OPTION VALUE="1">Open only
+<OPTION VALUE="2">Open and close
+</SELECT>
+</TD></TR>
+</TABLE>
+<P>
+<INPUT TYPE="submit" VALUE="Update foldertree"><INPUT TYPE="Button" VALUE="Show options file" onClick="showopt();">
+</CENTER>
+</FORM>
+</BODY>
+</HTML>
+
+
+

@@ -1,0 +1,9 @@
+04/30/03
+	what if we create a table that exists already?
+	--> table name confliction
+
+
+04/30/03
+	after creating a relationship without click table->edit index,
+	foreign key index will NOT be generated 
+	--> if click generate sql --> no foreign key will be generated
